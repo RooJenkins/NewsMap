@@ -1,4 +1,5 @@
 import { NewsOutlet, Topic, FrequencyData, SentimentData, PoliticalData, TruthSpectrumData, TopicArticleData } from '@/types'
+import { realNewsTopics } from './realNewsTopics'
 
 // Outlets ordered from left-leaning to right-leaning for visual clustering
 export const outlets: NewsOutlet[] = [
@@ -19,8 +20,14 @@ export const outlets: NewsOutlet[] = [
   { id: 'fox', name: 'Fox News', shortName: 'Fox', totalArticles: 5500 }, // 0.8 (right)
 ]
 
-// Hierarchical topics: main categories with sub-topics
-export const topics: Topic[] = [
+// Export real news topics for interactive map
+export { realNewsTopics }
+
+// Legacy hierarchical topics for other views
+export const topics: Topic[] = realNewsTopics
+
+// Old topics (kept for reference but not exported)
+const legacyTopics: Topic[] = [
   // Main category: Politics
   { id: 'politics', name: 'Politics', category: 'Main' },
   // Politics sub-topics
