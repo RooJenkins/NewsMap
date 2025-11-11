@@ -75,6 +75,38 @@ export default function NewsHeatmap({ viewType, normalized }: NewsHeatmapProps) 
     return cells.find(c => c.outletId === outletId && c.topicId === topicId)
   }
 
+  // Smooth color interpolation - average with neighboring cells
+  const getSmoothedValue = (outletId: string, topicId: string): number => {
+    const cell = getCell(outletId, topicId)
+    if (!cell) return 0
+
+    const outletIndex = outlets.findIndex(o => o.id === outletId)
+    const topicIndex = topics.findIndex(t => t.id === topicId)
+
+    let sum = cell.magnitude * 4 // Weight center cell more
+    let count = 4
+
+    // Average with adjacent cells (top, bottom, left, right)
+    const neighbors = [
+      { ox: outletIndex - 1, ty: topicIndex }, // left
+      { ox: outletIndex + 1, ty: topicIndex }, // right
+      { ox: outletIndex, ty: topicIndex - 1 }, // top
+      { ox: outletIndex, ty: topicIndex + 1 }, // bottom
+    ]
+
+    neighbors.forEach(({ ox, ty }) => {
+      if (ox >= 0 && ox < outlets.length && ty >= 0 && ty < topics.length) {
+        const neighbor = getCell(outlets[ox].id, topics[ty].id)
+        if (neighbor) {
+          sum += neighbor.magnitude
+          count += 1
+        }
+      }
+    })
+
+    return sum / count
+  }
+
   // Helper function to interpolate between colors
   const interpolateColor = (color1: number[], color2: number[], factor: number): string => {
     const r = Math.round(color1[0] + (color2[0] - color1[0]) * factor)
@@ -83,7 +115,10 @@ export default function NewsHeatmap({ viewType, normalized }: NewsHeatmapProps) 
     return `rgb(${r}, ${g}, ${b})`
   }
 
-  const getCellColor = (cell: HeatmapCell): string => {
+  const getCellColor = (cell: HeatmapCell, outletId: string, topicId: string): string => {
+    // Use smoothed values for continuous gradients
+    const smoothedMagnitude = getSmoothedValue(outletId, topicId)
+
     if (viewType === 'frequency') {
       // Blue (low) to Red (high) gradient
       const white = [255, 255, 255]
@@ -93,16 +128,16 @@ export default function NewsHeatmap({ viewType, normalized }: NewsHeatmapProps) 
       const orange = [249, 115, 22]
       const red = [220, 38, 38]
 
-      if (cell.magnitude < 0.2) {
-        return interpolateColor(white, lightBlue, cell.magnitude * 5)
-      } else if (cell.magnitude < 0.4) {
-        return interpolateColor(lightBlue, blue, (cell.magnitude - 0.2) * 5)
-      } else if (cell.magnitude < 0.6) {
-        return interpolateColor(blue, yellow, (cell.magnitude - 0.4) * 5)
-      } else if (cell.magnitude < 0.8) {
-        return interpolateColor(yellow, orange, (cell.magnitude - 0.6) * 5)
+      if (smoothedMagnitude < 0.2) {
+        return interpolateColor(white, lightBlue, smoothedMagnitude * 5)
+      } else if (smoothedMagnitude < 0.4) {
+        return interpolateColor(lightBlue, blue, (smoothedMagnitude - 0.2) * 5)
+      } else if (smoothedMagnitude < 0.6) {
+        return interpolateColor(blue, yellow, (smoothedMagnitude - 0.4) * 5)
+      } else if (smoothedMagnitude < 0.8) {
+        return interpolateColor(yellow, orange, (smoothedMagnitude - 0.6) * 5)
       } else {
-        return interpolateColor(orange, red, (cell.magnitude - 0.8) * 5)
+        return interpolateColor(orange, red, (smoothedMagnitude - 0.8) * 5)
       }
     }
 
@@ -180,7 +215,7 @@ export default function NewsHeatmap({ viewType, normalized }: NewsHeatmapProps) 
     if (!cell) return null
 
     const isHovered = hoveredCell?.outletId === outletId && hoveredCell?.topicId === topicId
-    const bgColor = getCellColor(cell)
+    const bgColor = getCellColor(cell, outletId, topicId)
 
     // For truth spectrum, always show numbers
     if (viewType === 'truth-spectrum') {
@@ -248,18 +283,18 @@ export default function NewsHeatmap({ viewType, normalized }: NewsHeatmapProps) 
       )}
 
       {/* Heatmap Table */}
-      <div className="overflow-x-auto">
-        <table className="border-collapse border border-gray-300 text-xs">
+      <div className="overflow-x-auto overflow-y-auto max-h-[75vh]">
+        <table className="border-collapse text-xs w-full">
           {/* Header Row - Outlets across top */}
-          <thead>
+          <thead className="sticky top-0 z-20">
             <tr>
-              <th className="sticky left-0 bg-gradient-to-br from-gray-100 to-gray-200 border border-gray-300 px-2 py-1 font-bold text-gray-800 text-left text-[10px] min-w-[120px] z-20">
+              <th className="sticky left-0 bg-gradient-to-br from-gray-100 to-gray-200 border-r border-b border-gray-300 px-1 py-0.5 font-bold text-gray-800 text-left text-[7px] min-w-[80px] z-30">
                 Topic
               </th>
               {outlets.map(outlet => (
                 <th
                   key={outlet.id}
-                  className="bg-gradient-to-br from-gray-100 to-gray-200 border border-gray-300 px-1 py-1 text-center font-bold text-[9px] text-gray-800 w-12"
+                  className="bg-gradient-to-br from-gray-100 to-gray-200 border-r border-b border-gray-300 px-0.5 py-0.5 text-center font-bold text-[7px] text-gray-800 w-10"
                 >
                   {outlet.shortName}
                 </th>
@@ -272,7 +307,7 @@ export default function NewsHeatmap({ viewType, normalized }: NewsHeatmapProps) 
             {topics.map(topic => (
               <tr key={topic.id}>
                 {/* Topic Label */}
-                <td className="sticky left-0 bg-gradient-to-r from-gray-50 to-gray-100 border border-gray-300 px-2 py-1 font-semibold text-[10px] text-gray-800 z-10 whitespace-nowrap">
+                <td className="sticky left-0 bg-gradient-to-r from-gray-50 to-gray-100 border-r border-b border-gray-200 px-1 py-0 font-semibold text-[7px] text-gray-800 z-10 whitespace-nowrap leading-tight">
                   {topic.name}
                 </td>
 
@@ -280,7 +315,7 @@ export default function NewsHeatmap({ viewType, normalized }: NewsHeatmapProps) 
                 {outlets.map(outlet => (
                   <td
                     key={`${topic.id}-${outlet.id}`}
-                    className="border border-gray-200 p-0 h-10 w-12"
+                    className="border-r border-b border-gray-100 p-0 h-6 w-10"
                   >
                     {renderCell(outlet.id, topic.id)}
                   </td>

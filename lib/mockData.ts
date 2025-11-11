@@ -19,19 +19,127 @@ export const outlets: NewsOutlet[] = [
   { id: 'fox', name: 'Fox News', shortName: 'Fox', totalArticles: 5500 }, // 0.8 (right)
 ]
 
+// 100 topics organized by category for natural clustering
 export const topics: Topic[] = [
+  // Politics & Government (15)
   { id: 'biden-admin', name: 'Biden Administration', category: 'Politics' },
-  { id: 'crime', name: 'Crime', category: 'Domestic' },
+  { id: 'congress', name: 'Congress', category: 'Politics' },
   { id: 'democracy', name: 'Democracy', category: 'Politics' },
-  { id: 'education', name: 'Education', category: 'Domestic' },
   { id: 'elections', name: 'Elections', category: 'Politics' },
-  { id: 'environment', name: 'Environment', category: 'Policy' },
+  { id: 'voting-rights', name: 'Voting Rights', category: 'Politics' },
+  { id: 'supreme-court', name: 'Supreme Court', category: 'Politics' },
+  { id: 'senate', name: 'Senate', category: 'Politics' },
+  { id: 'house', name: 'House of Representatives', category: 'Politics' },
+  { id: 'political-polls', name: 'Political Polling', category: 'Politics' },
+  { id: 'campaign-finance', name: 'Campaign Finance', category: 'Politics' },
+  { id: 'lobbying', name: 'Lobbying', category: 'Politics' },
+  { id: 'government-spending', name: 'Government Spending', category: 'Politics' },
+  { id: 'federal-budget', name: 'Federal Budget', category: 'Politics' },
+  { id: 'state-politics', name: 'State Politics', category: 'Politics' },
+  { id: 'local-government', name: 'Local Government', category: 'Politics' },
+
+  // Economy & Business (12)
+  { id: 'economy', name: 'Economy', category: 'Economy' },
+  { id: 'stock-market', name: 'Stock Market', category: 'Economy' },
+  { id: 'unemployment', name: 'Unemployment', category: 'Economy' },
+  { id: 'inflation', name: 'Inflation', category: 'Economy' },
+  { id: 'federal-reserve', name: 'Federal Reserve', category: 'Economy' },
+  { id: 'interest-rates', name: 'Interest Rates', category: 'Economy' },
+  { id: 'housing-market', name: 'Housing Market', category: 'Economy' },
+  { id: 'corporate-earnings', name: 'Corporate Earnings', category: 'Economy' },
+  { id: 'trade', name: 'Trade', category: 'Economy' },
+  { id: 'small-business', name: 'Small Business', category: 'Economy' },
+  { id: 'labor-unions', name: 'Labor Unions', category: 'Economy' },
+  { id: 'wages', name: 'Wages', category: 'Economy' },
+
+  // International Affairs (12)
   { id: 'foreign-policy', name: 'Foreign Policy', category: 'International' },
-  { id: 'guns', name: 'Guns', category: 'Domestic' },
-  { id: 'healthcare', name: 'Healthcare', category: 'Policy' },
-  { id: 'immigration', name: 'Immigration', category: 'Policy' },
-  { id: 'economy', name: 'Economy', category: 'Policy' },
-  { id: 'tech', name: 'Technology', category: 'Business' },
+  { id: 'china-relations', name: 'China Relations', category: 'International' },
+  { id: 'russia-ukraine', name: 'Russia-Ukraine', category: 'International' },
+  { id: 'middle-east', name: 'Middle East', category: 'International' },
+  { id: 'nato', name: 'NATO', category: 'International' },
+  { id: 'israel-palestine', name: 'Israel-Palestine', category: 'International' },
+  { id: 'iran', name: 'Iran', category: 'International' },
+  { id: 'north-korea', name: 'North Korea', category: 'International' },
+  { id: 'afghanistan', name: 'Afghanistan', category: 'International' },
+  { id: 'european-union', name: 'European Union', category: 'International' },
+  { id: 'global-terrorism', name: 'Global Terrorism', category: 'International' },
+  { id: 'humanitarian-crisis', name: 'Humanitarian Crisis', category: 'International' },
+
+  // Social Issues (12)
+  { id: 'immigration', name: 'Immigration', category: 'Social' },
+  { id: 'border-security', name: 'Border Security', category: 'Social' },
+  { id: 'police-reform', name: 'Police Reform', category: 'Social' },
+  { id: 'racial-justice', name: 'Racial Justice', category: 'Social' },
+  { id: 'lgbtq-rights', name: 'LGBTQ Rights', category: 'Social' },
+  { id: 'abortion', name: 'Abortion', category: 'Social' },
+  { id: 'gun-control', name: 'Gun Control', category: 'Social' },
+  { id: 'gun-rights', name: 'Gun Rights', category: 'Social' },
+  { id: 'homelessness', name: 'Homelessness', category: 'Social' },
+  { id: 'poverty', name: 'Poverty', category: 'Social' },
+  { id: 'income-inequality', name: 'Income Inequality', category: 'Social' },
+  { id: 'social-security', name: 'Social Security', category: 'Social' },
+
+  // Environment & Climate (8)
+  { id: 'climate-change', name: 'Climate Change', category: 'Environment' },
+  { id: 'renewable-energy', name: 'Renewable Energy', category: 'Environment' },
+  { id: 'fossil-fuels', name: 'Fossil Fuels', category: 'Environment' },
+  { id: 'environmental-policy', name: 'Environmental Policy', category: 'Environment' },
+  { id: 'natural-disasters', name: 'Natural Disasters', category: 'Environment' },
+  { id: 'water-resources', name: 'Water Resources', category: 'Environment' },
+  { id: 'conservation', name: 'Conservation', category: 'Environment' },
+  { id: 'pollution', name: 'Pollution', category: 'Environment' },
+
+  // Technology (10)
+  { id: 'tech-industry', name: 'Tech Industry', category: 'Technology' },
+  { id: 'artificial-intelligence', name: 'Artificial Intelligence', category: 'Technology' },
+  { id: 'social-media', name: 'Social Media', category: 'Technology' },
+  { id: 'cybersecurity', name: 'Cybersecurity', category: 'Technology' },
+  { id: 'privacy', name: 'Privacy', category: 'Technology' },
+  { id: 'big-tech', name: 'Big Tech', category: 'Technology' },
+  { id: 'cryptocurrency', name: 'Cryptocurrency', category: 'Technology' },
+  { id: 'space-exploration', name: 'Space Exploration', category: 'Technology' },
+  { id: 'electric-vehicles', name: 'Electric Vehicles', category: 'Technology' },
+  { id: 'tech-regulation', name: 'Tech Regulation', category: 'Technology' },
+
+  // Healthcare (8)
+  { id: 'healthcare', name: 'Healthcare', category: 'Healthcare' },
+  { id: 'covid-19', name: 'COVID-19', category: 'Healthcare' },
+  { id: 'vaccines', name: 'Vaccines', category: 'Healthcare' },
+  { id: 'medicare', name: 'Medicare', category: 'Healthcare' },
+  { id: 'medicaid', name: 'Medicaid', category: 'Healthcare' },
+  { id: 'opioid-crisis', name: 'Opioid Crisis', category: 'Healthcare' },
+  { id: 'mental-health', name: 'Mental Health', category: 'Healthcare' },
+  { id: 'healthcare-costs', name: 'Healthcare Costs', category: 'Healthcare' },
+
+  // Education (6)
+  { id: 'education', name: 'Education', category: 'Education' },
+  { id: 'public-schools', name: 'Public Schools', category: 'Education' },
+  { id: 'higher-education', name: 'Higher Education', category: 'Education' },
+  { id: 'student-debt', name: 'Student Debt', category: 'Education' },
+  { id: 'critical-race-theory', name: 'Critical Race Theory', category: 'Education' },
+  { id: 'school-choice', name: 'School Choice', category: 'Education' },
+
+  // Justice & Legal (8)
+  { id: 'crime', name: 'Crime', category: 'Justice' },
+  { id: 'criminal-justice', name: 'Criminal Justice', category: 'Justice' },
+  { id: 'mass-shootings', name: 'Mass Shootings', category: 'Justice' },
+  { id: 'death-penalty', name: 'Death Penalty', category: 'Justice' },
+  { id: 'prison-reform', name: 'Prison Reform', category: 'Justice' },
+  { id: 'civil-rights', name: 'Civil Rights', category: 'Justice' },
+  { id: 'legal-system', name: 'Legal System', category: 'Justice' },
+  { id: 'corruption', name: 'Corruption', category: 'Justice' },
+
+  // Media & Culture (9)
+  { id: 'media-bias', name: 'Media Bias', category: 'Culture' },
+  { id: 'free-speech', name: 'Free Speech', category: 'Culture' },
+  { id: 'cancel-culture', name: 'Cancel Culture', category: 'Culture' },
+  { id: 'misinformation', name: 'Misinformation', category: 'Culture' },
+  { id: 'entertainment', name: 'Entertainment', category: 'Culture' },
+  { id: 'sports', name: 'Sports', category: 'Culture' },
+  { id: 'religion', name: 'Religion', category: 'Culture' },
+  { id: 'cultural-issues', name: 'Cultural Issues', category: 'Culture' },
+  { id: 'diversity', name: 'Diversity', category: 'Culture' },
 ]
 
 // Generate frequency data based on realistic patterns
