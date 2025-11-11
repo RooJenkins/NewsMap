@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import NewsHeatmap from '@/components/NewsHeatmap'
 import TreemapView from '@/components/TreemapView'
+import InteractiveTreemapView from '@/components/InteractiveTreemapView'
 import { ViewType } from '@/types'
 
 export default function Home() {
@@ -77,6 +78,16 @@ export default function Home() {
               >
                 Treemap
               </button>
+              <button
+                onClick={() => setViewType('interactive-map')}
+                className={`px-2 py-1 rounded text-[9px] font-semibold transition-all ${
+                  viewType === 'interactive-map'
+                    ? 'bg-gradient-to-r from-emerald-600 to-emerald-700 text-white shadow'
+                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                }`}
+              >
+                Interactive Map
+              </button>
             </div>
 
             {/* Normalization Toggle */}
@@ -127,11 +138,18 @@ export default function Home() {
                 <span className="font-bold text-green-600">Treemap:</span> Box size = coverage frequency, Color = political bias (Blue = Left, Red = Right)
               </p>
             )}
+            {viewType === 'interactive-map' && (
+              <p className="text-[10px] text-gray-700">
+                <span className="font-bold text-emerald-600">Interactive Map:</span> Box size = articles today, Color = change vs yesterday (Green = increase, Red = decrease). Hover for outlet breakdown.
+              </p>
+            )}
           </div>
         </div>
 
         {/* Visualization */}
-        {viewType === 'treemap' ? (
+        {viewType === 'interactive-map' ? (
+          <InteractiveTreemapView />
+        ) : viewType === 'treemap' ? (
           <TreemapView normalized={normalized} />
         ) : (
           <NewsHeatmap viewType={viewType} normalized={normalized} />
@@ -222,6 +240,26 @@ export default function Home() {
                 <div className="flex items-center gap-1">
                   <div className="w-6 h-3 bg-red-600 rounded"></div>
                   <span className="text-[8px]">Right</span>
+                </div>
+              </div>
+            )}
+            {viewType === 'interactive-map' && (
+              <div className="flex items-center gap-2">
+                <div className="flex items-center gap-1">
+                  <span className="text-[8px] font-semibold">Size:</span>
+                  <span className="text-[8px]">Article Count</span>
+                </div>
+                <div className="flex items-center gap-1">
+                  <div className="w-6 h-3 bg-green-600 rounded"></div>
+                  <span className="text-[8px]">Up</span>
+                </div>
+                <div className="flex items-center gap-1">
+                  <div className="w-6 h-3 bg-gray-600 rounded"></div>
+                  <span className="text-[8px]">Flat</span>
+                </div>
+                <div className="flex items-center gap-1">
+                  <div className="w-6 h-3 bg-red-600 rounded"></div>
+                  <span className="text-[8px]">Down</span>
                 </div>
               </div>
             )}

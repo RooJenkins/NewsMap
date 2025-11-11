@@ -1,4 +1,4 @@
-import { NewsOutlet, Topic, FrequencyData, SentimentData, PoliticalData, TruthSpectrumData } from '@/types'
+import { NewsOutlet, Topic, FrequencyData, SentimentData, PoliticalData, TruthSpectrumData, TopicArticleData } from '@/types'
 
 // Outlets ordered from left-leaning to right-leaning for visual clustering
 export const outlets: NewsOutlet[] = [
@@ -19,127 +19,143 @@ export const outlets: NewsOutlet[] = [
   { id: 'fox', name: 'Fox News', shortName: 'Fox', totalArticles: 5500 }, // 0.8 (right)
 ]
 
-// 100 topics organized by category for natural clustering
+// Hierarchical topics: main categories with sub-topics
 export const topics: Topic[] = [
-  // Politics & Government (15)
-  { id: 'biden-admin', name: 'Biden Administration', category: 'Politics' },
-  { id: 'congress', name: 'Congress', category: 'Politics' },
-  { id: 'democracy', name: 'Democracy', category: 'Politics' },
-  { id: 'elections', name: 'Elections', category: 'Politics' },
-  { id: 'voting-rights', name: 'Voting Rights', category: 'Politics' },
-  { id: 'supreme-court', name: 'Supreme Court', category: 'Politics' },
-  { id: 'senate', name: 'Senate', category: 'Politics' },
-  { id: 'house', name: 'House of Representatives', category: 'Politics' },
-  { id: 'political-polls', name: 'Political Polling', category: 'Politics' },
-  { id: 'campaign-finance', name: 'Campaign Finance', category: 'Politics' },
-  { id: 'lobbying', name: 'Lobbying', category: 'Politics' },
-  { id: 'government-spending', name: 'Government Spending', category: 'Politics' },
-  { id: 'federal-budget', name: 'Federal Budget', category: 'Politics' },
-  { id: 'state-politics', name: 'State Politics', category: 'Politics' },
-  { id: 'local-government', name: 'Local Government', category: 'Politics' },
+  // Main category: Politics
+  { id: 'politics', name: 'Politics', category: 'Main' },
+  // Politics sub-topics
+  { id: 'biden-admin', name: 'Biden Admin', category: 'Politics', isSubTopic: true, parentId: 'politics' },
+  { id: 'congress', name: 'Congress', category: 'Politics', isSubTopic: true, parentId: 'politics' },
+  { id: 'democracy', name: 'Democracy', category: 'Politics', isSubTopic: true, parentId: 'politics' },
+  { id: 'elections', name: 'Elections', category: 'Politics', isSubTopic: true, parentId: 'politics' },
+  { id: 'voting-rights', name: 'Voting Rights', category: 'Politics', isSubTopic: true, parentId: 'politics' },
+  { id: 'supreme-court', name: 'Supreme Court', category: 'Politics', isSubTopic: true, parentId: 'politics' },
+  { id: 'senate', name: 'Senate', category: 'Politics', isSubTopic: true, parentId: 'politics' },
+  { id: 'house', name: 'House', category: 'Politics', isSubTopic: true, parentId: 'politics' },
+  { id: 'political-polls', name: 'Polls', category: 'Politics', isSubTopic: true, parentId: 'politics' },
+  { id: 'campaign-finance', name: 'Campaign Finance', category: 'Politics', isSubTopic: true, parentId: 'politics' },
+  { id: 'lobbying', name: 'Lobbying', category: 'Politics', isSubTopic: true, parentId: 'politics' },
+  { id: 'government-spending', name: 'Gov Spending', category: 'Politics', isSubTopic: true, parentId: 'politics' },
+  { id: 'federal-budget', name: 'Fed Budget', category: 'Politics', isSubTopic: true, parentId: 'politics' },
+  { id: 'state-politics', name: 'State Politics', category: 'Politics', isSubTopic: true, parentId: 'politics' },
+  { id: 'local-government', name: 'Local Gov', category: 'Politics', isSubTopic: true, parentId: 'politics' },
 
-  // Economy & Business (12)
-  { id: 'economy', name: 'Economy', category: 'Economy' },
-  { id: 'stock-market', name: 'Stock Market', category: 'Economy' },
-  { id: 'unemployment', name: 'Unemployment', category: 'Economy' },
-  { id: 'inflation', name: 'Inflation', category: 'Economy' },
-  { id: 'federal-reserve', name: 'Federal Reserve', category: 'Economy' },
-  { id: 'interest-rates', name: 'Interest Rates', category: 'Economy' },
-  { id: 'housing-market', name: 'Housing Market', category: 'Economy' },
-  { id: 'corporate-earnings', name: 'Corporate Earnings', category: 'Economy' },
-  { id: 'trade', name: 'Trade', category: 'Economy' },
-  { id: 'small-business', name: 'Small Business', category: 'Economy' },
-  { id: 'labor-unions', name: 'Labor Unions', category: 'Economy' },
-  { id: 'wages', name: 'Wages', category: 'Economy' },
+  // Main category: Economy
+  { id: 'economy-main', name: 'Economy', category: 'Main' },
+  // Economy sub-topics
+  { id: 'stock-market', name: 'Stock Market', category: 'Economy', isSubTopic: true, parentId: 'economy-main' },
+  { id: 'unemployment', name: 'Unemployment', category: 'Economy', isSubTopic: true, parentId: 'economy-main' },
+  { id: 'inflation', name: 'Inflation', category: 'Economy', isSubTopic: true, parentId: 'economy-main' },
+  { id: 'federal-reserve', name: 'Fed Reserve', category: 'Economy', isSubTopic: true, parentId: 'economy-main' },
+  { id: 'interest-rates', name: 'Interest Rates', category: 'Economy', isSubTopic: true, parentId: 'economy-main' },
+  { id: 'housing-market', name: 'Housing', category: 'Economy', isSubTopic: true, parentId: 'economy-main' },
+  { id: 'corporate-earnings', name: 'Corp Earnings', category: 'Economy', isSubTopic: true, parentId: 'economy-main' },
+  { id: 'trade', name: 'Trade', category: 'Economy', isSubTopic: true, parentId: 'economy-main' },
+  { id: 'small-business', name: 'Small Business', category: 'Economy', isSubTopic: true, parentId: 'economy-main' },
+  { id: 'labor-unions', name: 'Labor Unions', category: 'Economy', isSubTopic: true, parentId: 'economy-main' },
+  { id: 'wages', name: 'Wages', category: 'Economy', isSubTopic: true, parentId: 'economy-main' },
 
-  // International Affairs (12)
-  { id: 'foreign-policy', name: 'Foreign Policy', category: 'International' },
-  { id: 'china-relations', name: 'China Relations', category: 'International' },
-  { id: 'russia-ukraine', name: 'Russia-Ukraine', category: 'International' },
-  { id: 'middle-east', name: 'Middle East', category: 'International' },
-  { id: 'nato', name: 'NATO', category: 'International' },
-  { id: 'israel-palestine', name: 'Israel-Palestine', category: 'International' },
-  { id: 'iran', name: 'Iran', category: 'International' },
-  { id: 'north-korea', name: 'North Korea', category: 'International' },
-  { id: 'afghanistan', name: 'Afghanistan', category: 'International' },
-  { id: 'european-union', name: 'European Union', category: 'International' },
-  { id: 'global-terrorism', name: 'Global Terrorism', category: 'International' },
-  { id: 'humanitarian-crisis', name: 'Humanitarian Crisis', category: 'International' },
+  // Main category: International
+  { id: 'international-main', name: 'International', category: 'Main' },
+  // International sub-topics
+  { id: 'foreign-policy', name: 'Foreign Policy', category: 'International', isSubTopic: true, parentId: 'international-main' },
+  { id: 'china-relations', name: 'China', category: 'International', isSubTopic: true, parentId: 'international-main' },
+  { id: 'russia-ukraine', name: 'Russia-Ukraine', category: 'International', isSubTopic: true, parentId: 'international-main' },
+  { id: 'middle-east', name: 'Middle East', category: 'International', isSubTopic: true, parentId: 'international-main' },
+  { id: 'nato', name: 'NATO', category: 'International', isSubTopic: true, parentId: 'international-main' },
+  { id: 'israel-palestine', name: 'Israel-Palestine', category: 'International', isSubTopic: true, parentId: 'international-main' },
+  { id: 'iran', name: 'Iran', category: 'International', isSubTopic: true, parentId: 'international-main' },
+  { id: 'north-korea', name: 'N. Korea', category: 'International', isSubTopic: true, parentId: 'international-main' },
+  { id: 'afghanistan', name: 'Afghanistan', category: 'International', isSubTopic: true, parentId: 'international-main' },
+  { id: 'european-union', name: 'EU', category: 'International', isSubTopic: true, parentId: 'international-main' },
+  { id: 'global-terrorism', name: 'Terrorism', category: 'International', isSubTopic: true, parentId: 'international-main' },
+  { id: 'humanitarian-crisis', name: 'Humanitarian', category: 'International', isSubTopic: true, parentId: 'international-main' },
 
-  // Social Issues (12)
-  { id: 'immigration', name: 'Immigration', category: 'Social' },
-  { id: 'border-security', name: 'Border Security', category: 'Social' },
-  { id: 'police-reform', name: 'Police Reform', category: 'Social' },
-  { id: 'racial-justice', name: 'Racial Justice', category: 'Social' },
-  { id: 'lgbtq-rights', name: 'LGBTQ Rights', category: 'Social' },
-  { id: 'abortion', name: 'Abortion', category: 'Social' },
-  { id: 'gun-control', name: 'Gun Control', category: 'Social' },
-  { id: 'gun-rights', name: 'Gun Rights', category: 'Social' },
-  { id: 'homelessness', name: 'Homelessness', category: 'Social' },
-  { id: 'poverty', name: 'Poverty', category: 'Social' },
-  { id: 'income-inequality', name: 'Income Inequality', category: 'Social' },
-  { id: 'social-security', name: 'Social Security', category: 'Social' },
+  // Main category: Social
+  { id: 'social-main', name: 'Social Issues', category: 'Main' },
+  // Social sub-topics
+  { id: 'immigration', name: 'Immigration', category: 'Social', isSubTopic: true, parentId: 'social-main' },
+  { id: 'border-security', name: 'Border', category: 'Social', isSubTopic: true, parentId: 'social-main' },
+  { id: 'police-reform', name: 'Police Reform', category: 'Social', isSubTopic: true, parentId: 'social-main' },
+  { id: 'racial-justice', name: 'Racial Justice', category: 'Social', isSubTopic: true, parentId: 'social-main' },
+  { id: 'lgbtq-rights', name: 'LGBTQ', category: 'Social', isSubTopic: true, parentId: 'social-main' },
+  { id: 'abortion', name: 'Abortion', category: 'Social', isSubTopic: true, parentId: 'social-main' },
+  { id: 'gun-control', name: 'Gun Control', category: 'Social', isSubTopic: true, parentId: 'social-main' },
+  { id: 'gun-rights', name: 'Gun Rights', category: 'Social', isSubTopic: true, parentId: 'social-main' },
+  { id: 'homelessness', name: 'Homelessness', category: 'Social', isSubTopic: true, parentId: 'social-main' },
+  { id: 'poverty', name: 'Poverty', category: 'Social', isSubTopic: true, parentId: 'social-main' },
+  { id: 'income-inequality', name: 'Inequality', category: 'Social', isSubTopic: true, parentId: 'social-main' },
+  { id: 'social-security', name: 'Social Security', category: 'Social', isSubTopic: true, parentId: 'social-main' },
 
-  // Environment & Climate (8)
-  { id: 'climate-change', name: 'Climate Change', category: 'Environment' },
-  { id: 'renewable-energy', name: 'Renewable Energy', category: 'Environment' },
-  { id: 'fossil-fuels', name: 'Fossil Fuels', category: 'Environment' },
-  { id: 'environmental-policy', name: 'Environmental Policy', category: 'Environment' },
-  { id: 'natural-disasters', name: 'Natural Disasters', category: 'Environment' },
-  { id: 'water-resources', name: 'Water Resources', category: 'Environment' },
-  { id: 'conservation', name: 'Conservation', category: 'Environment' },
-  { id: 'pollution', name: 'Pollution', category: 'Environment' },
+  // Main category: Environment
+  { id: 'environment-main', name: 'Environment', category: 'Main' },
+  // Environment sub-topics
+  { id: 'climate-change', name: 'Climate', category: 'Environment', isSubTopic: true, parentId: 'environment-main' },
+  { id: 'renewable-energy', name: 'Renewables', category: 'Environment', isSubTopic: true, parentId: 'environment-main' },
+  { id: 'fossil-fuels', name: 'Fossil Fuels', category: 'Environment', isSubTopic: true, parentId: 'environment-main' },
+  { id: 'environmental-policy', name: 'Env Policy', category: 'Environment', isSubTopic: true, parentId: 'environment-main' },
+  { id: 'natural-disasters', name: 'Disasters', category: 'Environment', isSubTopic: true, parentId: 'environment-main' },
+  { id: 'water-resources', name: 'Water', category: 'Environment', isSubTopic: true, parentId: 'environment-main' },
+  { id: 'conservation', name: 'Conservation', category: 'Environment', isSubTopic: true, parentId: 'environment-main' },
+  { id: 'pollution', name: 'Pollution', category: 'Environment', isSubTopic: true, parentId: 'environment-main' },
 
-  // Technology (10)
-  { id: 'tech-industry', name: 'Tech Industry', category: 'Technology' },
-  { id: 'artificial-intelligence', name: 'Artificial Intelligence', category: 'Technology' },
-  { id: 'social-media', name: 'Social Media', category: 'Technology' },
-  { id: 'cybersecurity', name: 'Cybersecurity', category: 'Technology' },
-  { id: 'privacy', name: 'Privacy', category: 'Technology' },
-  { id: 'big-tech', name: 'Big Tech', category: 'Technology' },
-  { id: 'cryptocurrency', name: 'Cryptocurrency', category: 'Technology' },
-  { id: 'space-exploration', name: 'Space Exploration', category: 'Technology' },
-  { id: 'electric-vehicles', name: 'Electric Vehicles', category: 'Technology' },
-  { id: 'tech-regulation', name: 'Tech Regulation', category: 'Technology' },
+  // Main category: Technology
+  { id: 'technology-main', name: 'Technology', category: 'Main' },
+  // Technology sub-topics
+  { id: 'artificial-intelligence', name: 'AI', category: 'Technology', isSubTopic: true, parentId: 'technology-main' },
+  { id: 'social-media', name: 'Social Media', category: 'Technology', isSubTopic: true, parentId: 'technology-main' },
+  { id: 'cybersecurity', name: 'Cybersecurity', category: 'Technology', isSubTopic: true, parentId: 'technology-main' },
+  { id: 'privacy', name: 'Privacy', category: 'Technology', isSubTopic: true, parentId: 'technology-main' },
+  { id: 'big-tech', name: 'Big Tech', category: 'Technology', isSubTopic: true, parentId: 'technology-main' },
+  { id: 'cryptocurrency', name: 'Crypto', category: 'Technology', isSubTopic: true, parentId: 'technology-main' },
+  { id: 'space-exploration', name: 'Space', category: 'Technology', isSubTopic: true, parentId: 'technology-main' },
+  { id: 'electric-vehicles', name: 'EVs', category: 'Technology', isSubTopic: true, parentId: 'technology-main' },
+  { id: 'tech-regulation', name: 'Tech Regulation', category: 'Technology', isSubTopic: true, parentId: 'technology-main' },
 
-  // Healthcare (8)
-  { id: 'healthcare', name: 'Healthcare', category: 'Healthcare' },
-  { id: 'covid-19', name: 'COVID-19', category: 'Healthcare' },
-  { id: 'vaccines', name: 'Vaccines', category: 'Healthcare' },
-  { id: 'medicare', name: 'Medicare', category: 'Healthcare' },
-  { id: 'medicaid', name: 'Medicaid', category: 'Healthcare' },
-  { id: 'opioid-crisis', name: 'Opioid Crisis', category: 'Healthcare' },
-  { id: 'mental-health', name: 'Mental Health', category: 'Healthcare' },
-  { id: 'healthcare-costs', name: 'Healthcare Costs', category: 'Healthcare' },
+  // Main category: Healthcare
+  { id: 'healthcare-main', name: 'Healthcare', category: 'Main' },
+  // Healthcare sub-topics
+  { id: 'covid-19', name: 'COVID-19', category: 'Healthcare', isSubTopic: true, parentId: 'healthcare-main' },
+  { id: 'vaccines', name: 'Vaccines', category: 'Healthcare', isSubTopic: true, parentId: 'healthcare-main' },
+  { id: 'medicare', name: 'Medicare', category: 'Healthcare', isSubTopic: true, parentId: 'healthcare-main' },
+  { id: 'medicaid', name: 'Medicaid', category: 'Healthcare', isSubTopic: true, parentId: 'healthcare-main' },
+  { id: 'opioid-crisis', name: 'Opioids', category: 'Healthcare', isSubTopic: true, parentId: 'healthcare-main' },
+  { id: 'mental-health', name: 'Mental Health', category: 'Healthcare', isSubTopic: true, parentId: 'healthcare-main' },
+  { id: 'healthcare-costs', name: 'Costs', category: 'Healthcare', isSubTopic: true, parentId: 'healthcare-main' },
 
-  // Education (6)
-  { id: 'education', name: 'Education', category: 'Education' },
-  { id: 'public-schools', name: 'Public Schools', category: 'Education' },
-  { id: 'higher-education', name: 'Higher Education', category: 'Education' },
-  { id: 'student-debt', name: 'Student Debt', category: 'Education' },
-  { id: 'critical-race-theory', name: 'Critical Race Theory', category: 'Education' },
-  { id: 'school-choice', name: 'School Choice', category: 'Education' },
+  // Main category: Education
+  { id: 'education-main', name: 'Education', category: 'Main' },
+  // Education sub-topics
+  { id: 'public-schools', name: 'Public Schools', category: 'Education', isSubTopic: true, parentId: 'education-main' },
+  { id: 'higher-education', name: 'Higher Ed', category: 'Education', isSubTopic: true, parentId: 'education-main' },
+  { id: 'student-debt', name: 'Student Debt', category: 'Education', isSubTopic: true, parentId: 'education-main' },
+  { id: 'critical-race-theory', name: 'CRT', category: 'Education', isSubTopic: true, parentId: 'education-main' },
+  { id: 'school-choice', name: 'School Choice', category: 'Education', isSubTopic: true, parentId: 'education-main' },
 
-  // Justice & Legal (8)
-  { id: 'crime', name: 'Crime', category: 'Justice' },
-  { id: 'criminal-justice', name: 'Criminal Justice', category: 'Justice' },
-  { id: 'mass-shootings', name: 'Mass Shootings', category: 'Justice' },
-  { id: 'death-penalty', name: 'Death Penalty', category: 'Justice' },
-  { id: 'prison-reform', name: 'Prison Reform', category: 'Justice' },
-  { id: 'civil-rights', name: 'Civil Rights', category: 'Justice' },
-  { id: 'legal-system', name: 'Legal System', category: 'Justice' },
-  { id: 'corruption', name: 'Corruption', category: 'Justice' },
+  // Main category: Justice
+  { id: 'justice-main', name: 'Justice', category: 'Main' },
+  // Justice sub-topics
+  { id: 'crime', name: 'Crime', category: 'Justice', isSubTopic: true, parentId: 'justice-main' },
+  { id: 'criminal-justice', name: 'Criminal Justice', category: 'Justice', isSubTopic: true, parentId: 'justice-main' },
+  { id: 'mass-shootings', name: 'Mass Shootings', category: 'Justice', isSubTopic: true, parentId: 'justice-main' },
+  { id: 'death-penalty', name: 'Death Penalty', category: 'Justice', isSubTopic: true, parentId: 'justice-main' },
+  { id: 'prison-reform', name: 'Prison Reform', category: 'Justice', isSubTopic: true, parentId: 'justice-main' },
+  { id: 'civil-rights', name: 'Civil Rights', category: 'Justice', isSubTopic: true, parentId: 'justice-main' },
+  { id: 'legal-system', name: 'Legal System', category: 'Justice', isSubTopic: true, parentId: 'justice-main' },
+  { id: 'corruption', name: 'Corruption', category: 'Justice', isSubTopic: true, parentId: 'justice-main' },
 
-  // Media & Culture (9)
-  { id: 'media-bias', name: 'Media Bias', category: 'Culture' },
-  { id: 'free-speech', name: 'Free Speech', category: 'Culture' },
-  { id: 'cancel-culture', name: 'Cancel Culture', category: 'Culture' },
-  { id: 'misinformation', name: 'Misinformation', category: 'Culture' },
-  { id: 'entertainment', name: 'Entertainment', category: 'Culture' },
-  { id: 'sports', name: 'Sports', category: 'Culture' },
-  { id: 'religion', name: 'Religion', category: 'Culture' },
-  { id: 'cultural-issues', name: 'Cultural Issues', category: 'Culture' },
-  { id: 'diversity', name: 'Diversity', category: 'Culture' },
+  // Main category: Culture
+  { id: 'culture-main', name: 'Culture', category: 'Main' },
+  // Culture sub-topics
+  { id: 'media-bias', name: 'Media Bias', category: 'Culture', isSubTopic: true, parentId: 'culture-main' },
+  { id: 'free-speech', name: 'Free Speech', category: 'Culture', isSubTopic: true, parentId: 'culture-main' },
+  { id: 'cancel-culture', name: 'Cancel Culture', category: 'Culture', isSubTopic: true, parentId: 'culture-main' },
+  { id: 'misinformation', name: 'Misinformation', category: 'Culture', isSubTopic: true, parentId: 'culture-main' },
+  { id: 'entertainment', name: 'Entertainment', category: 'Culture', isSubTopic: true, parentId: 'culture-main' },
+  { id: 'sports', name: 'Sports', category: 'Culture', isSubTopic: true, parentId: 'culture-main' },
+  { id: 'religion', name: 'Religion', category: 'Culture', isSubTopic: true, parentId: 'culture-main' },
+  { id: 'cultural-issues', name: 'Cultural Issues', category: 'Culture', isSubTopic: true, parentId: 'culture-main' },
+  { id: 'diversity', name: 'Diversity', category: 'Culture', isSubTopic: true, parentId: 'culture-main' },
 ]
 
 // Generate frequency data based on realistic patterns
@@ -324,6 +340,66 @@ export const generateTruthSpectrumData = (): TruthSpectrumData[] => {
         truthPosition: truthPos,
         distanceFromTruth: distance
       })
+    })
+  })
+
+  return data
+}
+
+// Generate topic article data with day-over-day tracking and outlet breakdown
+export const generateTopicArticleData = (): TopicArticleData[] => {
+  const data: TopicArticleData[] = []
+
+  // Only generate data for sub-topics (not main categories)
+  const subTopics = topics.filter(t => t.isSubTopic)
+
+  // Outlet bias for realistic distribution
+  const outletBias: Record<string, number> = {
+    'nyt': -0.3, 'wsj': 0.4, 'wapo': -0.4, 'cnn': -0.5, 'fox': 0.8,
+    'bbc': 0, 'guardian': -0.6, 'reuters': 0, 'ap': 0, 'politico': -0.2,
+    'hill': 0.1, 'npr': -0.3, 'bloomberg': 0.2, 'economist': 0.1, 'ft': 0.1,
+  }
+
+  subTopics.forEach(topic => {
+    // Generate today's total count (50-500 articles per topic)
+    const todayCount = Math.floor(Math.random() * 450) + 50
+
+    // Yesterday's count varies -30% to +30% from today
+    const changeMultiplier = 0.7 + (Math.random() * 0.6) // 0.7 to 1.3
+    const yesterdayCount = Math.floor(todayCount / changeMultiplier)
+
+    // Calculate percentage change
+    const changePercent = ((todayCount - yesterdayCount) / yesterdayCount) * 100
+
+    // Generate outlet breakdown
+    const outletBreakdown = outlets.map(outlet => {
+      // Each outlet contributes proportionally to total count
+      const outletContribution = Math.random() * 0.3 // 0-30% of total
+      const count = Math.floor(todayCount * outletContribution)
+
+      // Sentiment varies by outlet and topic
+      let sentiment = (Math.random() - 0.5) * 2 // -1 to 1
+
+      // Apply outlet-specific sentiment tendencies
+      if (outlet.id === 'fox' && topic.id === 'biden-admin') sentiment = -Math.abs(sentiment) * 0.8
+      if (outlet.id === 'cnn' && topic.id === 'biden-admin') sentiment = Math.abs(sentiment) * 0.6
+
+      const bias = outletBias[outlet.id] || 0
+
+      return {
+        outletId: outlet.id,
+        count,
+        sentiment,
+        bias
+      }
+    })
+
+    data.push({
+      topicId: topic.id,
+      todayCount,
+      yesterdayCount,
+      changePercent,
+      outletBreakdown
     })
   })
 
