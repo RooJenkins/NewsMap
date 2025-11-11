@@ -84,6 +84,9 @@ export default function InteractiveTreemapView() {
         }
       }).filter(Boolean) as TreemapNode[]
 
+      // Sort children by size descending (largest first)
+      children.sort((a, b) => (b.size || 0) - (a.size || 0))
+
       // Calculate total size for main category
       const totalSize = children.reduce((sum, child) => sum + (child.size || 0), 0)
 
@@ -93,6 +96,9 @@ export default function InteractiveTreemapView() {
         size: totalSize
       }
     }).filter(cat => cat.children && cat.children.length > 0)
+
+    // Sort main categories by total size descending
+    hierarchical.sort((a, b) => (b.size || 0) - (a.size || 0))
 
     return hierarchical
   }, [])
@@ -151,16 +157,6 @@ export default function InteractiveTreemapView() {
         />
         {showLabel && (
           <>
-            {/* Semi-transparent background for text */}
-            <rect
-              x={x + 4}
-              y={y + height / 2 - 22}
-              width={width - 8}
-              height={36}
-              fill="rgba(0, 0, 0, 0.4)"
-              rx={4}
-              style={{ pointerEvents: 'none' }}
-            />
             {/* Topic name */}
             <text
               x={x + width / 2}
@@ -200,35 +196,23 @@ export default function InteractiveTreemapView() {
           </>
         )}
         {!showLabel && showSmallLabel && (
-          <>
-            {/* Smaller background for small boxes */}
-            <rect
-              x={x + 2}
-              y={y + height / 2 - 10}
-              width={width - 4}
-              height={18}
-              fill="rgba(0, 0, 0, 0.4)"
-              rx={3}
-              style={{ pointerEvents: 'none' }}
-            />
-            <text
-              x={x + width / 2}
-              y={y + height / 2 + 4}
-              textAnchor="middle"
-              fill="#ffffff"
-              fontSize={Math.min(width / 9, height / 3, 10)}
-              fontWeight="700"
-              style={{
-                textShadow: '0 2px 4px rgba(0,0,0,0.8), 0 0 1px rgba(0,0,0,1)',
-                paintOrder: 'stroke fill',
-                stroke: 'rgba(0,0,0,0.5)',
-                strokeWidth: '0.5px',
-                pointerEvents: 'none'
-              }}
-            >
-              {changePercent !== undefined && `${changePercent > 0 ? '+' : ''}${changePercent.toFixed(0)}%`}
-            </text>
-          </>
+          <text
+            x={x + width / 2}
+            y={y + height / 2 + 4}
+            textAnchor="middle"
+            fill="#ffffff"
+            fontSize={Math.min(width / 9, height / 3, 10)}
+            fontWeight="700"
+            style={{
+              textShadow: '0 2px 4px rgba(0,0,0,0.8), 0 0 1px rgba(0,0,0,1)',
+              paintOrder: 'stroke fill',
+              stroke: 'rgba(0,0,0,0.5)',
+              strokeWidth: '0.5px',
+              pointerEvents: 'none'
+            }}
+          >
+            {changePercent !== undefined && `${changePercent > 0 ? '+' : ''}${changePercent.toFixed(0)}%`}
+          </text>
         )}
       </g>
     )
