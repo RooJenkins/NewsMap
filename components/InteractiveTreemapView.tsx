@@ -50,16 +50,27 @@ export default function InteractiveTreemapView() {
         const data = articleData.find(d => d.topicId === subTopic.id)
         if (!data) return null
 
-        // Enhanced color gradients with smoother transitions
+        // Ultra-smooth color gradient from red through neutral to green
         const getChangeColor = (change: number): string => {
-          if (change > 30) return 'rgb(22, 163, 74)' // Vibrant green
-          if (change > 20) return 'rgb(34, 197, 94)'
-          if (change > 10) return 'rgb(74, 222, 128)'
-          if (change > 5) return 'rgb(134, 239, 172)'
-          if (change > -5) return 'rgb(107, 114, 128)' // Neutral gray
-          if (change > -10) return 'rgb(252, 165, 165)'
-          if (change > -20) return 'rgb(248, 113, 113)'
-          if (change > -30) return 'rgb(239, 68, 68)'
+          // Positive changes (green spectrum)
+          if (change > 25) return 'rgb(22, 163, 74)'   // Deep green
+          if (change > 20) return 'rgb(34, 197, 94)'   // Green
+          if (change > 15) return 'rgb(52, 211, 112)'  // Light green
+          if (change > 10) return 'rgb(74, 222, 128)'  // Lighter green
+          if (change > 7) return 'rgb(100, 232, 148)'  // Very light green
+          if (change > 4) return 'rgb(134, 239, 172)'  // Pale green
+          if (change > 2) return 'rgb(156, 243, 188)'  // Near neutral green
+
+          // Neutral zone (gray spectrum)
+          if (change > -2) return 'rgb(107, 114, 128)' // Neutral gray
+
+          // Negative changes (red spectrum)
+          if (change > -4) return 'rgb(254, 205, 211)'  // Near neutral red
+          if (change > -7) return 'rgb(254, 178, 188)'  // Pale red
+          if (change > -10) return 'rgb(253, 164, 175)' // Very light red
+          if (change > -15) return 'rgb(252, 145, 158)' // Light red
+          if (change > -20) return 'rgb(248, 113, 113)' // Lighter red
+          if (change > -25) return 'rgb(239, 68, 68)'   // Red
           return 'rgb(220, 38, 38)' // Deep red
         }
 
@@ -89,9 +100,9 @@ export default function InteractiveTreemapView() {
   const CustomContent = (props: any) => {
     const { x, y, width, height, name, changePercent, topicId, fill, data } = props
 
-    // Only show label if box is large enough
-    const showLabel = width > 60 && height > 30
-    const showSmallLabel = width > 35 && height > 20
+    // Only show label if box is large enough for readability
+    const showLabel = width > 70 && height > 40
+    const showSmallLabel = !showLabel && width > 45 && height > 25
 
     const handleMouseEnter = () => {
       setHoveredTopic(topicId)
@@ -140,29 +151,47 @@ export default function InteractiveTreemapView() {
         />
         {showLabel && (
           <>
+            {/* Semi-transparent background for text */}
+            <rect
+              x={x + 4}
+              y={y + height / 2 - 22}
+              width={width - 8}
+              height={36}
+              fill="rgba(0, 0, 0, 0.4)"
+              rx={4}
+              style={{ pointerEvents: 'none' }}
+            />
+            {/* Topic name */}
             <text
               x={x + width / 2}
-              y={y + height / 2 - 8}
+              y={y + height / 2 - 6}
               textAnchor="middle"
               fill="#ffffff"
-              fontSize={Math.min(width / 9, height / 3.5, 12)}
+              fontSize={Math.min(width / 8, height / 3.5, 13)}
               fontWeight="700"
               style={{
-                textShadow: '0 1px 3px rgba(0,0,0,0.5)',
+                textShadow: '0 2px 4px rgba(0,0,0,0.8), 0 0 1px rgba(0,0,0,1)',
+                paintOrder: 'stroke fill',
+                stroke: 'rgba(0,0,0,0.5)',
+                strokeWidth: '0.5px',
                 pointerEvents: 'none'
               }}
             >
               {name}
             </text>
+            {/* Change percentage */}
             <text
               x={x + width / 2}
-              y={y + height / 2 + 10}
+              y={y + height / 2 + 12}
               textAnchor="middle"
               fill="#ffffff"
-              fontSize={Math.min(width / 11, height / 4.5, 11)}
+              fontSize={Math.min(width / 10, height / 4.5, 12)}
               fontWeight="700"
               style={{
-                textShadow: '0 1px 3px rgba(0,0,0,0.5)',
+                textShadow: '0 2px 4px rgba(0,0,0,0.8), 0 0 1px rgba(0,0,0,1)',
+                paintOrder: 'stroke fill',
+                stroke: 'rgba(0,0,0,0.5)',
+                strokeWidth: '0.5px',
                 pointerEvents: 'none'
               }}
             >
@@ -171,20 +200,35 @@ export default function InteractiveTreemapView() {
           </>
         )}
         {!showLabel && showSmallLabel && (
-          <text
-            x={x + width / 2}
-            y={y + height / 2 + 3}
-            textAnchor="middle"
-            fill="#ffffff"
-            fontSize={Math.min(width / 10, height / 3, 9)}
-            fontWeight="600"
-            style={{
-              textShadow: '0 1px 2px rgba(0,0,0,0.5)',
-              pointerEvents: 'none'
-            }}
-          >
-            {changePercent !== undefined && `${changePercent > 0 ? '+' : ''}${changePercent.toFixed(0)}%`}
-          </text>
+          <>
+            {/* Smaller background for small boxes */}
+            <rect
+              x={x + 2}
+              y={y + height / 2 - 10}
+              width={width - 4}
+              height={18}
+              fill="rgba(0, 0, 0, 0.4)"
+              rx={3}
+              style={{ pointerEvents: 'none' }}
+            />
+            <text
+              x={x + width / 2}
+              y={y + height / 2 + 4}
+              textAnchor="middle"
+              fill="#ffffff"
+              fontSize={Math.min(width / 9, height / 3, 10)}
+              fontWeight="700"
+              style={{
+                textShadow: '0 2px 4px rgba(0,0,0,0.8), 0 0 1px rgba(0,0,0,1)',
+                paintOrder: 'stroke fill',
+                stroke: 'rgba(0,0,0,0.5)',
+                strokeWidth: '0.5px',
+                pointerEvents: 'none'
+              }}
+            >
+              {changePercent !== undefined && `${changePercent > 0 ? '+' : ''}${changePercent.toFixed(0)}%`}
+            </text>
+          </>
         )}
       </g>
     )
