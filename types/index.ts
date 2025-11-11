@@ -21,6 +21,7 @@ export interface TopicArticleData {
   todayCount: number
   yesterdayCount: number
   changePercent: number
+  isBreaking?: boolean
   outletBreakdown: {
     outletId: string
     count: number

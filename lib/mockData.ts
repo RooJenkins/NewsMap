@@ -353,12 +353,25 @@ export const generateTruthSpectrumData = (): TruthSpectrumData[] => {
   return data
 }
 
+// Simple seeded random generator for consistent daily data
+const seededRandom = (seed: number) => {
+  let value = seed
+  return () => {
+    value = (value * 9301 + 49297) % 233280
+    return value / 233280
+  }
+}
+
 // Generate topic article data with day-over-day tracking and outlet breakdown
-export const generateTopicArticleData = (): TopicArticleData[] => {
+export const generateTopicArticleData = (dateOffset: number = 0): TopicArticleData[] => {
   const data: TopicArticleData[] = []
 
   // Only generate data for sub-topics (not main categories)
   const subTopics = topics.filter(t => t.isSubTopic)
+
+  // Create seeded random for this date
+  const seed = 12345 + dateOffset
+  const random = seededRandom(seed)
 
   // Outlet bias for realistic distribution
   const outletBias: Record<string, number> = {
@@ -379,39 +392,45 @@ export const generateTopicArticleData = (): TopicArticleData[] => {
     // Major breaking news stories
     if (['govt-shutdown', 'trump-pardons', 'philippines-floods', 'typhoon-kalmaegi',
          'delhi-explosion', 'us-china-trade', 'ukraine-war'].includes(topic.id)) {
-      todayCount = Math.floor(Math.random() * 250) + 600 // 600-850
+      todayCount = Math.floor(random() * 250) + 600 // 600-850
     }
     // High-profile stories
     else if (['nyc-mayor-race', 'giuliani-pardon', 'israel-hamas', 'china-rare-earth',
               'russian-strikes', 'japan-female-pm', 'nasdaq-rally', 'amazon-gains',
               'hurricane-melissa', 'ovechkin-900', 'bbc-resignation'].includes(topic.id)) {
-      todayCount = Math.floor(Math.random() * 250) + 350 // 350-600
+      todayCount = Math.floor(random() * 250) + 350 // 350-600
     }
     // Medium coverage stories
     else if (['senate-deal', 'sudan-conflict', 'wendys-closures', 'housing-market',
               'climate-failure', 'ai-advances', 'cybersecurity', 'mlb-bribery'].includes(topic.id)) {
-      todayCount = Math.floor(Math.random() * 200) + 150 // 150-350
+      todayCount = Math.floor(random() * 200) + 150 // 150-350
     }
     // Standard coverage
     else {
-      todayCount = Math.floor(Math.random() * 100) + 50 // 50-150
+      todayCount = Math.floor(random() * 100) + 50 // 50-150
     }
 
     // Yesterday's count varies -30% to +30% from today
-    const changeMultiplier = 0.7 + (Math.random() * 0.6) // 0.7 to 1.3
+    const changeMultiplier = 0.7 + (random() * 0.6) // 0.7 to 1.3
     const yesterdayCount = Math.floor(todayCount / changeMultiplier)
 
     // Calculate percentage change
     const changePercent = ((todayCount - yesterdayCount) / yesterdayCount) * 100
 
+    // Determine if this is a breaking news story (new today)
+    // Stories are "breaking" if they first appeared in the last 3 days
+    const isBreaking = dateOffset >= -3 && dateOffset <= 0 &&
+                      ['delhi-explosion', 'red-fort-attack', 'ovechkin-900', 'rybakina-wta',
+                       'bbc-resignation', 'mlb-bribery', 'haiti-deaths'].includes(topic.id)
+
     // Generate outlet breakdown
     const outletBreakdown = outlets.map(outlet => {
       // Each outlet contributes proportionally to total count
-      const outletContribution = Math.random() * 0.3 // 0-30% of total
+      const outletContribution = random() * 0.3 // 0-30% of total
       const count = Math.floor(todayCount * outletContribution)
 
       // Sentiment varies by outlet and topic
-      let sentiment = (Math.random() - 0.5) * 2 // -1 to 1
+      let sentiment = (random() - 0.5) * 2 // -1 to 1
 
       // Apply outlet-specific sentiment tendencies
       if (outlet.id === 'fox' && topic.id === 'biden-admin') sentiment = -Math.abs(sentiment) * 0.8
@@ -432,6 +451,7 @@ export const generateTopicArticleData = (): TopicArticleData[] => {
       todayCount,
       yesterdayCount,
       changePercent,
+      isBreaking,
       outletBreakdown
     })
   })

@@ -28,6 +28,12 @@ export default function InteractiveTreemapView() {
   const [popupData, setPopupData] = useState<PopupData | null>(null)
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 })
 
+  // Date state - default to today, allow going back 90 days
+  const today = new Date()
+  today.setHours(0, 0, 0, 0)
+  const [selectedDate, setSelectedDate] = useState(today)
+  const [daysBack, setDaysBack] = useState(0) // 0 = today, 1 = yesterday, etc.
+
   // Track mouse position globally
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
@@ -37,9 +43,16 @@ export default function InteractiveTreemapView() {
     return () => window.removeEventListener('mousemove', handleMouseMove)
   }, [])
 
-  // Generate hierarchical treemap data
+  // Update selected date when daysBack changes
+  useEffect(() => {
+    const newDate = new Date(today)
+    newDate.setDate(newDate.getDate() - daysBack)
+    setSelectedDate(newDate)
+  }, [daysBack])
+
+  // Generate hierarchical treemap data based on selected date
   const treeData = useMemo(() => {
-    const articleData = generateTopicArticleData()
+    const articleData = generateTopicArticleData(-daysBack)
     const mainCategories = topics.filter(t => t.category === 'Main')
 
     // Create hierarchical structure
@@ -80,6 +93,7 @@ export default function InteractiveTreemapView() {
           changePercent: data.changePercent,
           topicId: subTopic.id,
           fill: getChangeColor(data.changePercent),
+          isBreaking: data.isBreaking,
           data: data // Store full data for popup
         }
       }).filter(Boolean) as TreemapNode[]
@@ -101,10 +115,10 @@ export default function InteractiveTreemapView() {
     hierarchical.sort((a, b) => (b.size || 0) - (a.size || 0))
 
     return hierarchical
-  }, [])
+  }, [daysBack])
 
   const CustomContent = (props: any) => {
-    const { x, y, width, height, name, changePercent, topicId, fill, data } = props
+    const { x, y, width, height, name, changePercent, topicId, fill, data, isBreaking } = props
 
     // Only show label if box is large enough for readability
     const showLabel = width > 70 && height > 40
@@ -157,6 +171,34 @@ export default function InteractiveTreemapView() {
         />
         {showLabel && (
           <>
+            {/* BREAKING badge for new stories */}
+            {isBreaking && width > 100 && height > 50 && (
+              <>
+                <rect
+                  x={x + 6}
+                  y={y + 6}
+                  width={55}
+                  height={16}
+                  fill="rgb(220, 38, 38)"
+                  rx={3}
+                  style={{ pointerEvents: 'none' }}
+                />
+                <text
+                  x={x + 33.5}
+                  y={y + 17}
+                  textAnchor="middle"
+                  fill="#ffffff"
+                  fontSize={9}
+                  fontWeight="800"
+                  style={{
+                    textShadow: '0 1px 2px rgba(0,0,0,0.8)',
+                    pointerEvents: 'none'
+                  }}
+                >
+                  BREAKING
+                </text>
+              </>
+            )}
             {/* Topic name */}
             <text
               x={x + width / 2}
@@ -218,13 +260,103 @@ export default function InteractiveTreemapView() {
     )
   }
 
+  // Format date for display
+  const formatDate = (date: Date) => {
+    const options: Intl.DateTimeFormatOptions = {
+      weekday: 'short',
+      year: 'numeric',
+      month: 'short',
+      day: 'numeric'
+    }
+    return date.toLocaleDateString('en-US', options)
+  }
+
+  const goToPreviousDay = () => {
+    if (daysBack < 90) setDaysBack(daysBack + 1)
+  }
+
+  const goToNextDay = () => {
+    if (daysBack > 0) setDaysBack(daysBack - 1)
+  }
+
+  const goToToday = () => {
+    setDaysBack(0)
+  }
+
   return (
-    <div className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 rounded-xl shadow-2xl p-3 h-[80vh] overflow-hidden">
-      {/* Background pattern for depth */}
-      <div className="absolute inset-0 opacity-5" style={{
-        backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)',
-        backgroundSize: '40px 40px'
-      }}/>
+    <div className="space-y-3">
+      {/* Timeline Controls */}
+      <div className="bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 rounded-xl shadow-2xl p-4 border border-gray-700">
+        <div className="flex items-center justify-between gap-4">
+          {/* Date Display */}
+          <div className="flex items-center gap-3">
+            <div className="text-white">
+              <div className="text-xs font-semibold text-gray-400 uppercase tracking-wider">Viewing</div>
+              <div className="text-lg font-bold">{formatDate(selectedDate)}</div>
+              {daysBack > 0 && (
+                <div className="text-xs text-gray-400">{daysBack} {daysBack === 1 ? 'day' : 'days'} ago</div>
+              )}
+            </div>
+          </div>
+
+          {/* Navigation Controls */}
+          <div className="flex items-center gap-2">
+            <button
+              onClick={goToPreviousDay}
+              disabled={daysBack >= 90}
+              className="px-4 py-2 bg-gray-700 hover:bg-gray-600 disabled:bg-gray-800 disabled:text-gray-600 text-white rounded-lg font-semibold text-sm transition-colors flex items-center gap-2"
+            >
+              <span>←</span>
+              <span>Previous Day</span>
+            </button>
+
+            {daysBack > 0 && (
+              <button
+                onClick={goToToday}
+                className="px-4 py-2 bg-blue-600 hover:bg-blue-500 text-white rounded-lg font-semibold text-sm transition-colors"
+              >
+                Today
+              </button>
+            )}
+
+            <button
+              onClick={goToNextDay}
+              disabled={daysBack === 0}
+              className="px-4 py-2 bg-gray-700 hover:bg-gray-600 disabled:bg-gray-800 disabled:text-gray-600 text-white rounded-lg font-semibold text-sm transition-colors flex items-center gap-2"
+            >
+              <span>Next Day</span>
+              <span>→</span>
+            </button>
+          </div>
+
+          {/* Date Slider */}
+          <div className="flex-1 max-w-md">
+            <input
+              type="range"
+              min="0"
+              max="90"
+              value={daysBack}
+              onChange={(e) => setDaysBack(Number(e.target.value))}
+              className="w-full h-2 bg-gray-700 rounded-lg appearance-none cursor-pointer slider"
+              style={{
+                background: `linear-gradient(to right, #3b82f6 0%, #3b82f6 ${(90 - daysBack) / 90 * 100}%, #374151 ${(90 - daysBack) / 90 * 100}%, #374151 100%)`
+              }}
+            />
+            <div className="flex justify-between text-xs text-gray-400 mt-1">
+              <span>90 days ago</span>
+              <span>Today</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Treemap Visualization */}
+      <div className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 rounded-xl shadow-2xl p-3 h-[70vh] overflow-hidden">
+        {/* Background pattern for depth */}
+        <div className="absolute inset-0 opacity-5" style={{
+          backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)',
+          backgroundSize: '40px 40px'
+        }}/>
 
       <ResponsiveContainer width="100%" height="100%">
         <Treemap
@@ -347,7 +479,7 @@ export default function InteractiveTreemapView() {
         </div>
       )}
 
-      {/* Custom scrollbar styles */}
+      {/* Custom scrollbar and slider styles */}
       <style jsx>{`
         .custom-scrollbar::-webkit-scrollbar {
           width: 6px;
@@ -363,7 +495,26 @@ export default function InteractiveTreemapView() {
         .custom-scrollbar::-webkit-scrollbar-thumb:hover {
           background: rgba(156, 163, 175, 0.7);
         }
+        .slider::-webkit-slider-thumb {
+          appearance: none;
+          width: 18px;
+          height: 18px;
+          background: #3b82f6;
+          border-radius: 50%;
+          cursor: pointer;
+          box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+        .slider::-moz-range-thumb {
+          width: 18px;
+          height: 18px;
+          background: #3b82f6;
+          border-radius: 50%;
+          cursor: pointer;
+          border: none;
+          box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
       `}</style>
+      </div>
     </div>
   )
 }
