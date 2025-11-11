@@ -1,4 +1,4 @@
-export type ViewType = 'frequency' | 'sentiment' | 'political'
+export type ViewType = 'frequency' | 'sentiment' | 'political' | 'truth-spectrum'
 
 export interface NewsOutlet {
   id: string
@@ -35,6 +35,14 @@ export interface PoliticalData {
   magnitude: number // 0-1 scale of how strong the bias is
 }
 
+export interface TruthSpectrumData {
+  outletId: string
+  topicId: string
+  outletPosition: number // -10 to 10 scale representing outlet's bias on this topic
+  truthPosition: number // -10 to 10 scale representing where objective truth lies
+  distanceFromTruth: number // absolute distance from truth
+}
+
 export interface JournalistData {
   id: string
   name: string
@@ -51,8 +59,10 @@ export interface JournalistData {
 export interface HeatmapCell {
   outletId: string
   topicId: string
-  value: number // The primary value (-1 to 1)
+  value: number // The primary value (-1 to 1 or -10 to 10 for truth spectrum)
   magnitude: number // 0-1 scale
   displayValue?: string
   tooltip?: string
+  truthPosition?: number // For truth spectrum view
+  distanceFromTruth?: number // For truth spectrum view
 }

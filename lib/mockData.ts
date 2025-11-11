@@ -1,4 +1,4 @@
-import { NewsOutlet, Topic, FrequencyData, SentimentData, PoliticalData } from '@/types'
+import { NewsOutlet, Topic, FrequencyData, SentimentData, PoliticalData, TruthSpectrumData } from '@/types'
 
 export const outlets: NewsOutlet[] = [
   { id: 'nyt', name: 'New York Times', shortName: 'NYT', totalArticles: 5000 },
@@ -150,6 +150,70 @@ export const generatePoliticalData = (): PoliticalData[] => {
         topicId: topic.id,
         bias,
         magnitude
+      })
+    })
+  })
+
+  return data
+}
+
+// Generate truth spectrum data showing outlet positions vs truth
+export const generateTruthSpectrumData = (): TruthSpectrumData[] => {
+  const data: TruthSpectrumData[] = []
+
+  // Define where "truth" lies for each topic (-10 to 10 scale)
+  // Negative = left-leaning truth, Positive = right-leaning truth
+  const topicTruthPositions: Record<string, number> = {
+    'biden-admin': -2,        // Slightly left of center
+    'crime': 1,              // Slightly right (law and order)
+    'democracy': 0,          // Center
+    'education': -1,         // Slightly left
+    'elections': 0,          // Center
+    'environment': -3,       // Left-leaning (climate science)
+    'foreign-policy': 0,     // Center
+    'guns': 2,               // Slightly right
+    'healthcare': -2,        // Slightly left
+    'immigration': 0,        // Center (polarizing issue)
+    'economy': 1,            // Slightly right
+    'tech': 0,               // Center
+  }
+
+  // Define outlet baseline positions (-10 to 10)
+  const outletPositions: Record<string, number> = {
+    'nyt': -4,
+    'wsj': 5,
+    'wapo': -5,
+    'cnn': -6,
+    'fox': 8,
+    'bbc': 0,
+    'guardian': -7,
+    'reuters': 0,
+    'ap': 0,
+    'politico': -2,
+    'hill': 1,
+    'npr': -3,
+    'bloomberg': 2,
+    'economist': 1,
+    'ft': 1,
+  }
+
+  outlets.forEach(outlet => {
+    topics.forEach(topic => {
+      const basePosition = outletPositions[outlet.id] || 0
+      const truthPos = topicTruthPositions[topic.id] || 0
+
+      // Add some topic-specific variation to outlet position
+      const variation = (Math.random() - 0.5) * 3
+      const outletPos = Math.max(-10, Math.min(10, basePosition + variation))
+
+      const distance = Math.abs(outletPos - truthPos)
+
+      data.push({
+        outletId: outlet.id,
+        topicId: topic.id,
+        outletPosition: Math.round(outletPos),
+        truthPosition: truthPos,
+        distanceFromTruth: distance
       })
     })
   })

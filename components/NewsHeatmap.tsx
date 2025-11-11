@@ -7,7 +7,8 @@ import {
   topics,
   generateFrequencyData,
   generateSentimentData,
-  generatePoliticalData
+  generatePoliticalData,
+  generateTruthSpectrumData
 } from '@/lib/mockData'
 
 interface NewsHeatmapProps {
@@ -42,6 +43,20 @@ export default function NewsHeatmap({ viewType, normalized }: NewsHeatmapProps) 
         value: d.sentiment,
         magnitude: d.magnitude,
         tooltip: `${outlets.find(o => o.id === d.outletId)?.name} - ${topics.find(t => t.id === d.topicId)?.name}: ${d.sentiment > 0 ? 'Positive' : 'Negative'} (${(d.sentiment * 100).toFixed(0)}%)`
+      }))
+    }
+
+    if (viewType === 'truth-spectrum') {
+      const data = generateTruthSpectrumData()
+      return data.map(d => ({
+        outletId: d.outletId,
+        topicId: d.topicId,
+        value: d.outletPosition,
+        magnitude: d.distanceFromTruth / 20, // Normalize to 0-1
+        truthPosition: d.truthPosition,
+        distanceFromTruth: d.distanceFromTruth,
+        displayValue: `${d.outletPosition}`,
+        tooltip: `${outlets.find(o => o.id === d.outletId)?.name} - ${topics.find(t => t.id === d.topicId)?.name}: Position ${d.outletPosition} | Truth at ${d.truthPosition} | Distance: ${d.distanceFromTruth.toFixed(1)}`
       }))
     }
 
@@ -111,6 +126,24 @@ export default function NewsHeatmap({ viewType, normalized }: NewsHeatmapProps) 
       }
     }
 
+    if (viewType === 'truth-spectrum') {
+      // Color based on distance from truth
+      // Close to truth = green, far from truth = red
+      const green = [22, 163, 74]
+      const yellow = [234, 179, 8]
+      const orange = [249, 115, 22]
+      const red = [220, 38, 38]
+
+      const distance = cell.distanceFromTruth || 0
+      if (distance < 3) {
+        return interpolateColor(green, yellow, distance / 3)
+      } else if (distance < 7) {
+        return interpolateColor(yellow, orange, (distance - 3) / 4)
+      } else {
+        return interpolateColor(orange, red, Math.min((distance - 7) / 6, 1))
+      }
+    }
+
     // Political: Red (right) through white (center) to blue (left)
     const red = [220, 38, 38]
     const lightRed = [254, 202, 202]
@@ -142,6 +175,31 @@ export default function NewsHeatmap({ viewType, normalized }: NewsHeatmapProps) 
 
     const isHovered = hoveredCell?.outletId === outletId && hoveredCell?.topicId === topicId
     const bgColor = getCellColor(cell)
+
+    // For truth spectrum, always show numbers
+    if (viewType === 'truth-spectrum') {
+      return (
+        <div
+          className={`relative flex items-center justify-center h-full transition-all duration-200 cursor-pointer ${
+            isHovered ? 'ring-4 ring-purple-500 ring-inset z-10 shadow-lg' : ''
+          }`}
+          style={{
+            backgroundColor: bgColor,
+          }}
+          onMouseEnter={() => setHoveredCell(cell)}
+          onMouseLeave={() => setHoveredCell(null)}
+        >
+          <div className="flex flex-col items-center justify-center text-xs font-bold">
+            <span className="text-gray-900">{cell.value}</span>
+            {cell.truthPosition !== undefined && (
+              <span className="text-[10px] text-gray-700 mt-0.5">
+                T:{cell.truthPosition}
+              </span>
+            )}
+          </div>
+        </div>
+      )
+    }
 
     return (
       <div

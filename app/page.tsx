@@ -56,6 +56,16 @@ export default function Home() {
               >
                 Political Bias
               </button>
+              <button
+                onClick={() => setViewType('truth-spectrum')}
+                className={`px-6 py-3 rounded-lg font-semibold transition-all duration-200 transform hover:scale-105 ${
+                  viewType === 'truth-spectrum'
+                    ? 'bg-gradient-to-r from-purple-600 to-purple-700 text-white shadow-lg'
+                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                }`}
+              >
+                Truth Spectrum
+              </button>
             </div>
 
             {/* Normalization Toggle */}
@@ -95,6 +105,11 @@ export default function Home() {
             {viewType === 'political' && (
               <p className="text-sm text-gray-700 font-medium">
                 <span className="font-bold text-blue-600">Political Bias View:</span> Blue (left-leaning) to red (right-leaning) gradient shows political bias in coverage.
+              </p>
+            )}
+            {viewType === 'truth-spectrum' && (
+              <p className="text-sm text-gray-700 font-medium">
+                <span className="font-bold text-purple-600">Truth Spectrum View:</span> Shows each outlet's position (-10 to +10) and where objective truth lies (T:). Green = close to truth, Red = far from truth.
               </p>
             )}
           </div>
@@ -160,6 +175,31 @@ export default function Home() {
                   <div className="flex items-center gap-3">
                     <div className="w-12 h-8 bg-gradient-to-r from-red-600 to-red-500 rounded shadow-sm"></div>
                     <span className="text-sm font-medium">Right-leaning</span>
+                  </div>
+                </div>
+              </div>
+            )}
+            {viewType === 'truth-spectrum' && (
+              <div>
+                <h4 className="font-semibold text-gray-800 mb-4 text-lg">Truth Distance Scale</h4>
+                <div className="space-y-3">
+                  <div className="flex items-center gap-3">
+                    <div className="w-12 h-8 bg-gradient-to-r from-green-600 to-green-500 rounded shadow-sm"></div>
+                    <span className="text-sm font-medium">Close to Truth (0-3)</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div className="w-12 h-8 bg-gradient-to-r from-yellow-500 to-orange-500 rounded shadow-sm"></div>
+                    <span className="text-sm font-medium">Moderate Distance (3-7)</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div className="w-12 h-8 bg-gradient-to-r from-orange-500 to-red-600 rounded shadow-sm"></div>
+                    <span className="text-sm font-medium">Far from Truth (7+)</span>
+                  </div>
+                  <div className="mt-4 p-3 bg-purple-50 rounded border border-purple-200">
+                    <p className="text-xs text-gray-700">
+                      <strong>How to read:</strong> Top number = outlet's position (-10 to +10).
+                      Bottom "T:" = where truth lies. Color shows distance from truth.
+                    </p>
                   </div>
                 </div>
               </div>
