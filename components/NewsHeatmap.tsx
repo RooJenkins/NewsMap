@@ -75,7 +75,7 @@ export default function NewsHeatmap({ viewType, normalized }: NewsHeatmapProps) 
     return cells.find(c => c.outletId === outletId && c.topicId === topicId)
   }
 
-  // Smooth color interpolation - average with neighboring cells
+  // Ultra-smooth color interpolation - average with extended neighborhood
   const getSmoothedValue = (outletId: string, topicId: string): number => {
     const cell = getCell(outletId, topicId)
     if (!cell) return 0
@@ -83,26 +83,29 @@ export default function NewsHeatmap({ viewType, normalized }: NewsHeatmapProps) 
     const outletIndex = outlets.findIndex(o => o.id === outletId)
     const topicIndex = topics.findIndex(t => t.id === topicId)
 
-    let sum = cell.magnitude * 4 // Weight center cell more
-    let count = 4
+    let sum = cell.magnitude * 8 // Weight center cell
+    let count = 8
 
-    // Average with adjacent cells (top, bottom, left, right)
-    const neighbors = [
-      { ox: outletIndex - 1, ty: topicIndex }, // left
-      { ox: outletIndex + 1, ty: topicIndex }, // right
-      { ox: outletIndex, ty: topicIndex - 1 }, // top
-      { ox: outletIndex, ty: topicIndex + 1 }, // bottom
-    ]
+    // Extended neighborhood - average with cells in 2-step radius
+    for (let dx = -2; dx <= 2; dx++) {
+      for (let dy = -2; dy <= 2; dy++) {
+        if (dx === 0 && dy === 0) continue // Skip center
 
-    neighbors.forEach(({ ox, ty }) => {
-      if (ox >= 0 && ox < outlets.length && ty >= 0 && ty < topics.length) {
-        const neighbor = getCell(outlets[ox].id, topics[ty].id)
-        if (neighbor) {
-          sum += neighbor.magnitude
-          count += 1
+        const ox = outletIndex + dx
+        const ty = topicIndex + dy
+
+        if (ox >= 0 && ox < outlets.length && ty >= 0 && ty < topics.length) {
+          const neighbor = getCell(outlets[ox].id, topics[ty].id)
+          if (neighbor) {
+            // Weight by distance (closer = more influence)
+            const distance = Math.sqrt(dx * dx + dy * dy)
+            const weight = 1 / (distance * distance)
+            sum += neighbor.magnitude * weight
+            count += weight
+          }
         }
       }
-    })
+    }
 
     return sum / count
   }
@@ -221,8 +224,8 @@ export default function NewsHeatmap({ viewType, normalized }: NewsHeatmapProps) 
     if (viewType === 'truth-spectrum') {
       return (
         <div
-          className={`relative flex items-center justify-center h-full transition-all duration-200 cursor-pointer ${
-            isHovered ? 'ring-4 ring-purple-500 ring-inset z-10 shadow-lg' : ''
+          className={`relative flex items-center justify-center h-full transition-all duration-150 cursor-pointer ${
+            isHovered ? 'z-20 brightness-110' : ''
           }`}
           style={{
             backgroundColor: bgColor,
@@ -244,8 +247,8 @@ export default function NewsHeatmap({ viewType, normalized }: NewsHeatmapProps) 
 
     return (
       <div
-        className={`relative flex items-center justify-center h-full transition-all duration-200 cursor-pointer ${
-          isHovered ? 'ring-4 ring-blue-500 ring-inset z-10 shadow-lg' : ''
+        className={`relative flex items-center justify-center h-full transition-all duration-150 cursor-pointer ${
+          isHovered ? 'z-20 brightness-110 scale-105' : ''
         }`}
         style={{
           backgroundColor: bgColor,
@@ -253,77 +256,75 @@ export default function NewsHeatmap({ viewType, normalized }: NewsHeatmapProps) 
         onMouseEnter={() => setHoveredCell(cell)}
         onMouseLeave={() => setHoveredCell(null)}
       >
-        {isHovered && (
-          <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-10 text-xs font-bold text-white">
-            {viewType === 'frequency' && (
-              <span>{(cell.magnitude * 100).toFixed(0)}%</span>
-            )}
-            {viewType === 'sentiment' && (
-              <span>{cell.value > 0 ? '+' : ''}{(cell.value * 100).toFixed(0)}</span>
-            )}
-            {viewType === 'political' && (
-              <span>{cell.value > 0 ? 'R' : 'L'} {(Math.abs(cell.value) * 100).toFixed(0)}</span>
-            )}
-          </div>
-        )}
       </div>
     )
   }
 
   return (
     <div className="bg-white rounded-lg shadow-lg p-4 overflow-hidden">
-      {/* Tooltip */}
+      {/* Enhanced Tooltip */}
       {hoveredCell && (
-        <div className="mb-3 p-2 bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 rounded text-xs shadow-sm">
-          <strong className="text-gray-900">{hoveredCell.tooltip}</strong>
-          {hoveredCell.displayValue && (
-            <span className="ml-2 text-gray-600">({hoveredCell.displayValue})</span>
-          )}
+        <div className="mb-3 p-3 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-lg text-white shadow-lg">
+          <div className="font-bold text-sm mb-1">
+            {topics.find(t => t.id === hoveredCell.topicId)?.name}
+          </div>
+          <div className="text-xs">
+            <span className="font-semibold">Outlet:</span> {outlets.find(o => o.id === hoveredCell.outletId)?.name}
+          </div>
+          <div className="text-xs mt-1">
+            <span className="font-semibold">Score:</span> {(hoveredCell.magnitude * 100).toFixed(1)}
+            {hoveredCell.displayValue && (
+              <span className="ml-2 opacity-75">({hoveredCell.displayValue})</span>
+            )}
+          </div>
         </div>
       )}
 
-      {/* Heatmap Table */}
+      {/* Heatmap Table - Seamless smooth gradient */}
       <div className="overflow-x-auto overflow-y-auto max-h-[75vh]">
-        <table className="border-collapse text-xs w-full">
-          {/* Header Row - Outlets across top */}
-          <thead className="sticky top-0 z-20">
-            <tr>
-              <th className="sticky left-0 bg-gradient-to-br from-gray-100 to-gray-200 border-r border-b border-gray-300 px-1 py-0.5 font-bold text-gray-800 text-left text-[7px] min-w-[80px] z-30">
-                Topic
-              </th>
-              {outlets.map(outlet => (
-                <th
-                  key={outlet.id}
-                  className="bg-gradient-to-br from-gray-100 to-gray-200 border-r border-b border-gray-300 px-0.5 py-0.5 text-center font-bold text-[7px] text-gray-800 w-10"
-                >
-                  {outlet.shortName}
+        {/* Blur overlay for ultra-smooth appearance */}
+        <div className="relative" style={{ backdropFilter: 'blur(1px)' }}>
+          <table className="border-collapse text-xs w-full">
+            {/* Header Row - Outlets across top */}
+            <thead className="sticky top-0 z-20">
+              <tr>
+                <th className="sticky left-0 bg-gradient-to-br from-gray-100 to-gray-200 px-1 py-0.5 font-bold text-gray-800 text-left text-[7px] min-w-[80px] z-30">
+                  Topic
                 </th>
-              ))}
-            </tr>
-          </thead>
-
-          {/* Body - Topics down left side */}
-          <tbody>
-            {topics.map(topic => (
-              <tr key={topic.id}>
-                {/* Topic Label */}
-                <td className="sticky left-0 bg-gradient-to-r from-gray-50 to-gray-100 border-r border-b border-gray-200 px-1 py-0 font-semibold text-[7px] text-gray-800 z-10 whitespace-nowrap leading-tight">
-                  {topic.name}
-                </td>
-
-                {/* Data Cells */}
                 {outlets.map(outlet => (
-                  <td
-                    key={`${topic.id}-${outlet.id}`}
-                    className="border-r border-b border-gray-100 p-0 h-6 w-10"
+                  <th
+                    key={outlet.id}
+                    className="bg-gradient-to-br from-gray-100 to-gray-200 px-0.5 py-0.5 text-center font-bold text-[7px] text-gray-800 w-10"
                   >
-                    {renderCell(outlet.id, topic.id)}
-                  </td>
+                    {outlet.shortName}
+                  </th>
                 ))}
               </tr>
-            ))}
-          </tbody>
-        </table>
+            </thead>
+
+            {/* Body - Topics down left side */}
+            <tbody>
+              {topics.map(topic => (
+                <tr key={topic.id}>
+                  {/* Topic Label */}
+                  <td className="sticky left-0 bg-gradient-to-r from-gray-50 to-gray-100 px-1 py-0 font-semibold text-[7px] text-gray-800 z-10 whitespace-nowrap leading-tight">
+                    {topic.name}
+                  </td>
+
+                  {/* Data Cells - NO BORDERS for seamless gradient */}
+                  {outlets.map(outlet => (
+                    <td
+                      key={`${topic.id}-${outlet.id}`}
+                      className="p-0 h-6 w-10"
+                    >
+                      {renderCell(outlet.id, topic.id)}
+                    </td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   )
