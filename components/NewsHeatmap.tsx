@@ -85,18 +85,24 @@ export default function NewsHeatmap({ viewType, normalized }: NewsHeatmapProps) 
 
   const getCellColor = (cell: HeatmapCell): string => {
     if (viewType === 'frequency') {
-      // White to deep blue gradient
+      // Blue (low) to Red (high) gradient
       const white = [255, 255, 255]
-      const lightBlue = [219, 234, 254]
-      const medBlue = [59, 130, 246]
-      const deepBlue = [30, 64, 175]
+      const lightBlue = [147, 197, 253]
+      const blue = [59, 130, 246]
+      const yellow = [234, 179, 8]
+      const orange = [249, 115, 22]
+      const red = [220, 38, 38]
 
-      if (cell.magnitude < 0.33) {
-        return interpolateColor(white, lightBlue, cell.magnitude * 3)
-      } else if (cell.magnitude < 0.66) {
-        return interpolateColor(lightBlue, medBlue, (cell.magnitude - 0.33) * 3)
+      if (cell.magnitude < 0.2) {
+        return interpolateColor(white, lightBlue, cell.magnitude * 5)
+      } else if (cell.magnitude < 0.4) {
+        return interpolateColor(lightBlue, blue, (cell.magnitude - 0.2) * 5)
+      } else if (cell.magnitude < 0.6) {
+        return interpolateColor(blue, yellow, (cell.magnitude - 0.4) * 5)
+      } else if (cell.magnitude < 0.8) {
+        return interpolateColor(yellow, orange, (cell.magnitude - 0.6) * 5)
       } else {
-        return interpolateColor(medBlue, deepBlue, (cell.magnitude - 0.66) * 3)
+        return interpolateColor(orange, red, (cell.magnitude - 0.8) * 5)
       }
     }
 
@@ -241,44 +247,48 @@ export default function NewsHeatmap({ viewType, normalized }: NewsHeatmapProps) 
         </div>
       )}
 
-      {/* Heatmap Grid */}
-      <div className="inline-block min-w-full">
-        <div className="grid gap-0 border-2 border-gray-300 rounded-lg overflow-hidden shadow-inner">
-          {/* Header Row */}
-          <div className="contents">
-            <div className="sticky left-0 bg-gradient-to-br from-gray-100 to-gray-200 border-b-2 border-r-2 border-gray-300 p-3 font-bold min-w-[180px] text-gray-800">
-              Topic / Outlet
-            </div>
-            {outlets.map(outlet => (
-              <div
-                key={outlet.id}
-                className="bg-gradient-to-br from-gray-100 to-gray-200 border-b-2 border-r border-gray-300 p-3 text-center font-bold min-w-[70px] text-xs text-gray-800"
-              >
-                {outlet.shortName}
-              </div>
-            ))}
-          </div>
-
-          {/* Data Rows */}
-          {topics.map(topic => (
-            <div key={topic.id} className="contents">
-              {/* Topic Label */}
-              <div className="sticky left-0 bg-gradient-to-r from-gray-50 to-gray-100 border-b border-r-2 border-gray-300 p-3 font-semibold min-w-[180px] text-sm text-gray-800">
-                {topic.name}
-              </div>
-
-              {/* Cells */}
+      {/* Heatmap Table */}
+      <div className="overflow-x-auto">
+        <table className="border-collapse border-2 border-gray-300 w-full">
+          {/* Header Row - Outlets across top */}
+          <thead>
+            <tr>
+              <th className="sticky left-0 bg-gradient-to-br from-gray-100 to-gray-200 border-2 border-gray-300 p-3 font-bold text-gray-800 text-left min-w-[200px] z-20">
+                Topic
+              </th>
               {outlets.map(outlet => (
-                <div
-                  key={`${topic.id}-${outlet.id}`}
-                  className="border-b border-r border-gray-200 min-w-[70px] h-20"
+                <th
+                  key={outlet.id}
+                  className="bg-gradient-to-br from-gray-100 to-gray-200 border border-gray-300 p-3 text-center font-bold text-xs text-gray-800 min-w-[80px]"
                 >
-                  {renderCell(outlet.id, topic.id)}
-                </div>
+                  {outlet.shortName}
+                </th>
               ))}
-            </div>
-          ))}
-        </div>
+            </tr>
+          </thead>
+
+          {/* Body - Topics down left side */}
+          <tbody>
+            {topics.map(topic => (
+              <tr key={topic.id}>
+                {/* Topic Label */}
+                <td className="sticky left-0 bg-gradient-to-r from-gray-50 to-gray-100 border-2 border-gray-300 p-3 font-semibold text-sm text-gray-800 z-10">
+                  {topic.name}
+                </td>
+
+                {/* Data Cells */}
+                {outlets.map(outlet => (
+                  <td
+                    key={`${topic.id}-${outlet.id}`}
+                    className="border border-gray-200 p-0 h-20 w-20"
+                  >
+                    {renderCell(outlet.id, topic.id)}
+                  </td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
     </div>
   )

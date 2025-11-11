@@ -93,7 +93,7 @@ export default function Home() {
           <div className="mt-5 p-4 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg border border-blue-100">
             {viewType === 'frequency' && (
               <p className="text-sm text-gray-700 font-medium">
-                <span className="font-bold text-blue-600">Frequency View:</span> Color intensity shows how frequently each outlet covers each topic.
+                <span className="font-bold text-blue-600">Frequency View:</span> Blue (low coverage) to Red (high coverage) shows how frequently each outlet covers each topic.
                 {normalized && ' Values are normalized relative to total article output.'}
               </p>
             )}
@@ -127,16 +127,19 @@ export default function Home() {
                 <h4 className="font-semibold text-gray-800 mb-4 text-lg">Frequency Scale</h4>
                 <div className="space-y-3">
                   <div className="flex items-center gap-3">
-                    <div className="w-12 h-8 rounded shadow-sm" style={{ backgroundColor: 'rgb(255, 255, 255)' }}></div>
+                    <div className="w-16 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded shadow-sm"></div>
                     <span className="text-sm font-medium">Low coverage</span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <div className="w-12 h-8 rounded shadow-sm" style={{ backgroundColor: 'rgb(59, 130, 246)' }}></div>
+                    <div className="w-16 h-8 bg-gradient-to-r from-yellow-500 to-orange-500 rounded shadow-sm"></div>
                     <span className="text-sm font-medium">Medium coverage</span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <div className="w-12 h-8 rounded shadow-sm" style={{ backgroundColor: 'rgb(30, 64, 175)' }}></div>
+                    <div className="w-16 h-8 bg-gradient-to-r from-orange-500 to-red-600 rounded shadow-sm"></div>
                     <span className="text-sm font-medium">High coverage</span>
+                  </div>
+                  <div className="mt-3 p-2 bg-gray-50 rounded text-xs text-gray-600">
+                    Full spectrum: Blue → Yellow → Orange → Red
                   </div>
                 </div>
               </div>
