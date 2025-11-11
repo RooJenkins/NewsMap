@@ -236,10 +236,10 @@ export default function NewsHeatmap({ viewType, normalized }: NewsHeatmapProps) 
   }
 
   return (
-    <div className="bg-white rounded-xl shadow-lg p-8 overflow-x-auto">
+    <div className="bg-white rounded-lg shadow-lg p-4 overflow-hidden">
       {/* Tooltip */}
       {hoveredCell && (
-        <div className="mb-6 p-4 bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 rounded-lg text-sm shadow-sm">
+        <div className="mb-3 p-2 bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 rounded text-xs shadow-sm">
           <strong className="text-gray-900">{hoveredCell.tooltip}</strong>
           {hoveredCell.displayValue && (
             <span className="ml-2 text-gray-600">({hoveredCell.displayValue})</span>
@@ -249,17 +249,17 @@ export default function NewsHeatmap({ viewType, normalized }: NewsHeatmapProps) 
 
       {/* Heatmap Table */}
       <div className="overflow-x-auto">
-        <table className="border-collapse border-2 border-gray-300 w-full">
+        <table className="border-collapse border border-gray-300 text-xs">
           {/* Header Row - Outlets across top */}
           <thead>
             <tr>
-              <th className="sticky left-0 bg-gradient-to-br from-gray-100 to-gray-200 border-2 border-gray-300 p-3 font-bold text-gray-800 text-left min-w-[200px] z-20">
+              <th className="sticky left-0 bg-gradient-to-br from-gray-100 to-gray-200 border border-gray-300 px-2 py-1 font-bold text-gray-800 text-left text-[10px] min-w-[120px] z-20">
                 Topic
               </th>
               {outlets.map(outlet => (
                 <th
                   key={outlet.id}
-                  className="bg-gradient-to-br from-gray-100 to-gray-200 border border-gray-300 p-3 text-center font-bold text-xs text-gray-800 min-w-[80px]"
+                  className="bg-gradient-to-br from-gray-100 to-gray-200 border border-gray-300 px-1 py-1 text-center font-bold text-[9px] text-gray-800 w-12"
                 >
                   {outlet.shortName}
                 </th>
@@ -272,7 +272,7 @@ export default function NewsHeatmap({ viewType, normalized }: NewsHeatmapProps) 
             {topics.map(topic => (
               <tr key={topic.id}>
                 {/* Topic Label */}
-                <td className="sticky left-0 bg-gradient-to-r from-gray-50 to-gray-100 border-2 border-gray-300 p-3 font-semibold text-sm text-gray-800 z-10">
+                <td className="sticky left-0 bg-gradient-to-r from-gray-50 to-gray-100 border border-gray-300 px-2 py-1 font-semibold text-[10px] text-gray-800 z-10 whitespace-nowrap">
                   {topic.name}
                 </td>
 
@@ -280,7 +280,7 @@ export default function NewsHeatmap({ viewType, normalized }: NewsHeatmapProps) 
                 {outlets.map(outlet => (
                   <td
                     key={`${topic.id}-${outlet.id}`}
-                    className="border border-gray-200 p-0 h-20 w-20"
+                    className="border border-gray-200 p-0 h-10 w-12"
                   >
                     {renderCell(outlet.id, topic.id)}
                   </td>

@@ -10,27 +10,27 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-slate-100">
-      <div className="container mx-auto px-6 py-10">
+      <div className="container mx-auto px-4 py-4 max-w-[1600px]">
         {/* Header */}
-        <header className="mb-10 text-center">
-          <h1 className="text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 mb-3">
+        <header className="mb-4 text-center">
+          <h1 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 mb-1">
             NewsMap
           </h1>
-          <p className="text-gray-700 text-xl font-medium">
+          <p className="text-gray-700 text-sm font-medium">
             Visualize how different news outlets cover topics
           </p>
         </header>
 
         {/* Controls */}
-        <div className="bg-white rounded-xl shadow-lg p-6 mb-8 border border-gray-200">
-          <div className="flex flex-wrap gap-4 items-center">
+        <div className="bg-white rounded-lg shadow-lg p-4 mb-4 border border-gray-200">
+          <div className="flex flex-wrap gap-2 items-center">
             {/* View Type Selector */}
-            <div className="flex gap-3">
+            <div className="flex gap-2">
               <button
                 onClick={() => setViewType('frequency')}
-                className={`px-6 py-3 rounded-lg font-semibold transition-all duration-200 transform hover:scale-105 ${
+                className={`px-3 py-1.5 rounded text-xs font-semibold transition-all ${
                   viewType === 'frequency'
-                    ? 'bg-gradient-to-r from-blue-600 to-blue-700 text-white shadow-lg'
+                    ? 'bg-gradient-to-r from-blue-600 to-blue-700 text-white shadow'
                     : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                 }`}
               >
@@ -38,9 +38,9 @@ export default function Home() {
               </button>
               <button
                 onClick={() => setViewType('sentiment')}
-                className={`px-6 py-3 rounded-lg font-semibold transition-all duration-200 transform hover:scale-105 ${
+                className={`px-3 py-1.5 rounded text-xs font-semibold transition-all ${
                   viewType === 'sentiment'
-                    ? 'bg-gradient-to-r from-blue-600 to-blue-700 text-white shadow-lg'
+                    ? 'bg-gradient-to-r from-blue-600 to-blue-700 text-white shadow'
                     : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                 }`}
               >
@@ -48,9 +48,9 @@ export default function Home() {
               </button>
               <button
                 onClick={() => setViewType('political')}
-                className={`px-6 py-3 rounded-lg font-semibold transition-all duration-200 transform hover:scale-105 ${
+                className={`px-3 py-1.5 rounded text-xs font-semibold transition-all ${
                   viewType === 'political'
-                    ? 'bg-gradient-to-r from-blue-600 to-blue-700 text-white shadow-lg'
+                    ? 'bg-gradient-to-r from-blue-600 to-blue-700 text-white shadow'
                     : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                 }`}
               >
@@ -58,9 +58,9 @@ export default function Home() {
               </button>
               <button
                 onClick={() => setViewType('truth-spectrum')}
-                className={`px-6 py-3 rounded-lg font-semibold transition-all duration-200 transform hover:scale-105 ${
+                className={`px-3 py-1.5 rounded text-xs font-semibold transition-all ${
                   viewType === 'truth-spectrum'
-                    ? 'bg-gradient-to-r from-purple-600 to-purple-700 text-white shadow-lg'
+                    ? 'bg-gradient-to-r from-purple-600 to-purple-700 text-white shadow'
                     : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                 }`}
               >
@@ -69,20 +69,20 @@ export default function Home() {
             </div>
 
             {/* Normalization Toggle */}
-            <div className="flex items-center gap-3 ml-auto">
-              <label htmlFor="normalized" className="text-sm font-semibold text-gray-700">
+            <div className="flex items-center gap-2 ml-auto">
+              <label htmlFor="normalized" className="text-xs font-semibold text-gray-700">
                 Normalized
               </label>
               <button
                 id="normalized"
                 onClick={() => setNormalized(!normalized)}
-                className={`relative inline-flex h-7 w-14 items-center rounded-full transition-all duration-300 shadow-inner ${
+                className={`relative inline-flex h-5 w-10 items-center rounded-full transition-all ${
                   normalized ? 'bg-gradient-to-r from-blue-500 to-blue-600' : 'bg-gray-300'
                 }`}
               >
                 <span
-                  className={`inline-block h-5 w-5 transform rounded-full bg-white transition-transform duration-300 shadow-md ${
-                    normalized ? 'translate-x-8' : 'translate-x-1'
+                  className={`inline-block h-3.5 w-3.5 transform rounded-full bg-white transition-transform ${
+                    normalized ? 'translate-x-6' : 'translate-x-1'
                   }`}
                 />
               </button>
@@ -90,26 +90,25 @@ export default function Home() {
           </div>
 
           {/* View Type Description */}
-          <div className="mt-5 p-4 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg border border-blue-100">
+          <div className="mt-2 p-2 bg-gradient-to-r from-blue-50 to-indigo-50 rounded border border-blue-100">
             {viewType === 'frequency' && (
-              <p className="text-sm text-gray-700 font-medium">
-                <span className="font-bold text-blue-600">Frequency View:</span> Blue (low coverage) to Red (high coverage) shows how frequently each outlet covers each topic.
-                {normalized && ' Values are normalized relative to total article output.'}
+              <p className="text-[10px] text-gray-700">
+                <span className="font-bold text-blue-600">Frequency:</span> Blue (low) to Red (high) shows coverage frequency{normalized && ' (normalized)'}
               </p>
             )}
             {viewType === 'sentiment' && (
-              <p className="text-sm text-gray-700 font-medium">
-                <span className="font-bold text-blue-600">Sentiment View:</span> Green (positive) to red (negative) gradient shows the sentiment of coverage.
+              <p className="text-[10px] text-gray-700">
+                <span className="font-bold text-blue-600">Sentiment:</span> Green (positive) to Red (negative) shows sentiment
               </p>
             )}
             {viewType === 'political' && (
-              <p className="text-sm text-gray-700 font-medium">
-                <span className="font-bold text-blue-600">Political Bias View:</span> Blue (left-leaning) to red (right-leaning) gradient shows political bias in coverage.
+              <p className="text-[10px] text-gray-700">
+                <span className="font-bold text-blue-600">Political Bias:</span> Blue (left) to Red (right) shows political bias
               </p>
             )}
             {viewType === 'truth-spectrum' && (
-              <p className="text-sm text-gray-700 font-medium">
-                <span className="font-bold text-purple-600">Truth Spectrum View:</span> Shows each outlet's position (-10 to +10) and where objective truth lies (T:). Green = close to truth, Red = far from truth.
+              <p className="text-[10px] text-gray-700">
+                <span className="font-bold text-purple-600">Truth Spectrum:</span> Position & Truth (T:). Green = close, Red = far
               </p>
             )}
           </div>
@@ -118,92 +117,71 @@ export default function Home() {
         {/* Heatmap */}
         <NewsHeatmap viewType={viewType} normalized={normalized} />
 
-        {/* Legend */}
-        <div className="bg-white rounded-xl shadow-lg p-8 mt-8 border border-gray-200">
-          <h3 className="text-2xl font-bold text-gray-900 mb-6">Color Legend</h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {/* Compact Legend */}
+        <div className="bg-white rounded-lg shadow-lg p-3 mt-4 border border-gray-200">
+          <h3 className="text-sm font-bold text-gray-900 mb-2">Color Legend</h3>
+          <div className="flex flex-wrap gap-4">
             {viewType === 'frequency' && (
-              <div>
-                <h4 className="font-semibold text-gray-800 mb-4 text-lg">Frequency Scale</h4>
-                <div className="space-y-3">
-                  <div className="flex items-center gap-3">
-                    <div className="w-16 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded shadow-sm"></div>
-                    <span className="text-sm font-medium">Low coverage</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <div className="w-16 h-8 bg-gradient-to-r from-yellow-500 to-orange-500 rounded shadow-sm"></div>
-                    <span className="text-sm font-medium">Medium coverage</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <div className="w-16 h-8 bg-gradient-to-r from-orange-500 to-red-600 rounded shadow-sm"></div>
-                    <span className="text-sm font-medium">High coverage</span>
-                  </div>
-                  <div className="mt-3 p-2 bg-gray-50 rounded text-xs text-gray-600">
-                    Full spectrum: Blue → Yellow → Orange → Red
-                  </div>
+              <div className="flex items-center gap-2">
+                <div className="flex items-center gap-1">
+                  <div className="w-8 h-4 bg-gradient-to-r from-blue-500 to-blue-600 rounded"></div>
+                  <span className="text-[10px]">Low</span>
+                </div>
+                <div className="flex items-center gap-1">
+                  <div className="w-8 h-4 bg-gradient-to-r from-yellow-500 to-orange-500 rounded"></div>
+                  <span className="text-[10px]">Med</span>
+                </div>
+                <div className="flex items-center gap-1">
+                  <div className="w-8 h-4 bg-gradient-to-r from-orange-500 to-red-600 rounded"></div>
+                  <span className="text-[10px]">High</span>
                 </div>
               </div>
             )}
             {viewType === 'sentiment' && (
-              <div>
-                <h4 className="font-semibold text-gray-800 mb-4 text-lg">Sentiment Scale</h4>
-                <div className="space-y-3">
-                  <div className="flex items-center gap-3">
-                    <div className="w-12 h-8 bg-gradient-to-r from-red-600 to-red-500 rounded shadow-sm"></div>
-                    <span className="text-sm font-medium">Very Negative</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <div className="w-12 h-8 bg-white border-2 border-gray-300 rounded shadow-sm"></div>
-                    <span className="text-sm font-medium">Neutral</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <div className="w-12 h-8 bg-gradient-to-r from-green-600 to-green-500 rounded shadow-sm"></div>
-                    <span className="text-sm font-medium">Very Positive</span>
-                  </div>
+              <div className="flex items-center gap-2">
+                <div className="flex items-center gap-1">
+                  <div className="w-8 h-4 bg-gradient-to-r from-red-600 to-red-500 rounded"></div>
+                  <span className="text-[10px]">Negative</span>
+                </div>
+                <div className="flex items-center gap-1">
+                  <div className="w-8 h-4 bg-white border border-gray-300 rounded"></div>
+                  <span className="text-[10px]">Neutral</span>
+                </div>
+                <div className="flex items-center gap-1">
+                  <div className="w-8 h-4 bg-gradient-to-r from-green-600 to-green-500 rounded"></div>
+                  <span className="text-[10px]">Positive</span>
                 </div>
               </div>
             )}
             {viewType === 'political' && (
-              <div>
-                <h4 className="font-semibold text-gray-800 mb-4 text-lg">Political Bias Scale</h4>
-                <div className="space-y-3">
-                  <div className="flex items-center gap-3">
-                    <div className="w-12 h-8 bg-gradient-to-r from-blue-700 to-blue-600 rounded shadow-sm"></div>
-                    <span className="text-sm font-medium">Left-leaning</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <div className="w-12 h-8 bg-white border-2 border-gray-300 rounded shadow-sm"></div>
-                    <span className="text-sm font-medium">Centrist</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <div className="w-12 h-8 bg-gradient-to-r from-red-600 to-red-500 rounded shadow-sm"></div>
-                    <span className="text-sm font-medium">Right-leaning</span>
-                  </div>
+              <div className="flex items-center gap-2">
+                <div className="flex items-center gap-1">
+                  <div className="w-8 h-4 bg-gradient-to-r from-blue-700 to-blue-600 rounded"></div>
+                  <span className="text-[10px]">Left</span>
+                </div>
+                <div className="flex items-center gap-1">
+                  <div className="w-8 h-4 bg-white border border-gray-300 rounded"></div>
+                  <span className="text-[10px]">Center</span>
+                </div>
+                <div className="flex items-center gap-1">
+                  <div className="w-8 h-4 bg-gradient-to-r from-red-600 to-red-500 rounded"></div>
+                  <span className="text-[10px]">Right</span>
                 </div>
               </div>
             )}
             {viewType === 'truth-spectrum' && (
-              <div>
-                <h4 className="font-semibold text-gray-800 mb-4 text-lg">Truth Distance Scale</h4>
-                <div className="space-y-3">
-                  <div className="flex items-center gap-3">
-                    <div className="w-12 h-8 bg-gradient-to-r from-green-600 to-green-500 rounded shadow-sm"></div>
-                    <span className="text-sm font-medium">Close to Truth (0-3)</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <div className="w-12 h-8 bg-gradient-to-r from-yellow-500 to-orange-500 rounded shadow-sm"></div>
-                    <span className="text-sm font-medium">Moderate Distance (3-7)</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <div className="w-12 h-8 bg-gradient-to-r from-orange-500 to-red-600 rounded shadow-sm"></div>
-                    <span className="text-sm font-medium">Far from Truth (7+)</span>
-                  </div>
-                  <div className="mt-4 p-3 bg-purple-50 rounded border border-purple-200">
-                    <p className="text-xs text-gray-700">
-                      <strong>How to read:</strong> Top number = outlet's position (-10 to +10).
-                      Bottom "T:" = where truth lies. Color shows distance from truth.
-                    </p>
-                  </div>
+              <div className="flex items-center gap-2">
+                <div className="flex items-center gap-1">
+                  <div className="w-8 h-4 bg-gradient-to-r from-green-600 to-green-500 rounded"></div>
+                  <span className="text-[10px]">Close</span>
+                </div>
+                <div className="flex items-center gap-1">
+                  <div className="w-8 h-4 bg-gradient-to-r from-yellow-500 to-orange-500 rounded"></div>
+                  <span className="text-[10px]">Moderate</span>
+                </div>
+                <div className="flex items-center gap-1">
+                  <div className="w-8 h-4 bg-gradient-to-r from-orange-500 to-red-600 rounded"></div>
+                  <span className="text-[10px]">Far</span>
                 </div>
               </div>
             )}
