@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import NewsHeatmap from '@/components/NewsHeatmap'
+import TreemapView from '@/components/TreemapView'
 import { ViewType } from '@/types'
 
 export default function Home() {
@@ -66,6 +67,16 @@ export default function Home() {
               >
                 Truth
               </button>
+              <button
+                onClick={() => setViewType('treemap')}
+                className={`px-2 py-1 rounded text-[9px] font-semibold transition-all ${
+                  viewType === 'treemap'
+                    ? 'bg-gradient-to-r from-green-600 to-green-700 text-white shadow'
+                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                }`}
+              >
+                Treemap
+              </button>
             </div>
 
             {/* Normalization Toggle */}
@@ -111,11 +122,20 @@ export default function Home() {
                 <span className="font-bold text-purple-600">Truth Spectrum:</span> Position & Truth (T:). Green = close, Red = far
               </p>
             )}
+            {viewType === 'treemap' && (
+              <p className="text-[10px] text-gray-700">
+                <span className="font-bold text-green-600">Treemap:</span> Box size = coverage frequency, Color = political bias (Blue = Left, Red = Right)
+              </p>
+            )}
           </div>
         </div>
 
-        {/* Heatmap */}
-        <NewsHeatmap viewType={viewType} normalized={normalized} />
+        {/* Visualization */}
+        {viewType === 'treemap' ? (
+          <TreemapView normalized={normalized} />
+        ) : (
+          <NewsHeatmap viewType={viewType} normalized={normalized} />
+        )}
 
         {/* Compact Legend */}
         <div className="bg-white rounded-lg shadow-lg p-2 mt-2 border border-gray-200">
@@ -182,6 +202,26 @@ export default function Home() {
                 <div className="flex items-center gap-0.5">
                   <div className="w-6 h-3 bg-gradient-to-r from-orange-500 to-red-600 rounded"></div>
                   <span className="text-[8px]">Far</span>
+                </div>
+              </div>
+            )}
+            {viewType === 'treemap' && (
+              <div className="flex items-center gap-2">
+                <div className="flex items-center gap-1">
+                  <span className="text-[8px] font-semibold">Size:</span>
+                  <span className="text-[8px]">Coverage Amount</span>
+                </div>
+                <div className="flex items-center gap-1">
+                  <div className="w-6 h-3 bg-blue-600 rounded"></div>
+                  <span className="text-[8px]">Left</span>
+                </div>
+                <div className="flex items-center gap-1">
+                  <div className="w-6 h-3 bg-gray-600 rounded"></div>
+                  <span className="text-[8px]">Center</span>
+                </div>
+                <div className="flex items-center gap-1">
+                  <div className="w-6 h-3 bg-red-600 rounded"></div>
+                  <span className="text-[8px]">Right</span>
                 </div>
               </div>
             )}

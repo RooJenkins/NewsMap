@@ -1,4 +1,4 @@
-export type ViewType = 'frequency' | 'sentiment' | 'political' | 'truth-spectrum'
+export type ViewType = 'frequency' | 'sentiment' | 'political' | 'truth-spectrum' | 'treemap'
 
 export interface NewsOutlet {
   id: string
