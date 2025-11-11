@@ -1,21 +1,22 @@
 import { NewsOutlet, Topic, FrequencyData, SentimentData, PoliticalData, TruthSpectrumData } from '@/types'
 
+// Outlets ordered from left-leaning to right-leaning for visual clustering
 export const outlets: NewsOutlet[] = [
-  { id: 'nyt', name: 'New York Times', shortName: 'NYT', totalArticles: 5000 },
-  { id: 'wsj', name: 'Wall Street Journal', shortName: 'WSJ', totalArticles: 4500 },
-  { id: 'wapo', name: 'Washington Post', shortName: 'WaPo', totalArticles: 4800 },
-  { id: 'cnn', name: 'CNN', shortName: 'CNN', totalArticles: 6000 },
-  { id: 'fox', name: 'Fox News', shortName: 'Fox', totalArticles: 5500 },
-  { id: 'bbc', name: 'BBC', shortName: 'BBC', totalArticles: 5200 },
-  { id: 'guardian', name: 'The Guardian', shortName: 'Guardian', totalArticles: 4700 },
-  { id: 'reuters', name: 'Reuters', shortName: 'Reuters', totalArticles: 5800 },
-  { id: 'ap', name: 'Associated Press', shortName: 'AP', totalArticles: 6200 },
-  { id: 'politico', name: 'Politico', shortName: 'Politico', totalArticles: 3500 },
-  { id: 'hill', name: 'The Hill', shortName: 'Hill', totalArticles: 4000 },
-  { id: 'npr', name: 'NPR', shortName: 'NPR', totalArticles: 4300 },
-  { id: 'bloomberg', name: 'Bloomberg', shortName: 'Bloomberg', totalArticles: 5100 },
-  { id: 'economist', name: 'The Economist', shortName: 'Economist', totalArticles: 2800 },
-  { id: 'ft', name: 'Financial Times', shortName: 'FT', totalArticles: 3200 },
+  { id: 'guardian', name: 'The Guardian', shortName: 'Guardian', totalArticles: 4700 }, // -0.6 (left)
+  { id: 'cnn', name: 'CNN', shortName: 'CNN', totalArticles: 6000 }, // -0.5
+  { id: 'wapo', name: 'Washington Post', shortName: 'WaPo', totalArticles: 4800 }, // -0.4
+  { id: 'npr', name: 'NPR', shortName: 'NPR', totalArticles: 4300 }, // -0.3
+  { id: 'nyt', name: 'New York Times', shortName: 'NYT', totalArticles: 5000 }, // -0.3
+  { id: 'politico', name: 'Politico', shortName: 'Politico', totalArticles: 3500 }, // -0.2
+  { id: 'reuters', name: 'Reuters', shortName: 'Reuters', totalArticles: 5800 }, // 0 (center)
+  { id: 'ap', name: 'Associated Press', shortName: 'AP', totalArticles: 6200 }, // 0
+  { id: 'bbc', name: 'BBC', shortName: 'BBC', totalArticles: 5200 }, // 0
+  { id: 'economist', name: 'The Economist', shortName: 'Economist', totalArticles: 2800 }, // 0.1
+  { id: 'ft', name: 'Financial Times', shortName: 'FT', totalArticles: 3200 }, // 0.1
+  { id: 'hill', name: 'The Hill', shortName: 'Hill', totalArticles: 4000 }, // 0.1
+  { id: 'bloomberg', name: 'Bloomberg', shortName: 'Bloomberg', totalArticles: 5100 }, // 0.2
+  { id: 'wsj', name: 'Wall Street Journal', shortName: 'WSJ', totalArticles: 4500 }, // 0.4
+  { id: 'fox', name: 'Fox News', shortName: 'Fox', totalArticles: 5500 }, // 0.8 (right)
 ]
 
 export const topics: Topic[] = [
