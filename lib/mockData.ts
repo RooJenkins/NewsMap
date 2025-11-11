@@ -368,8 +368,34 @@ export const generateTopicArticleData = (): TopicArticleData[] => {
   }
 
   subTopics.forEach(topic => {
-    // Generate today's total count (50-500 articles per topic)
-    const todayCount = Math.floor(Math.random() * 450) + 50
+    // Assign realistic article counts based on story importance
+    // Major breaking news: 600-850 articles
+    // High-profile stories: 350-600 articles
+    // Medium coverage: 150-350 articles
+    // Standard coverage: 50-150 articles
+
+    let todayCount: number
+
+    // Major breaking news stories
+    if (['govt-shutdown', 'trump-pardons', 'philippines-floods', 'typhoon-kalmaegi',
+         'delhi-explosion', 'us-china-trade', 'ukraine-war'].includes(topic.id)) {
+      todayCount = Math.floor(Math.random() * 250) + 600 // 600-850
+    }
+    // High-profile stories
+    else if (['nyc-mayor-race', 'giuliani-pardon', 'israel-hamas', 'china-rare-earth',
+              'russian-strikes', 'japan-female-pm', 'nasdaq-rally', 'amazon-gains',
+              'hurricane-melissa', 'ovechkin-900', 'bbc-resignation'].includes(topic.id)) {
+      todayCount = Math.floor(Math.random() * 250) + 350 // 350-600
+    }
+    // Medium coverage stories
+    else if (['senate-deal', 'sudan-conflict', 'wendys-closures', 'housing-market',
+              'climate-failure', 'ai-advances', 'cybersecurity', 'mlb-bribery'].includes(topic.id)) {
+      todayCount = Math.floor(Math.random() * 200) + 150 // 150-350
+    }
+    // Standard coverage
+    else {
+      todayCount = Math.floor(Math.random() * 100) + 50 // 50-150
+    }
 
     // Yesterday's count varies -30% to +30% from today
     const changeMultiplier = 0.7 + (Math.random() * 0.6) // 0.7 to 1.3
