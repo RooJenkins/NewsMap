@@ -3,27 +3,35 @@ import { PrismaClient } from '@prisma/client'
 
 const prisma = new PrismaClient()
 
-// Cache for location summaries
-let cachedSummaries: any = null
-let cacheTimestamp = 0
+// Cache for location summaries by category
+const summaryCache = new Map<string, { data: any[], timestamp: number }>()
 const CACHE_DURATION = 60 * 60 * 1000 // 1 hour
 
-export async function GET() {
+export async function GET(request: Request) {
   try {
-    // Check cache
-    if (cachedSummaries && Date.now() - cacheTimestamp < CACHE_DURATION) {
-      console.log('✅ Returning cached location summaries:', cachedSummaries.length)
+    // Get category from query parameters
+    const { searchParams } = new URL(request.url)
+    const category = searchParams.get('category') || 'all'
+
+    // Check cache for this category
+    const cached = summaryCache.get(category)
+    if (cached && Date.now() - cached.timestamp < CACHE_DURATION) {
+      console.log(`✅ Returning cached location summaries for category ${category}:`, cached.data.length)
       return NextResponse.json({
-        locations: cachedSummaries,
-        count: cachedSummaries.length,
+        locations: cached.data,
+        count: cached.data.length,
+        category,
         cached: true
       })
     }
 
-    // Fetch all location summaries from database
-    console.log('🔄 Fetching location summaries from database...')
+    // Fetch location summaries from database for this category
+    console.log(`🔄 Fetching location summaries from database for category: ${category}`)
 
     const summaries = await prisma.locationSummary.findMany({
+      where: {
+        category: category
+      },
       orderBy: [
         { type: 'asc' }, // Countries first, then cities
         { name: 'asc' },
@@ -64,15 +72,18 @@ export async function GET() {
       }
     })
 
-    // Update cache
-    cachedSummaries = formattedSummaries
-    cacheTimestamp = Date.now()
+    // Update cache for this category
+    summaryCache.set(category, {
+      data: formattedSummaries,
+      timestamp: Date.now()
+    })
 
-    console.log(`✅ Loaded ${formattedSummaries.length} location summaries`)
+    console.log(`✅ Loaded ${formattedSummaries.length} location summaries for category: ${category}`)
 
     return NextResponse.json({
       locations: formattedSummaries,
       count: formattedSummaries.length,
+      category,
       cached: false
     })
   } catch (error) {

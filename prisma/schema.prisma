@@ -46,6 +46,7 @@ model LocationSummary {
   country       String   // Country code or name
   lat           Float
   lng           Float
+  category      String   @default("all") // "all", "politics", "technology", "climate", "economy"
 
   // AI-generated summary
   summary       String   // Full AI-generated summary
@@ -57,8 +58,9 @@ model LocationSummary {
   createdAt     DateTime @default(now())
   storyCount    Int      @default(0) // Number of stories used to generate summary
 
-  @@unique([name, type])
+  @@unique([name, type, category])
   @@index([type])
   @@index([country])
+  @@index([category])
   @@index([updatedAt])
 }

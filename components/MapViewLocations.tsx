@@ -37,6 +37,8 @@ interface MapViewLocationsProps {
   onPanelStateChange?: (isOpen: boolean) => void
 }
 
+type NewsCategory = 'all' | 'politics' | 'technology' | 'climate' | 'economy'
+
 export default function MapViewLocations({ onViewChange, onPanelStateChange }: MapViewLocationsProps) {
   const [locations, setLocations] = useState<LocationSummary[]>([])
   const [loading, setLoading] = useState(true)
@@ -47,6 +49,7 @@ export default function MapViewLocations({ onViewChange, onPanelStateChange }: M
   const [hoveredCountryName, setHoveredCountryName] = useState<string | null>(null)
   const [tooltipPosition, setTooltipPosition] = useState<{ x: number; y: number } | null>(null)
   const [tooltipContent, setTooltipContent] = useState<string | null>(null)
+  const [selectedCategory, setSelectedCategory] = useState<NewsCategory>('all')
 
   // Check when Leaflet is available
   useEffect(() => {
@@ -55,12 +58,13 @@ export default function MapViewLocations({ onViewChange, onPanelStateChange }: M
     }
   }, [])
 
-  // Load all location summaries once
+  // Load all location summaries based on selected category
   useEffect(() => {
-    fetch('/api/locations/summaries')
+    const categoryParam = selectedCategory !== 'all' ? `?category=${selectedCategory}` : ''
+    fetch(`/api/locations/summaries${categoryParam}`)
       .then(res => res.json())
       .then(data => {
-        console.log('✅ Loaded', data.count, 'location summaries')
+        console.log('✅ Loaded', data.count, 'location summaries for category:', selectedCategory)
         setLocations(data.locations || [])
         setLoading(false)
       })
@@ -68,7 +72,7 @@ export default function MapViewLocations({ onViewChange, onPanelStateChange }: M
         console.error('Error loading location summaries:', error)
         setLoading(false)
       })
-  }, [])
+  }, [selectedCategory])
 
   // Load country boundaries GeoJSON
   useEffect(() => {
@@ -206,11 +210,11 @@ export default function MapViewLocations({ onViewChange, onPanelStateChange }: M
     const isHovered = hoveredCountryName === countryName
 
     if (isSelected) {
-      // Selected state: Blue fill with thick border
+      // Selected state: Solid blue fill with thick border
       return {
-        fillColor: '#3b82f6',
-        fillOpacity: 0.35,
-        color: '#2563eb',
+        fillColor: '#0F5499',
+        fillOpacity: 0.6,
+        color: '#0F5499',
         weight: 3,
         opacity: 1
       }
@@ -242,14 +246,21 @@ export default function MapViewLocations({ onViewChange, onPanelStateChange }: M
     }
   }, [selectedLocation, onPanelStateChange])
 
-  // Handle country click
+  // Handle country click - toggle if same country clicked
   const onCountryClick = (feature: any) => {
     const countryName = feature?.properties?.ADMIN || feature?.properties?.NAME
     const location = getLocationByGeoJSONName(countryName)
 
     if (location) {
-      setSelectedCountryName(countryName)
-      setSelectedLocation(location)
+      // If clicking the same country, close the panel
+      if (selectedCountryName === countryName) {
+        setSelectedCountryName(null)
+        setSelectedLocation(null)
+      } else {
+        // Otherwise, open the new country
+        setSelectedCountryName(countryName)
+        setSelectedLocation(location)
+      }
     }
   }
 
@@ -314,11 +325,54 @@ export default function MapViewLocations({ onViewChange, onPanelStateChange }: M
     )
   }
 
+  const categories: { id: NewsCategory; label: string }[] = [
+    { id: 'all', label: 'All News' },
+    { id: 'politics', label: 'Politics' },
+    { id: 'technology', label: 'Technology' },
+    { id: 'climate', label: 'Climate' },
+    { id: 'economy', label: 'Economy' },
+  ]
+
   return (
     <div className="relative w-full h-screen">
+      {/* Category Filter Pills */}
+      <div
+        className="absolute top-4 z-[1000] flex gap-2 transition-all duration-300"
+        style={{
+          left: selectedLocation ? 'calc(50% - 300px)' : '50%',
+          transform: 'translateX(-50%)'
+        }}
+      >
+        {categories.map((category) => (
+          <button
+            key={category.id}
+            onClick={() => {
+              setSelectedCategory(category.id)
+              setSelectedLocation(null)
+              setSelectedCountryName(null)
+            }}
+            className={`
+              px-3 py-1.5 rounded-full font-body font-semibold text-xs transition-all
+              ${selectedCategory === category.id
+                ? 'bg-ft-oxford text-white shadow-md'
+                : 'bg-white/80 text-ft-black hover:bg-white border border-ft-oxford/30 shadow-sm'
+              }
+            `}
+          >
+            {category.label}
+          </button>
+        ))}
+      </div>
+
       <MapContainer
+        key="world-map"
         center={[20, 0]}
         zoom={2}
+        minZoom={2}
+        maxZoom={18}
+        maxBounds={[[-85, -Infinity], [85, Infinity]]}
+        maxBoundsViscosity={1.0}
+        worldCopyJump={true}
         style={{ height: '100%', width: '100%' }}
         className="z-0"
         whenReady={() => setMapReady(true)}
@@ -367,17 +421,51 @@ export default function MapViewLocations({ onViewChange, onPanelStateChange }: M
       )}
 
       {/* Hover Tooltip with FT styling */}
-      {tooltipContent && tooltipPosition && (
-        <div
-          className="absolute z-50 bg-white border-2 border-ft-oxford text-ft-black px-4 py-2 text-xs font-body shadow-xl pointer-events-none rounded-full ft-pill"
-          style={{
-            left: `${tooltipPosition.x + 15}px`,
-            top: `${tooltipPosition.y - 10}px`,
-          }}
-        >
-          {tooltipContent}
-        </div>
-      )}
+      {tooltipContent && tooltipPosition && (() => {
+        const viewportWidth = typeof window !== 'undefined' ? window.innerWidth : 1200
+        const viewportHeight = typeof window !== 'undefined' ? window.innerHeight : 800
+        const panelWidth = selectedLocation ? 600 : 0
+        const padding = 10
+        const availableWidth = viewportWidth - panelWidth - (padding * 2)
+
+        // Estimate tooltip width (since we can't measure it dynamically)
+        const estimatedTooltipWidth = Math.min(tooltipContent.length * 7, 500)
+        const halfWidth = estimatedTooltipWidth / 2
+
+        // Position above cursor by default
+        let top = tooltipPosition.y - 45
+
+        // Center horizontally on cursor, but constrain to available space
+        let left = tooltipPosition.x - halfWidth
+
+        // Ensure tooltip doesn't overflow left edge
+        if (left < padding) {
+          left = padding
+        }
+
+        // Ensure tooltip doesn't overflow right edge (accounting for panel if open)
+        const maxLeft = viewportWidth - panelWidth - estimatedTooltipWidth - padding
+        if (left > maxLeft) {
+          left = Math.max(padding, maxLeft)
+        }
+
+        // If too close to top, show below cursor instead
+        if (top < padding) {
+          top = tooltipPosition.y + 25
+        }
+
+        return (
+          <div
+            className="absolute z-50 bg-white border-2 border-ft-oxford text-ft-black px-4 py-2 text-xs font-body shadow-xl pointer-events-none rounded-full ft-pill whitespace-nowrap"
+            style={{
+              left: `${left}px`,
+              top: `${top}px`,
+            }}
+          >
+            {tooltipContent}
+          </div>
+        )
+      })()}
     </div>
   )
 }

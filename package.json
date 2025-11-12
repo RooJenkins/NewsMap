@@ -15,7 +15,8 @@
     "generate-location-summaries-openai": "tsx scripts/generate-location-summaries-openai.ts",
     "generate-comprehensive": "tsx scripts/generate-location-summaries-comprehensive.ts",
     "generate-specific-countries": "tsx scripts/generate-specific-countries.ts",
-    "generate-four-countries": "tsx scripts/generate-four-countries.ts"
+    "generate-four-countries": "tsx scripts/generate-four-countries.ts",
+    "generate-category-summaries": "tsx scripts/generate-category-summaries.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.68.0",
