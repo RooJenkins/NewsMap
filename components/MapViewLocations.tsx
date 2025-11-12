@@ -354,32 +354,6 @@ export default function MapViewLocations({ onViewChange, onPanelStateChange }: M
           ))}
       </MapContainer>
 
-      {/* Stats Overlay with FT styling */}
-      <div className="absolute top-6 left-6 bg-white border-2 border-ft-teal shadow-xl rounded-2xl p-6 max-w-sm z-10">
-        <h2 className="font-headline text-2xl font-bold text-ft-black mb-4 border-b-4 border-ft-teal pb-3">
-          World Intelligence
-        </h2>
-        <div className="space-y-3 font-body text-sm">
-          <div className="flex justify-between items-center gap-4">
-            <span className="ft-pill bg-ft-pink text-ft-slate flex-1 text-center">Countries</span>
-            <span className="ft-pill bg-ft-oxford text-white font-bold px-4">{locations.filter(l => l.type === 'country').length}</span>
-          </div>
-          <div className="flex justify-between items-center gap-4">
-            <span className="ft-pill bg-ft-pink text-ft-slate flex-1 text-center">Cities</span>
-            <span className="ft-pill bg-ft-teal text-white font-bold px-4">{locations.filter(l => l.type === 'city').length}</span>
-          </div>
-          <div className="flex justify-between items-center gap-4 pt-2 border-t-2 border-ft-wheat">
-            <span className="ft-pill bg-ft-mandarin/20 text-ft-black flex-1 text-center">Total Locations</span>
-            <span className="ft-pill bg-ft-mandarin text-white font-bold px-4">{locations.length}</span>
-          </div>
-        </div>
-        <div className="mt-5 pt-4 border-t-2 border-ft-teal">
-          <p className="text-xs text-ft-slate leading-relaxed text-center font-medium">
-            Click countries or cities for detailed analysis
-          </p>
-        </div>
-      </div>
-
       {/* Location Summary Panel */}
       {selectedLocation && (
         <LocationSummaryPanel

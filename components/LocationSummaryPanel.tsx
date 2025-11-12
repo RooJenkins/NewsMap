@@ -39,39 +39,39 @@ export default function LocationSummaryPanel({ location, onClose }: LocationSumm
   }
 
   return (
-    <div className="fixed top-0 right-0 w-[600px] h-full bg-white shadow-2xl overflow-y-auto z-[10000] animate-slideIn border-l-4 border-ft-teal">
-      {/* Header with FT Pink gradient */}
-      <div className="sticky top-0 ft-gradient border-b-2 border-ft-teal p-6 z-10">
+    <div className="fixed top-0 right-0 w-[600px] h-full bg-white shadow-2xl overflow-y-auto z-[10000] animate-slideIn border-l-8 border-ft-oxford">
+      {/* Header with vibrant gradient and blue/red accents */}
+      <div className="sticky top-0 bg-gradient-to-br from-ft-pink via-white to-ft-sky/20 border-b-4 border-ft-oxford p-6 z-10 shadow-lg">
         <button
           onClick={onClose}
-          className="absolute top-6 right-6 hover:bg-ft-wheat rounded-full p-2 transition-colors"
+          className="absolute top-6 right-6 ft-pill bg-ft-claret text-white hover:bg-ft-oxford transition-all hover:scale-110 shadow-md"
           aria-label="Close"
         >
-          <X size={20} className="text-ft-black" />
+          <X size={18} />
         </button>
 
         <div className="pr-12">
-          <h2 className="font-headline text-4xl font-bold text-ft-black mb-3 leading-tight">
+          <h2 className="font-headline text-5xl font-black text-ft-oxford mb-4 leading-tight border-l-6 border-ft-claret pl-4 bg-gradient-to-r from-ft-oxford to-ft-teal bg-clip-text text-transparent">
             {location.name}
           </h2>
-          <div className="flex items-center gap-2">
-            <span className="ft-pill bg-ft-teal text-white text-xs">
+          <div className="flex items-center gap-2 flex-wrap">
+            <span className="ft-pill bg-gradient-to-r from-ft-oxford to-ft-teal text-white text-xs font-bold shadow-md">
               {location.type === 'country' ? 'Country Analysis' : location.country}
             </span>
-            <span className="ft-pill bg-ft-oxford text-white text-xs">
+            <span className="ft-pill bg-gradient-to-r from-ft-claret to-ft-mandarin text-white text-xs font-bold shadow-md">
               {location.storyCount} stories
             </span>
-            <span className="ft-pill bg-ft-mandarin text-white text-xs">
+            <span className="ft-pill bg-gradient-to-r from-ft-mandarin to-ft-lemon text-ft-black text-xs font-bold shadow-md">
               {location.issues.length} issues
             </span>
           </div>
         </div>
       </div>
 
-      {/* Metadata bar with FT colors */}
-      <div className="bg-ft-sky/30 border-b-2 border-ft-blue/20 px-6 py-3">
+      {/* Metadata bar with vibrant accent */}
+      <div className="bg-gradient-to-r from-ft-oxford/10 via-ft-sky/20 to-ft-claret/10 border-b-2 border-ft-teal px-6 py-4">
         <div className="flex items-center justify-end text-xs font-body text-ft-slate">
-          <span className="ft-pill bg-white border border-ft-wasabi">
+          <span className="ft-pill bg-white border-2 border-ft-oxford text-ft-oxford font-semibold shadow-sm">
             Updated {timeAgo(location.updatedAt)}
           </span>
         </div>
@@ -83,15 +83,15 @@ export default function LocationSummaryPanel({ location, onClose }: LocationSumm
           <ReactMarkdown
             components={{
               h1: ({ children }) => (
-                <h1 className="font-headline text-3xl font-bold mb-6 text-ft-black leading-tight border-b-4 border-ft-teal pb-3">{children}</h1>
+                <h1 className="font-headline text-3xl font-bold mb-6 text-ft-oxford leading-tight border-b-4 border-ft-oxford pb-3 border-l-6 border-ft-claret pl-4 bg-gradient-to-r from-ft-oxford to-ft-teal bg-clip-text text-transparent">{children}</h1>
               ),
               h2: ({ children }) => (
-                <h2 className="font-headline text-2xl font-bold mt-8 mb-4 text-ft-black border-l-4 border-ft-mandarin pl-4 py-2 bg-ft-pink">
+                <h2 className="font-headline text-2xl font-bold mt-8 mb-4 text-ft-oxford border-l-6 border-ft-claret pl-4 py-3 bg-gradient-to-r from-ft-pink to-ft-sky/30 shadow-sm">
                   {children}
                 </h2>
               ),
               h3: ({ children }) => (
-                <h3 className="font-headline text-xl font-semibold mt-6 mb-3 text-ft-oxford">{children}</h3>
+                <h3 className="font-headline text-xl font-bold mt-6 mb-3 text-ft-claret border-b-2 border-ft-oxford/30 pb-2">{children}</h3>
               ),
               p: ({ children }) => (
                 <p className="text-ft-slate leading-relaxed mb-4 text-base">{children}</p>
@@ -111,48 +111,50 @@ export default function LocationSummaryPanel({ location, onClose }: LocationSumm
           </ReactMarkdown>
         </div>
 
-        {/* Top Stories Section with FT styling */}
+        {/* Top Stories Section with vibrant styling */}
         {location.topStories && location.topStories.length > 0 && (
-          <div className="mt-8 pt-8 border-t-2 border-ft-teal">
-            <h3 className="font-headline text-xl font-bold mb-4 text-ft-black">
+          <div className="mt-8 pt-8 border-t-4 border-ft-oxford">
+            <h3 className="font-headline text-2xl font-bold mb-6 text-ft-oxford border-l-6 border-ft-claret pl-4 bg-gradient-to-r from-ft-oxford to-ft-teal bg-clip-text text-transparent">
               Latest News
             </h3>
-            <div className="space-y-3">
+            <div className="space-y-4">
               {location.topStories.map((story, index) => (
                 <a
                   key={index}
                   href={story.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block p-4 hover:bg-ft-pink rounded-xl border-2 border-ft-wheat hover:border-ft-teal transition-all group"
+                  className="block p-5 bg-gradient-to-r from-white to-ft-pink/30 hover:from-ft-sky/20 hover:to-ft-pink rounded-2xl border-l-4 border-ft-oxford hover:border-ft-claret hover:shadow-xl transition-all group transform hover:-translate-y-1"
                 >
-                  <div className="flex items-start justify-between gap-3">
+                  <div className="flex items-start justify-between gap-4">
                     <div className="flex-1">
-                      <h4 className="font-body font-semibold text-ft-black group-hover:text-ft-oxford mb-2 leading-snug text-sm">
+                      <h4 className="font-body font-bold text-ft-black group-hover:text-ft-oxford mb-3 leading-snug text-base">
                         {story.title}
                       </h4>
                       <div className="flex items-center gap-2">
-                        <span className="ft-pill bg-ft-oxford text-white text-xs px-3 py-1">
+                        <span className="ft-pill bg-gradient-to-r from-ft-oxford to-ft-teal text-white text-xs px-4 py-1.5 font-bold shadow-sm">
                           {story.source}
                         </span>
-                        <span className="text-xs text-ft-wasabi">
+                        <span className="ft-pill bg-white border-2 border-ft-wheat text-ft-slate text-xs px-3 py-1">
                           {new Date(story.pubDate).toLocaleDateString()}
                         </span>
                       </div>
                     </div>
-                    <svg
-                      className="w-5 h-5 text-ft-teal group-hover:text-ft-oxford flex-shrink-0 mt-1"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                      />
-                    </svg>
+                    <div className="ft-pill bg-ft-claret group-hover:bg-ft-oxford text-white p-2 shadow-md transition-all">
+                      <svg
+                        className="w-5 h-5"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2.5}
+                          d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                        />
+                      </svg>
+                    </div>
                   </div>
                 </a>
               ))}

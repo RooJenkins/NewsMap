@@ -101,23 +101,23 @@ export default function ChatBot({ panelOpen = false }: ChatBotProps) {
       }`}
       style={panelOpen ? { maxWidth: 'calc(100vw - 600px)' } : undefined}
     >
-      {/* Expanded conversation view with FT styling */}
+      {/* Expanded conversation view with vibrant FT styling */}
       {isExpanded && messages.length > 0 && (
-        <div className="mb-4 bg-white border-2 border-ft-teal rounded-2xl shadow-xl max-h-96 overflow-y-auto">
-          {/* Header with FT gradient */}
-          <div className="sticky top-0 ft-gradient border-b-2 border-ft-teal px-5 py-4 flex items-center justify-between">
-            <h3 className="font-headline text-lg font-bold text-ft-black">Analysis by Rory Stewart</h3>
+        <div className="mb-4 bg-white border-4 border-ft-oxford rounded-3xl shadow-2xl max-h-96 overflow-y-auto">
+          {/* Header with vibrant gradient and accents */}
+          <div className="sticky top-0 bg-gradient-to-r from-ft-oxford to-ft-teal border-b-4 border-ft-claret px-6 py-4 flex items-center justify-between shadow-md">
+            <h3 className="font-headline text-xl font-black text-white">Analysis by Rory Stewart</h3>
             <div className="flex items-center gap-2">
               <button
                 onClick={handleMinimize}
-                className="ft-pill bg-ft-oxford text-white hover:bg-ft-teal transition-colors px-3 py-1"
+                className="ft-pill bg-white text-ft-oxford hover:bg-ft-sky hover:scale-110 transition-all font-bold shadow-md"
                 aria-label="Minimize"
               >
                 <Minus className="w-4 h-4" />
               </button>
               <button
                 onClick={handleClear}
-                className="ft-pill bg-ft-claret text-white hover:bg-ft-mandarin transition-colors px-3 py-1"
+                className="ft-pill bg-ft-claret text-white hover:bg-ft-mandarin hover:scale-110 transition-all font-bold shadow-md"
                 aria-label="Clear conversation"
               >
                 <X className="w-4 h-4" />
@@ -125,17 +125,17 @@ export default function ChatBot({ panelOpen = false }: ChatBotProps) {
             </div>
           </div>
 
-          {/* Messages */}
-          <div className="px-5 py-5 space-y-4 bg-ft-pink/30">
+          {/* Messages with sleek styling */}
+          <div className="px-6 py-6 space-y-5 bg-gradient-to-br from-ft-pink/20 via-white to-ft-sky/10">
             {messages.map((message, index) => (
               <div key={index} className={`${message.role === 'user' ? 'text-right' : 'text-left'}`}>
                 <div className={`inline-block max-w-[85%] ${
                   message.role === 'user'
-                    ? 'bg-ft-oxford text-white'
-                    : 'bg-white text-ft-black border-2 border-ft-wheat'
-                } px-5 py-3 rounded-2xl shadow-md`}>
+                    ? 'bg-gradient-to-br from-ft-oxford to-ft-teal text-white shadow-lg'
+                    : 'bg-white text-ft-black border-l-4 border-ft-oxford shadow-md'
+                } px-6 py-4 rounded-2xl transform hover:scale-[1.02] transition-transform`}>
                   {message.role === 'assistant' && (
-                    <div className="ft-pill bg-ft-teal text-white text-xs mb-2 inline-block px-3 py-1">Rory Stewart</div>
+                    <div className="ft-pill bg-gradient-to-r from-ft-oxford to-ft-teal text-white text-xs mb-3 inline-block px-4 py-1.5 font-bold shadow-sm">Rory Stewart</div>
                   )}
                   <p className="text-sm font-body leading-relaxed whitespace-pre-wrap">
                     {message.content}
@@ -160,7 +160,7 @@ export default function ChatBot({ panelOpen = false }: ChatBotProps) {
         </div>
       )}
 
-      {/* Input pill with FT styling */}
+      {/* Input pill with sleek, modern FT styling */}
       <form onSubmit={handleSubmit} className="relative">
         <input
           ref={inputRef}
@@ -169,23 +169,23 @@ export default function ChatBot({ panelOpen = false }: ChatBotProps) {
           onChange={(e) => setInput(e.target.value)}
           placeholder="Ask about world politics..."
           disabled={isLoading}
-          className="w-full bg-white border-3 border-ft-teal text-ft-black rounded-full px-6 py-4 pr-28 focus:outline-none focus:border-ft-oxford focus:ring-2 focus:ring-ft-sky disabled:opacity-50 disabled:cursor-not-allowed font-body text-sm shadow-xl transition-all"
+          className="w-full bg-white border-4 border-ft-oxford text-ft-black rounded-full px-7 py-5 pr-32 focus:outline-none focus:border-ft-teal focus:ring-4 focus:ring-ft-sky/50 disabled:opacity-50 disabled:cursor-not-allowed font-body text-base shadow-2xl transition-all hover:shadow-3xl"
         />
-        <div className="absolute right-2 top-1/2 transform -translate-y-1/2 flex items-center gap-2">
+        <div className="absolute right-3 top-1/2 transform -translate-y-1/2 flex items-center gap-2">
           {messages.length > 0 && (
             <button
               type="button"
               onClick={handleClear}
-              className="ft-pill bg-ft-claret text-white hover:bg-ft-mandarin transition-colors px-3 py-2"
+              className="ft-pill bg-ft-claret text-white hover:bg-ft-mandarin hover:scale-110 transition-all px-4 py-2.5 shadow-md font-bold"
               aria-label="Clear"
             >
-              <X className="w-4 h-4" />
+              <X className="w-5 h-5" />
             </button>
           )}
           <button
             type="submit"
             disabled={!input.trim() || isLoading}
-            className="ft-pill bg-ft-oxford hover:bg-ft-teal disabled:bg-ft-wasabi disabled:cursor-not-allowed text-white px-5 py-2 font-bold text-xs uppercase tracking-wide shadow-md transition-all"
+            className="ft-pill bg-gradient-to-r from-ft-oxford to-ft-teal hover:from-ft-teal hover:to-ft-oxford disabled:bg-ft-wasabi disabled:cursor-not-allowed text-white px-6 py-2.5 font-bold text-sm uppercase tracking-wide shadow-lg transition-all hover:scale-105 hover:shadow-xl"
           >
             Ask
           </button>
