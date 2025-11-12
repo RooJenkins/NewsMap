@@ -322,6 +322,10 @@ export default function MapViewLocations({ onViewChange, onPanelStateChange }: M
         style={{ height: '100%', width: '100%' }}
         className="z-0"
         whenReady={() => setMapReady(true)}
+        zoomControl={true}
+        scrollWheelZoom={true}
+        smoothWheelZoom={true}
+        smoothSensitivity={1}
       >
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'

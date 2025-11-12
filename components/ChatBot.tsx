@@ -160,7 +160,7 @@ export default function ChatBot({ panelOpen = false }: ChatBotProps) {
         </div>
       )}
 
-      {/* Input pill with sleek, modern FT styling */}
+      {/* Input pill with pixel-perfect thin border */}
       <form onSubmit={handleSubmit} className="relative">
         <input
           ref={inputRef}
@@ -169,7 +169,7 @@ export default function ChatBot({ panelOpen = false }: ChatBotProps) {
           onChange={(e) => setInput(e.target.value)}
           placeholder="Ask about world politics..."
           disabled={isLoading}
-          className="w-full bg-white border-4 border-ft-oxford text-ft-black rounded-full px-7 py-5 pr-32 focus:outline-none focus:border-ft-teal focus:ring-4 focus:ring-ft-sky/50 disabled:opacity-50 disabled:cursor-not-allowed font-body text-base shadow-2xl transition-all hover:shadow-3xl"
+          className="w-full bg-white border-2 border-ft-oxford text-ft-black rounded-full px-6 py-4 pr-32 focus:outline-none focus:border-ft-teal focus:ring-2 focus:ring-ft-oxford/20 disabled:opacity-50 disabled:cursor-not-allowed font-body text-sm shadow-xl transition-all hover:border-ft-teal"
         />
         <div className="absolute right-3 top-1/2 transform -translate-y-1/2 flex items-center gap-2">
           {messages.length > 0 && (

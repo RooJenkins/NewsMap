@@ -50,28 +50,28 @@ export default function LocationSummaryPanel({ location, onClose }: LocationSumm
           <X size={18} />
         </button>
 
-        <div className="pr-12">
-          <h2 className="font-headline text-5xl font-black text-ft-oxford mb-4 leading-tight border-l-6 border-ft-claret pl-4 bg-gradient-to-r from-ft-oxford to-ft-teal bg-clip-text text-transparent">
+        <div className="pr-14">
+          <h2 className="font-headline text-5xl font-black text-ft-oxford mb-3 leading-tight border-l-6 border-ft-claret pl-4 bg-gradient-to-r from-ft-oxford to-ft-teal bg-clip-text text-transparent">
             {location.name}
           </h2>
-          <div className="flex items-center gap-2 flex-wrap">
-            <span className="ft-pill bg-gradient-to-r from-ft-oxford to-ft-teal text-white text-xs font-bold shadow-md">
-              {location.type === 'country' ? 'Country Analysis' : location.country}
-            </span>
-            <span className="ft-pill bg-gradient-to-r from-ft-claret to-ft-mandarin text-white text-xs font-bold shadow-md">
-              {location.storyCount} stories
-            </span>
-            <span className="ft-pill bg-gradient-to-r from-ft-mandarin to-ft-lemon text-ft-black text-xs font-bold shadow-md">
-              {location.issues.length} issues
-            </span>
-          </div>
+          <p className="ft-pill bg-gradient-to-r from-ft-oxford to-ft-teal text-white text-sm font-bold shadow-md inline-block">
+            {location.type === 'country' ? 'Country Analysis' : location.country}
+          </p>
         </div>
       </div>
 
-      {/* Metadata bar with vibrant accent */}
-      <div className="bg-gradient-to-r from-ft-oxford/10 via-ft-sky/20 to-ft-claret/10 border-b-2 border-ft-teal px-6 py-4">
-        <div className="flex items-center justify-end text-xs font-body text-ft-slate">
-          <span className="ft-pill bg-white border-2 border-ft-oxford text-ft-oxford font-semibold shadow-sm">
+      {/* Metadata bar with clean spacing */}
+      <div className="bg-gradient-to-r from-ft-oxford/10 via-ft-sky/20 to-ft-claret/10 border-b-2 border-ft-teal px-6 py-3">
+        <div className="flex items-center justify-between text-xs font-body">
+          <div className="flex items-center gap-3">
+            <span className="ft-pill bg-white border-2 border-ft-oxford text-ft-oxford font-bold shadow-sm">
+              {location.storyCount} stories
+            </span>
+            <span className="ft-pill bg-white border-2 border-ft-claret text-ft-claret font-bold shadow-sm">
+              {location.issues.length} issues
+            </span>
+          </div>
+          <span className="ft-pill bg-white border-2 border-ft-teal text-ft-slate font-semibold shadow-sm">
             Updated {timeAgo(location.updatedAt)}
           </span>
         </div>
@@ -111,7 +111,7 @@ export default function LocationSummaryPanel({ location, onClose }: LocationSumm
           </ReactMarkdown>
         </div>
 
-        {/* Top Stories Section with vibrant styling */}
+        {/* Top Stories Section with clean layout */}
         {location.topStories && location.topStories.length > 0 && (
           <div className="mt-8 pt-8 border-t-4 border-ft-oxford">
             <h3 className="font-headline text-2xl font-bold mb-6 text-ft-oxford border-l-6 border-ft-claret pl-4 bg-gradient-to-r from-ft-oxford to-ft-teal bg-clip-text text-transparent">
@@ -124,37 +124,35 @@ export default function LocationSummaryPanel({ location, onClose }: LocationSumm
                   href={story.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block p-5 bg-gradient-to-r from-white to-ft-pink/30 hover:from-ft-sky/20 hover:to-ft-pink rounded-2xl border-l-4 border-ft-oxford hover:border-ft-claret hover:shadow-xl transition-all group transform hover:-translate-y-1"
+                  className="flex items-center justify-between gap-4 p-5 bg-gradient-to-r from-white to-ft-pink/30 hover:from-ft-sky/20 hover:to-ft-pink rounded-2xl border-l-4 border-ft-oxford hover:border-ft-claret hover:shadow-xl transition-all group transform hover:-translate-y-1"
                 >
-                  <div className="flex items-start justify-between gap-4">
-                    <div className="flex-1">
-                      <h4 className="font-body font-bold text-ft-black group-hover:text-ft-oxford mb-3 leading-snug text-base">
-                        {story.title}
-                      </h4>
-                      <div className="flex items-center gap-2">
-                        <span className="ft-pill bg-gradient-to-r from-ft-oxford to-ft-teal text-white text-xs px-4 py-1.5 font-bold shadow-sm">
-                          {story.source}
-                        </span>
-                        <span className="ft-pill bg-white border-2 border-ft-wheat text-ft-slate text-xs px-3 py-1">
-                          {new Date(story.pubDate).toLocaleDateString()}
-                        </span>
-                      </div>
+                  <div className="flex-1 min-w-0">
+                    <h4 className="font-body font-bold text-ft-black group-hover:text-ft-oxford mb-3 leading-snug text-base">
+                      {story.title}
+                    </h4>
+                    <div className="flex items-center gap-2 flex-wrap">
+                      <span className="ft-pill bg-gradient-to-r from-ft-oxford to-ft-teal text-white text-xs px-4 py-1.5 font-bold shadow-sm whitespace-nowrap">
+                        {story.source}
+                      </span>
+                      <span className="ft-pill bg-white border-2 border-ft-wheat text-ft-slate text-xs px-3 py-1 whitespace-nowrap">
+                        {new Date(story.pubDate).toLocaleDateString()}
+                      </span>
                     </div>
-                    <div className="ft-pill bg-ft-claret group-hover:bg-ft-oxford text-white p-2 shadow-md transition-all">
-                      <svg
-                        className="w-5 h-5"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2.5}
-                          d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                        />
-                      </svg>
-                    </div>
+                  </div>
+                  <div className="ft-pill bg-ft-claret group-hover:bg-ft-oxford text-white p-2.5 shadow-md transition-all flex-shrink-0">
+                    <svg
+                      className="w-5 h-5"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2.5}
+                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                      />
+                    </svg>
                   </div>
                 </a>
               ))}
