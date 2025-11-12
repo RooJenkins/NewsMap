@@ -146,6 +146,132 @@ These countries still need summaries generated:
 
 ---
 
+## 🔧 Methodology: How Countries Were Generated
+
+### Parallel Agent Approach
+
+All 63 countries were generated using Claude Code's **Task tool with parallel agents**. This allowed generating multiple countries simultaneously while maintaining quality.
+
+### Batch Strategy
+
+- **Batch size:** 3-4 countries per batch
+- **Parallel execution:** 3 agents running simultaneously
+- **Total batches:** 10 batches completed before hitting session limit
+- **Time per country:** ~2-3 minutes (including research, writing, database saves)
+- **Total generation time:** ~90 minutes for 39 countries (24 existed from previous work)
+
+### Exact Prompt Template Used
+
+For each agent, the following prompt was used:
+
+```
+You are generating "Rest is Politics" style country summaries for a world news map.
+
+COUNTRIES TO GENERATE:
+- [Country 1]
+- [Country 2]
+- [Country 3]
+- [Country 4]
+
+For EACH country:
+
+1. **Research Latest News (November 2025)**
+   - Use perplexity MCP to search: "[Country] November 2025 news politics"
+   - Focus on: elections, conflicts, economic issues, leadership changes
+   - Look for specific dates, names, statistics
+
+2. **Write Summary Using This Exact Structure:**
+
+   OPENING HOOK (1 paragraph, ~150 words)
+   - Lead with most dramatic/recent event
+   - Set the scene with vivid details
+   - Make it feel like insider analysis
+
+   **The Big Issue 1: [Title]** (~200 words)
+   - Deep dive into primary crisis/event
+   - Include specific details: dates, names, numbers
+   - Explain stakes and consequences
+   - Conversational tone, not dry reporting
+
+   **The Big Issue 2: [Title]** (~200 words)
+   - Second major storyline
+   - Connect to broader trends
+   - Include international implications
+
+   **The Big Issue 3: [Title]** (~200 words)
+   - Third storyline or emerging issue
+   - Can be economic, social, or political
+   - Forward-looking angle
+
+   **The International Angle** (~150 words)
+   - How this affects other countries
+   - Regional/global implications
+   - Power dynamics and alliances
+
+   **The Bottom Line** (~100 words)
+   - Synthesis of all threads
+   - What to watch next
+   - Punchy conclusion
+
+3. **Create Short Tooltip Description**
+   - Format: "Brief summary, 2-3 key issues"
+   - Example: "Milei's experiment, train derailments"
+   - Max 60 characters
+
+4. **Save to Database**
+   - Use Prisma to create LocationSummary record
+   - Set type: 'country'
+   - Get coordinates from geo API
+   - Save full summary, tooltip, issues array
+
+5. **Update MapViewLocations.tsx**
+   - Add country to getShortSummary() function
+   - Format: 'CountryName': 'tooltip text'
+   - Maintain alphabetical order
+
+IMPORTANT:
+- Use REAL news from November 2025 only
+- Write in conversational "Rest is Politics" style (casual, insider, analytical)
+- Target 4,000-6,000 characters per summary
+- Be specific: use names, dates, statistics
+- Make it engaging: use vivid language, rhetorical questions, dramatic framing
+```
+
+### Agent Batches Executed
+
+1. **Batch 1:** Afghanistan, Algeria, Angola
+2. **Batch 2:** Austria, Bahrain, Bangladesh, Belgium
+3. **Batch 3:** Bolivia, Bulgaria, Cambodia, Chile
+4. **Batch 4:** Costa Rica, Croatia, Czech Republic, Denmark
+5. **Batch 5:** DRC, Dominican Republic, Ecuador, Egypt
+6. **Batch 6:** El Salvador, Estonia, Ethiopia, Fiji
+7. **Batch 7:** Finland, Ghana, Greece, Guatemala
+8. **Batch 8:** Haiti, Honduras, Hungary, Indonesia
+9. **Batch 9:** Iran, Iraq, Ireland, Jordan
+10. **Batch 10:** Kazakhstan, Kenya, Kuwait, Laos
+
+**Batch 11 (attempted):** Latvia, Lebanon, Libya, Lithuania, Malaysia, Mongolia, Morocco, Mozambique, Myanmar, Nepal, Netherlands, New Zealand
+- **Status:** All 3 agents hit "Session limit reached ∙ resets 7pm"
+
+### Quality Control
+
+Each agent was responsible for:
+- ✅ Verifying summary saved to database
+- ✅ Confirming tooltip added to MapViewLocations.tsx
+- ✅ Testing that country appears on map
+- ✅ Ensuring summary follows "Rest is Politics" style
+- ✅ Using only November 2025 real news (no mock data)
+
+### Tools Used
+
+- **perplexity MCP server:** For researching latest November 2025 news
+- **Prisma Client:** For database operations
+- **Geocoding APIs:** For country coordinates
+- **Read/Edit tools:** For updating MapViewLocations.tsx
+- **Task tool:** For parallel agent execution
+
+---
+
 ## 📊 Summary Statistics
 
 - **Total countries:** 114
