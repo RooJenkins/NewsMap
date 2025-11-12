@@ -325,7 +325,7 @@ export default function MapViewLocations({ onViewChange, onPanelStateChange }: M
       >
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png"
         />
 
         {/* Country boundaries - clickable polygons */}
@@ -354,27 +354,27 @@ export default function MapViewLocations({ onViewChange, onPanelStateChange }: M
           ))}
       </MapContainer>
 
-      {/* Stats Overlay */}
-      <div className="absolute top-6 left-6 bg-white border border-gray-300 shadow-md p-5 max-w-xs z-10">
-        <h2 className="font-headline text-lg font-bold text-black mb-3 border-b border-gray-300 pb-2">
+      {/* Stats Overlay with FT styling */}
+      <div className="absolute top-6 left-6 bg-white border-2 border-ft-teal shadow-xl rounded-2xl p-6 max-w-sm z-10">
+        <h2 className="font-headline text-2xl font-bold text-ft-black mb-4 border-b-4 border-ft-teal pb-3">
           World Intelligence
         </h2>
         <div className="space-y-3 font-body text-sm">
-          <div className="flex justify-between items-center">
-            <span className="text-gray-700">Countries</span>
-            <span className="font-semibold text-black">{locations.filter(l => l.type === 'country').length}</span>
+          <div className="flex justify-between items-center gap-4">
+            <span className="ft-pill bg-ft-pink text-ft-slate flex-1 text-center">Countries</span>
+            <span className="ft-pill bg-ft-oxford text-white font-bold px-4">{locations.filter(l => l.type === 'country').length}</span>
           </div>
-          <div className="flex justify-between items-center">
-            <span className="text-gray-700">Cities</span>
-            <span className="font-semibold text-black">{locations.filter(l => l.type === 'city').length}</span>
+          <div className="flex justify-between items-center gap-4">
+            <span className="ft-pill bg-ft-pink text-ft-slate flex-1 text-center">Cities</span>
+            <span className="ft-pill bg-ft-teal text-white font-bold px-4">{locations.filter(l => l.type === 'city').length}</span>
           </div>
-          <div className="flex justify-between items-center pt-2 border-t border-gray-200">
-            <span className="text-gray-700">Total Locations</span>
-            <span className="font-bold text-black">{locations.length}</span>
+          <div className="flex justify-between items-center gap-4 pt-2 border-t-2 border-ft-wheat">
+            <span className="ft-pill bg-ft-mandarin/20 text-ft-black flex-1 text-center">Total Locations</span>
+            <span className="ft-pill bg-ft-mandarin text-white font-bold px-4">{locations.length}</span>
           </div>
         </div>
-        <div className="mt-4 pt-3 border-t border-gray-300">
-          <p className="text-xs text-gray-600 leading-relaxed">
+        <div className="mt-5 pt-4 border-t-2 border-ft-teal">
+          <p className="text-xs text-ft-slate leading-relaxed text-center font-medium">
             Click countries or cities for detailed analysis
           </p>
         </div>
@@ -388,10 +388,10 @@ export default function MapViewLocations({ onViewChange, onPanelStateChange }: M
         />
       )}
 
-      {/* Hover Tooltip */}
+      {/* Hover Tooltip with FT styling */}
       {tooltipContent && tooltipPosition && (
         <div
-          className="absolute z-50 bg-white border border-gray-400 text-black px-3 py-2 text-xs font-body shadow-lg pointer-events-none"
+          className="absolute z-50 bg-white border-2 border-ft-oxford text-ft-black px-4 py-2 text-xs font-body shadow-xl pointer-events-none rounded-full ft-pill"
           style={{
             left: `${tooltipPosition.x + 15}px`,
             top: `${tooltipPosition.y - 10}px`,

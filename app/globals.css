@@ -2,27 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Import NYT-style fonts */
-@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+/* Import FT-style fonts */
+@import url('https://fonts.googleapis.com/css2?family=Financier+Display:wght@400;500;600;700&family=Metro+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Lato:wght@300;400;700;900&display=swap');
 
 :root {
-  --nyt-black: #000000;
-  --nyt-white: #ffffff;
-  --nyt-gray-light: #f7f7f7;
-  --nyt-gray-medium: #e5e5e5;
-  --nyt-gray-dark: #333333;
-  --nyt-gray-text: #666666;
-  --nyt-border: #ddd;
-  --nyt-blue: #326891;
+  /* FT Brand Colors */
+  --ft-pink: #FFF1E5;
+  --ft-pink-dark: #F2DFCE;
+  --ft-black: #33302E;
+  --ft-white: #FFFFFF;
+  --ft-slate: #262A33;
+  --ft-blue: #0D7680;
+  --ft-teal: #0E7680;
+  --ft-oxford: #0F5499;
+  --ft-claret: #990F3D;
+  --ft-orange: #F66;
+  --ft-wasabi: #A7A59B;
+  --ft-wheat: #F2DFCE;
+  --ft-sky: #CCE6FF;
+  --ft-velvet: #593380;
+  --ft-mandarin: #FF8833;
+  --ft-lemon: #FFEC1A;
 
-  --background: var(--nyt-white);
-  --foreground: var(--nyt-black);
+  --background: var(--ft-pink);
+  --foreground: var(--ft-black);
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: 'Libre Franklin', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  font-family: 'Lato', 'Metro Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
@@ -30,9 +40,9 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'Merriweather', 'Financier Display', Georgia, serif;
   font-weight: 700;
-  color: var(--nyt-black);
+  color: var(--ft-black);
   letter-spacing: -0.01em;
 }
 
@@ -42,11 +52,23 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .font-headline {
-    font-family: 'Playfair Display', Georgia, serif;
+    font-family: 'Merriweather', 'Financier Display', Georgia, serif;
   }
 
   .font-body {
-    font-family: 'Libre Franklin', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-family: 'Lato', 'Metro Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  }
+
+  .ft-pill {
+    border-radius: 9999px;
+    padding: 0.5rem 1.25rem;
+    font-weight: 600;
+    font-size: 0.875rem;
+    transition: all 0.2s ease;
+  }
+
+  .ft-gradient {
+    background: linear-gradient(135deg, #FFF1E5 0%, #F2DFCE 100%);
   }
 }
 
