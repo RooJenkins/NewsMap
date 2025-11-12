@@ -145,7 +145,7 @@ export async function POST(request: NextRequest) {
 
     // First Claude API call
     let response = await anthropic.messages.create({
-      model: 'claude-3-5-sonnet-20241022',
+      model: 'claude-3-5-sonnet-20240620',
       max_tokens: 2000,
       system: RORY_SYSTEM_PROMPT,
       tools: tools,
@@ -192,7 +192,7 @@ export async function POST(request: NextRequest) {
 
       // Continue conversation with tool result
       response = await anthropic.messages.create({
-        model: 'claude-3-5-sonnet-20241022',
+        model: 'claude-3-5-sonnet-20240620',
         max_tokens: 2000,
         system: RORY_SYSTEM_PROMPT,
         tools: tools,
