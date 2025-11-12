@@ -169,27 +169,20 @@ export default function ChatBot({ panelOpen = false }: ChatBotProps) {
           onChange={(e) => setInput(e.target.value)}
           placeholder="Ask about world politics..."
           disabled={isLoading}
-          className="w-full bg-white border-2 border-ft-oxford text-ft-black rounded-full px-6 py-4 pr-32 focus:outline-none focus:border-ft-teal focus:ring-2 focus:ring-ft-oxford/20 disabled:opacity-50 disabled:cursor-not-allowed font-body text-sm shadow-xl transition-all hover:border-ft-teal"
+          className="w-full bg-white border-2 border-ft-oxford text-ft-black rounded-full px-6 py-4 pr-14 focus:outline-none focus:border-ft-teal focus:ring-2 focus:ring-ft-oxford/20 disabled:opacity-50 disabled:cursor-not-allowed font-body text-sm shadow-xl transition-all hover:border-ft-teal"
         />
-        <div className="absolute right-3 top-1/2 transform -translate-y-1/2 flex items-center gap-2">
-          {messages.length > 0 && (
+        {messages.length > 0 && (
+          <div className="absolute right-4 top-1/2 transform -translate-y-1/2">
             <button
               type="button"
               onClick={handleClear}
-              className="ft-pill bg-ft-claret text-white hover:bg-ft-mandarin hover:scale-110 transition-all px-4 py-2.5 shadow-md font-bold"
+              className="ft-pill bg-ft-claret text-white hover:bg-ft-mandarin hover:scale-110 transition-all p-2 shadow-md"
               aria-label="Clear"
             >
-              <X className="w-5 h-5" />
+              <X className="w-4 h-4" />
             </button>
-          )}
-          <button
-            type="submit"
-            disabled={!input.trim() || isLoading}
-            className="ft-pill bg-gradient-to-r from-ft-oxford to-ft-teal hover:from-ft-teal hover:to-ft-oxford disabled:bg-ft-wasabi disabled:cursor-not-allowed text-white px-6 py-2.5 font-bold text-sm uppercase tracking-wide shadow-lg transition-all hover:scale-105 hover:shadow-xl"
-          >
-            Ask
-          </button>
-        </div>
+          </div>
+        )}
       </form>
     </div>
   )
