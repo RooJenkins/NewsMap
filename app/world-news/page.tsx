@@ -1,5 +1,6 @@
 'use client'
 
+import { useState } from 'react'
 import dynamic from 'next/dynamic'
 import ChatBot from '@/components/ChatBot'
 
@@ -14,10 +15,12 @@ const MapViewLocations = dynamic(() => import('@/components/MapViewLocations'), 
 })
 
 export default function WorldNewsPage() {
+  const [isPanelOpen, setIsPanelOpen] = useState(false)
+
   return (
     <div className="w-full h-screen">
-      <MapViewLocations />
-      <ChatBot />
+      <MapViewLocations onPanelStateChange={setIsPanelOpen} />
+      <ChatBot panelOpen={isPanelOpen} />
     </div>
   )
 }

@@ -112,8 +112,8 @@ export default function Home() {
                 3D Globe
               </button>
               <Link href="/world-news">
-                <button className="px-2 py-1 rounded text-[9px] font-semibold transition-all bg-gradient-to-r from-indigo-600 to-indigo-700 text-white hover:from-indigo-700 hover:to-indigo-800 shadow">
-                  🌍 World Map
+                <button className="px-2 py-1 rounded text-[9px] font-semibold transition-all bg-black text-white hover:bg-gray-800 shadow">
+                  World Map
                 </button>
               </Link>
             </div>

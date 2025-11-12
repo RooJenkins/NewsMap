@@ -270,7 +270,7 @@ export default function GlobeView({ onViewChange }: GlobeViewProps = {}) {
           <div style="background: rgba(0,0,0,0.8); padding: 12px; border-radius: 8px; color: white; max-width: 300px;">
             <div style="font-weight: bold; font-size: 14px; margin-bottom: 4px;">${d.name}</div>
             <div style="font-size: 12px; color: #93c5fd;">${d.articleCount} articles</div>
-            ${d.isBreaking ? '<div style="color: #ef4444; font-size: 11px; margin-top: 4px;">🔴 BREAKING NEWS</div>' : ''}
+            ${d.isBreaking ? '<div style="color: #ef4444; font-size: 11px; margin-top: 4px;">BREAKING NEWS</div>' : ''}
           </div>
         `}
         onPointClick={(point: any) => setSelectedPin(point as StoryPin)}
@@ -306,14 +306,14 @@ export default function GlobeView({ onViewChange }: GlobeViewProps = {}) {
 
               {selectedPin.location?.city && (
                 <div className="inline-block px-3 py-1 bg-gray-200 text-gray-700 rounded-full text-xs font-semibold ml-2">
-                  📍 {selectedPin.location.city}, {selectedPin.location.country}
+                  {selectedPin.location.city}, {selectedPin.location.country}
                 </div>
               )}
 
               {/* Breaking badge */}
               {selectedPin.isBreaking && (
                 <div className="inline-block px-3 py-1 bg-red-500 text-white rounded-full text-xs font-bold ml-2">
-                  🔴 BREAKING
+                  BREAKING
                 </div>
               )}
             </div>
@@ -367,7 +367,7 @@ export default function GlobeView({ onViewChange }: GlobeViewProps = {}) {
       {/* Controls Info */}
       <div className="absolute bottom-6 left-6 bg-black bg-opacity-70 text-white p-4 rounded-lg">
         <h3 className="font-bold mb-2 flex items-center">
-          🌍 Interactive Globe
+          Interactive Globe
         </h3>
         <div className="text-sm space-y-1">
           <div>• <span className="font-semibold">Drag</span> to rotate the globe</div>
@@ -395,10 +395,10 @@ export default function GlobeView({ onViewChange }: GlobeViewProps = {}) {
           {/* Zoom Level Badge */}
           <div>
             <div className="inline-block px-2 py-1 bg-blue-500 bg-opacity-80 rounded text-xs font-bold uppercase">
-              {zoomLevel === 'global' && '🌍 Global View'}
-              {zoomLevel === 'regional' && '🗺️ Regional View'}
-              {zoomLevel === 'city' && '🏙️ City View'}
-              {zoomLevel === 'neighborhood' && '📍 Neighborhood View'}
+              {zoomLevel === 'global' && 'Global View'}
+              {zoomLevel === 'regional' && 'Regional View'}
+              {zoomLevel === 'city' && 'City View'}
+              {zoomLevel === 'neighborhood' && 'Neighborhood View'}
             </div>
           </div>
 
@@ -415,7 +415,7 @@ export default function GlobeView({ onViewChange }: GlobeViewProps = {}) {
           onClick={() => onViewChange('map')}
           className="absolute bottom-6 right-6 bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-full shadow-lg font-semibold z-10"
         >
-          🗺️ Switch to Map
+          Switch to Map
         </button>
       )}
 
@@ -425,7 +425,6 @@ export default function GlobeView({ onViewChange }: GlobeViewProps = {}) {
           onClick={() => setChatOpen(true)}
           className="fixed bottom-6 right-6 bg-gradient-to-r from-blue-500 to-blue-600 text-white px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-all font-semibold flex items-center gap-2"
         >
-          <span>💬</span>
           <span>Ask AI about this story</span>
         </button>
       )}

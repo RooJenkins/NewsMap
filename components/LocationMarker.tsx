@@ -81,11 +81,11 @@ export default function LocationMarker({
           <div className="text-sm">
             <div className="font-bold text-base mb-1">{name}</div>
             <div className="text-gray-600">
-              {type === 'country' ? '🌍 Country' : '🏙️ City'}
+              {type === 'country' ? 'Country' : 'City'}
             </div>
             <div className="mt-2 text-xs">
-              <div>📰 {storyCount} stories analyzed</div>
-              <div>⚠️ {issueCount} major issues</div>
+              <div>{storyCount} stories analyzed</div>
+              <div>{issueCount} major issues</div>
             </div>
             <div className="mt-2 text-xs text-blue-600 font-semibold">
               Click for detailed analysis →

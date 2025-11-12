@@ -571,7 +571,6 @@ export default function InteractiveTreemapView() {
           ) : (
             <div className="flex-1 flex items-center justify-center p-8 text-center">
               <div>
-                <div className="text-6xl mb-4">📰</div>
                 <h3 className="text-xl font-bold text-stone-900 mb-2">Hover over a story</h3>
                 <p className="text-stone-600">Details will appear here</p>
               </div>

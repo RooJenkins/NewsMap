@@ -39,42 +39,39 @@ export default function LocationSummaryPanel({ location, onClose }: LocationSumm
   }
 
   return (
-    <div className="fixed top-0 right-0 w-[600px] h-full bg-white shadow-2xl overflow-y-auto z-[10000] animate-slideIn">
+    <div className="fixed top-0 right-0 w-[600px] h-full bg-white shadow-2xl overflow-y-auto z-[10000] animate-slideIn border-l border-gray-300">
       {/* Header */}
-      <div className="sticky top-0 bg-gradient-to-r from-blue-600 to-indigo-700 text-white p-6 shadow-lg z-10">
+      <div className="sticky top-0 bg-white border-b-2 border-black p-6 z-10">
         <button
           onClick={onClose}
-          className="absolute top-6 right-6 hover:bg-white/20 rounded-full p-2 transition-colors"
+          className="absolute top-6 right-6 hover:bg-gray-100 rounded-sm p-2 transition-colors"
           aria-label="Close"
         >
-          <X size={24} />
+          <X size={20} className="text-black" />
         </button>
 
         <div className="pr-12">
-          <div className="flex items-center gap-2 mb-2">
-            <span className="text-2xl">
-              {location.type === 'country' ? '🌍' : '🏙️'}
-            </span>
-            <h2 className="text-3xl font-bold">{location.name}</h2>
-          </div>
-          <p className="text-blue-100 text-sm">
-            {location.type === 'country' ? 'Country Analysis' : `City in ${location.country}`}
+          <h2 className="font-headline text-4xl font-bold text-black mb-2 leading-tight">
+            {location.name}
+          </h2>
+          <p className="font-body text-sm text-gray-600 uppercase tracking-wide">
+            {location.type === 'country' ? 'Country Analysis' : `${location.country}`}
           </p>
         </div>
       </div>
 
       {/* Metadata */}
       <div className="bg-gray-50 border-b border-gray-200 px-6 py-4">
-        <div className="flex items-center justify-between text-sm">
-          <div className="flex items-center gap-4">
-            <span className="text-gray-600">
-              📊 <strong>{location.storyCount}</strong> stories analyzed
+        <div className="flex items-center justify-between text-xs font-body">
+          <div className="flex items-center gap-6 text-gray-700">
+            <span>
+              <strong className="font-semibold">{location.storyCount}</strong> stories
             </span>
-            <span className="text-gray-600">
-              ⚠️ <strong>{location.issues.length}</strong> major issues
+            <span>
+              <strong className="font-semibold">{location.issues.length}</strong> issues
             </span>
           </div>
-          <div className="text-gray-500 text-xs">
+          <div className="text-gray-500">
             Updated {timeAgo(location.updatedAt)}
           </div>
         </div>
@@ -82,31 +79,31 @@ export default function LocationSummaryPanel({ location, onClose }: LocationSumm
 
       {/* AI Summary */}
       <div className="p-6">
-        <div className="prose prose-sm max-w-none">
+        <div className="prose prose-sm max-w-none font-body">
           <ReactMarkdown
             components={{
               h1: ({ children }) => (
-                <h1 className="text-3xl font-bold mb-6 text-gray-900">{children}</h1>
+                <h1 className="font-headline text-3xl font-bold mb-6 text-black leading-tight">{children}</h1>
               ),
               h2: ({ children }) => (
-                <h2 className="text-2xl font-bold mt-8 mb-4 text-gray-800 border-b-2 border-blue-500 pb-2">
+                <h2 className="font-headline text-2xl font-bold mt-8 mb-4 text-black border-b border-gray-300 pb-2">
                   {children}
                 </h2>
               ),
               h3: ({ children }) => (
-                <h3 className="text-xl font-bold mt-6 mb-3 text-gray-800">{children}</h3>
+                <h3 className="font-headline text-xl font-semibold mt-6 mb-3 text-black">{children}</h3>
               ),
               p: ({ children }) => (
-                <p className="text-gray-700 leading-relaxed mb-4">{children}</p>
+                <p className="text-gray-800 leading-relaxed mb-4 text-base">{children}</p>
               ),
               ul: ({ children }) => (
-                <ul className="list-disc list-inside space-y-2 mb-4 text-gray-700">{children}</ul>
+                <ul className="list-disc list-inside space-y-2 mb-4 text-gray-800">{children}</ul>
               ),
               li: ({ children }) => (
                 <li className="leading-relaxed">{children}</li>
               ),
               strong: ({ children }) => (
-                <strong className="font-bold text-gray-900">{children}</strong>
+                <strong className="font-semibold text-black">{children}</strong>
               ),
             }}
           >
@@ -116,9 +113,9 @@ export default function LocationSummaryPanel({ location, onClose }: LocationSumm
 
         {/* Top Stories Section */}
         {location.topStories && location.topStories.length > 0 && (
-          <div className="mt-8 pt-8 border-t-2 border-gray-200">
-            <h3 className="text-xl font-bold mb-4 text-gray-800 flex items-center gap-2">
-              <span>📰</span> Latest {location.name} News
+          <div className="mt-8 pt-8 border-t border-gray-300">
+            <h3 className="font-headline text-xl font-bold mb-4 text-black">
+              Latest News
             </h3>
             <div className="space-y-3">
               {location.topStories.map((story, index) => (
@@ -127,21 +124,21 @@ export default function LocationSummaryPanel({ location, onClose }: LocationSumm
                   href={story.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block p-4 bg-gray-50 hover:bg-blue-50 rounded-lg border border-gray-200 hover:border-blue-300 transition-all group"
+                  className="block p-4 hover:bg-gray-50 border border-gray-200 hover:border-gray-400 transition-all group"
                 >
                   <div className="flex items-start justify-between gap-3">
                     <div className="flex-1">
-                      <h4 className="font-semibold text-gray-900 group-hover:text-blue-700 mb-1 leading-snug">
+                      <h4 className="font-body font-semibold text-black group-hover:text-gray-700 mb-1 leading-snug text-sm">
                         {story.title}
                       </h4>
-                      <div className="flex items-center gap-3 text-xs text-gray-500">
+                      <div className="flex items-center gap-3 text-xs text-gray-500 font-body">
                         <span className="font-medium">{story.source}</span>
                         <span>•</span>
                         <span>{new Date(story.pubDate).toLocaleDateString()}</span>
                       </div>
                     </div>
                     <svg
-                      className="w-5 h-5 text-gray-400 group-hover:text-blue-600 flex-shrink-0 mt-1"
+                      className="w-4 h-4 text-gray-400 group-hover:text-black flex-shrink-0 mt-1"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -161,13 +158,12 @@ export default function LocationSummaryPanel({ location, onClose }: LocationSumm
         )}
 
         {/* Footer */}
-        <div className="mt-8 p-4 bg-blue-50 border-l-4 border-blue-500 rounded text-sm text-gray-700">
-          <p className="font-semibold mb-1">About this analysis</p>
-          <p className="text-xs leading-relaxed">
-            This AI-generated summary analyzes {location.storyCount} recent news stories
-            about {location.name} to identify key issues, trends, and prospects. The analysis
-            is designed for business, investment, and policy professionals tracking
-            developments in this region.
+        <div className="mt-8 p-4 bg-gray-50 border-l-2 border-gray-400 text-xs text-gray-700 font-body">
+          <p className="font-semibold mb-1 text-black">About This Analysis</p>
+          <p className="leading-relaxed">
+            This analysis examines {location.storyCount} recent news stories
+            about {location.name} to identify key developments, trends, and implications.
+            Generated for policy, business, and research professionals.
           </p>
         </div>
       </div>
@@ -189,7 +185,7 @@ export default function LocationSummaryPanel({ location, onClose }: LocationSumm
         }
 
         .prose strong {
-          font-weight: 700;
+          font-weight: 600;
         }
       `}</style>
     </div>

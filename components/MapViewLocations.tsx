@@ -34,9 +34,10 @@ interface LocationSummary {
 
 interface MapViewLocationsProps {
   onViewChange?: (view: string) => void
+  onPanelStateChange?: (isOpen: boolean) => void
 }
 
-export default function MapViewLocations({ onViewChange }: MapViewLocationsProps) {
+export default function MapViewLocations({ onViewChange, onPanelStateChange }: MapViewLocationsProps) {
   const [locations, setLocations] = useState<LocationSummary[]>([])
   const [loading, setLoading] = useState(true)
   const [mapReady, setMapReady] = useState(false)
@@ -234,6 +235,13 @@ export default function MapViewLocations({ onViewChange }: MapViewLocationsProps
     }
   }
 
+  // Notify parent when panel state changes
+  useEffect(() => {
+    if (onPanelStateChange) {
+      onPanelStateChange(selectedLocation !== null)
+    }
+  }, [selectedLocation, onPanelStateChange])
+
   // Handle country click
   const onCountryClick = (feature: any) => {
     const countryName = feature?.properties?.ADMIN || feature?.properties?.NAME
@@ -347,40 +355,28 @@ export default function MapViewLocations({ onViewChange }: MapViewLocationsProps
       </MapContainer>
 
       {/* Stats Overlay */}
-      <div className="absolute top-6 left-6 bg-black bg-opacity-70 text-white p-4 rounded-lg max-w-xs z-10">
-        <div className="text-sm space-y-2">
-          <div>
-            <div className="font-bold mb-1">WORLD INTELLIGENCE MAP</div>
-            <div className="text-2xl font-bold">
-              {locations.length}
-              <span className="text-lg text-gray-400 ml-1">locations</span>
-            </div>
-            <div className="text-sm text-blue-400 mt-1">
-              🌍 {locations.filter(l => l.type === 'country').length} countries
-            </div>
-            <div className="text-sm text-green-400">
-              🏙️ {locations.filter(l => l.type === 'city').length} cities
-            </div>
+      <div className="absolute top-6 left-6 bg-white border border-gray-300 shadow-md p-5 max-w-xs z-10">
+        <h2 className="font-headline text-lg font-bold text-black mb-3 border-b border-gray-300 pb-2">
+          World Intelligence
+        </h2>
+        <div className="space-y-3 font-body text-sm">
+          <div className="flex justify-between items-center">
+            <span className="text-gray-700">Countries</span>
+            <span className="font-semibold text-black">{locations.filter(l => l.type === 'country').length}</span>
           </div>
-          <div>
-            <div className="inline-block px-2 py-1 bg-blue-500 bg-opacity-80 rounded text-xs font-bold">
-              🗺️ LOCATION-BASED ANALYSIS
-            </div>
+          <div className="flex justify-between items-center">
+            <span className="text-gray-700">Cities</span>
+            <span className="font-semibold text-black">{locations.filter(l => l.type === 'city').length}</span>
           </div>
-          <div className="text-xs space-y-1">
-            <div className="flex items-center gap-2">
-              <div className="w-6 h-3 bg-blue-500 border-2 border-blue-700 rounded"></div>
-              <span>Click country regions</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-5 h-5 rounded-full bg-green-500 border-2 border-green-900"></div>
-              <span>Click city markers</span>
-            </div>
+          <div className="flex justify-between items-center pt-2 border-t border-gray-200">
+            <span className="text-gray-700">Total Locations</span>
+            <span className="font-bold text-black">{locations.length}</span>
           </div>
-          <div className="text-xs text-yellow-400 font-semibold flex items-center gap-1 mt-3">
-            <span className="inline-block w-2 h-2 bg-yellow-400 rounded-full animate-pulse"></span>
-            Hover and click for AI analysis
-          </div>
+        </div>
+        <div className="mt-4 pt-3 border-t border-gray-300">
+          <p className="text-xs text-gray-600 leading-relaxed">
+            Click countries or cities for detailed analysis
+          </p>
         </div>
       </div>
 
@@ -395,7 +391,7 @@ export default function MapViewLocations({ onViewChange }: MapViewLocationsProps
       {/* Hover Tooltip */}
       {tooltipContent && tooltipPosition && (
         <div
-          className="absolute z-50 bg-black bg-opacity-90 text-white px-3 py-2 rounded-lg text-sm font-medium shadow-lg border border-gray-600 pointer-events-none"
+          className="absolute z-50 bg-white border border-gray-400 text-black px-3 py-2 text-xs font-body shadow-lg pointer-events-none"
           style={{
             left: `${tooltipPosition.x + 15}px`,
             top: `${tooltipPosition.y - 10}px`,

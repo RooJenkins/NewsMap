@@ -1,18 +1,22 @@
 'use client'
 
 import { useState, useRef, useEffect } from 'react'
-import { Send, MessageCircle, X, Loader2 } from 'lucide-react'
+import { X, Loader2, Minus } from 'lucide-react'
 
 interface Message {
   role: 'user' | 'assistant'
   content: string
 }
 
-export default function ChatBot() {
-  const [isOpen, setIsOpen] = useState(false)
+interface ChatBotProps {
+  panelOpen?: boolean
+}
+
+export default function ChatBot({ panelOpen = false }: ChatBotProps) {
   const [messages, setMessages] = useState<Message[]>([])
   const [input, setInput] = useState('')
   const [isLoading, setIsLoading] = useState(false)
+  const [isExpanded, setIsExpanded] = useState(false)
   const messagesEndRef = useRef<HTMLDivElement>(null)
   const inputRef = useRef<HTMLInputElement>(null)
 
@@ -25,10 +29,10 @@ export default function ChatBot() {
   }, [messages])
 
   useEffect(() => {
-    if (isOpen && inputRef.current) {
+    if (inputRef.current) {
       inputRef.current.focus()
     }
-  }, [isOpen])
+  }, [isExpanded])
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -39,9 +43,10 @@ export default function ChatBot() {
     setInput('')
     setMessages(prev => [...prev, { role: 'user', content: userMessage }])
     setIsLoading(true)
+    setIsExpanded(true)
 
     try {
-      console.log('🚀 Sending message to API:', userMessage)
+      console.log('Sending message to API:', userMessage)
 
       const response = await fetch('/api/chat', {
         method: 'POST',
@@ -54,122 +59,134 @@ export default function ChatBot() {
         }),
       })
 
-      console.log('📡 API response status:', response.status)
+      console.log('API response status:', response.status)
 
       if (!response.ok) {
         const errorData = await response.json()
-        console.error('❌ API error:', errorData)
+        console.error('API error:', errorData)
         throw new Error(errorData.error || 'Failed to get response')
       }
 
       const data = await response.json()
-      console.log('✅ Got response from API')
+      console.log('Got response from API')
 
       setMessages(prev => [...prev, { role: 'assistant', content: data.response }])
     } catch (error: any) {
-      console.error('💥 Chat error:', error)
+      console.error('Chat error:', error)
       setMessages(prev => [...prev, {
         role: 'assistant',
-        content: `I apologize, but I encountered an error: ${error.message}. Please check the console for details.`
+        content: `An error occurred: ${error.message}. Please try again.`
       }])
     } finally {
       setIsLoading(false)
     }
   }
 
-  if (!isOpen) {
-    return (
-      <button
-        onClick={() => setIsOpen(true)}
-        className="fixed bottom-6 right-6 z-50 bg-blue-600 hover:bg-blue-700 text-white rounded-full p-4 shadow-2xl transition-all duration-200 flex items-center gap-2 group"
-      >
-        <MessageCircle className="w-6 h-6" />
-        <span className="max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-300 whitespace-nowrap">
-          Ask Rory Stewart
-        </span>
-      </button>
-    )
+  const handleMinimize = () => {
+    setIsExpanded(false)
+  }
+
+  const handleClear = () => {
+    setMessages([])
+    setIsExpanded(false)
+    setInput('')
   }
 
   return (
-    <div className="fixed bottom-6 right-6 z-50 w-[450px] h-[600px] bg-gray-900 rounded-2xl shadow-2xl flex flex-col border border-gray-700">
-      {/* Header */}
-      <div className="flex items-center justify-between p-4 border-b border-gray-700 bg-gray-800 rounded-t-2xl">
-        <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center">
-            <MessageCircle className="w-5 h-5 text-white" />
+    <div
+      className={`fixed bottom-8 z-50 w-full px-4 transition-all duration-300 ${
+        panelOpen
+          ? 'left-0 right-[620px]'
+          : 'left-1/2 transform -translate-x-1/2 max-w-3xl'
+      }`}
+    >
+      {/* Expanded conversation view */}
+      {isExpanded && messages.length > 0 && (
+        <div className="mb-4 bg-white border border-gray-300 rounded-sm shadow-sm max-h-96 overflow-y-auto">
+          {/* Header */}
+          <div className="sticky top-0 bg-white border-b border-gray-300 px-4 py-3 flex items-center justify-between">
+            <h3 className="font-headline text-base font-semibold text-black">Analysis by Rory Stewart</h3>
+            <div className="flex items-center gap-2">
+              <button
+                onClick={handleMinimize}
+                className="text-gray-600 hover:text-black transition-colors"
+                aria-label="Minimize"
+              >
+                <Minus className="w-4 h-4" />
+              </button>
+              <button
+                onClick={handleClear}
+                className="text-gray-600 hover:text-black transition-colors"
+                aria-label="Clear conversation"
+              >
+                <X className="w-4 h-4" />
+              </button>
+            </div>
           </div>
-          <div>
-            <div className="font-bold text-white">Rory Stewart</div>
-            <div className="text-xs text-gray-400">The Rest is Politics</div>
+
+          {/* Messages */}
+          <div className="px-4 py-4 space-y-4">
+            {messages.map((message, index) => (
+              <div key={index} className={`${message.role === 'user' ? 'text-right' : 'text-left'}`}>
+                <div className={`inline-block max-w-[85%] ${
+                  message.role === 'user'
+                    ? 'bg-gray-100 text-black'
+                    : 'bg-white text-black border border-gray-200'
+                } px-4 py-3 rounded-sm`}>
+                  {message.role === 'assistant' && (
+                    <div className="text-xs font-semibold text-gray-600 mb-2 uppercase tracking-wide">Rory Stewart</div>
+                  )}
+                  <p className="text-sm font-body leading-relaxed whitespace-pre-wrap">
+                    {message.content}
+                  </p>
+                </div>
+              </div>
+            ))}
+
+            {isLoading && (
+              <div className="text-left">
+                <div className="inline-block bg-white border border-gray-200 px-4 py-3 rounded-sm">
+                  <div className="flex items-center gap-2">
+                    <Loader2 className="w-4 h-4 text-gray-600 animate-spin" />
+                    <span className="text-sm text-gray-600">Analyzing...</span>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            <div ref={messagesEndRef} />
           </div>
         </div>
-        <button
-          onClick={() => setIsOpen(false)}
-          className="text-gray-400 hover:text-white transition-colors"
-        >
-          <X className="w-5 h-5" />
-        </button>
-      </div>
+      )}
 
-      {/* Messages */}
-      <div className="flex-1 overflow-y-auto p-4 space-y-4">
-        {messages.length === 0 && (
-          <div className="text-center text-gray-400 mt-8">
-            <MessageCircle className="w-12 h-12 mx-auto mb-3 opacity-50" />
-            <p className="text-sm">Ask me anything about world politics,</p>
-            <p className="text-sm">current events, or geopolitics</p>
-          </div>
-        )}
-
-        {messages.map((message, index) => (
-          <div
-            key={index}
-            className={`flex ${message.role === 'user' ? 'justify-end' : 'justify-start'}`}
-          >
-            <div
-              className={`max-w-[85%] rounded-2xl px-4 py-3 ${
-                message.role === 'user'
-                  ? 'bg-blue-600 text-white'
-                  : 'bg-gray-800 text-gray-100 border border-gray-700'
-              }`}
+      {/* Input pill */}
+      <form onSubmit={handleSubmit} className="relative">
+        <input
+          ref={inputRef}
+          type="text"
+          value={input}
+          onChange={(e) => setInput(e.target.value)}
+          placeholder="Ask about world politics..."
+          disabled={isLoading}
+          className="w-full bg-white border-2 border-black text-black rounded-full px-6 py-3 pr-24 focus:outline-none focus:border-gray-600 disabled:opacity-50 disabled:cursor-not-allowed font-body text-sm shadow-lg transition-all"
+        />
+        <div className="absolute right-2 top-1/2 transform -translate-y-1/2 flex items-center gap-2">
+          {messages.length > 0 && (
+            <button
+              type="button"
+              onClick={handleClear}
+              className="text-gray-600 hover:text-black transition-colors px-2"
+              aria-label="Clear"
             >
-              <p className="text-sm whitespace-pre-wrap leading-relaxed">
-                {message.content}
-              </p>
-            </div>
-          </div>
-        ))}
-
-        {isLoading && (
-          <div className="flex justify-start">
-            <div className="bg-gray-800 border border-gray-700 rounded-2xl px-4 py-3">
-              <Loader2 className="w-5 h-5 text-blue-500 animate-spin" />
-            </div>
-          </div>
-        )}
-
-        <div ref={messagesEndRef} />
-      </div>
-
-      {/* Input */}
-      <form onSubmit={handleSubmit} className="p-4 border-t border-gray-700 bg-gray-800 rounded-b-2xl">
-        <div className="relative">
-          <input
-            ref={inputRef}
-            type="text"
-            value={input}
-            onChange={(e) => setInput(e.target.value)}
-            placeholder="Ask about world politics..."
-            disabled={isLoading}
-            className="w-full bg-gray-900 text-white rounded-full px-5 py-3 pr-12 focus:outline-none focus:ring-2 focus:ring-blue-500 border border-gray-700 disabled:opacity-50 disabled:cursor-not-allowed placeholder-gray-500"
-          />
+              <X className="w-4 h-4" />
+            </button>
+          )}
           <button
             type="submit"
             disabled={!input.trim() || isLoading}
-            className="absolute right-2 top-1/2 -translate-y-1/2 bg-blue-600 hover:bg-blue-700 disabled:bg-gray-700 disabled:cursor-not-allowed text-white rounded-full p-2 transition-colors"
+            className="bg-black hover:bg-gray-800 disabled:bg-gray-400 disabled:cursor-not-allowed text-white rounded-full px-4 py-1.5 text-xs font-semibold uppercase tracking-wide transition-all"
           >
-            <Send className="w-4 h-4" />
+            Ask
           </button>
         </div>
       </form>
