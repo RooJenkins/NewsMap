@@ -2,9 +2,11 @@
 
 import { useState } from 'react'
 import dynamic from 'next/dynamic'
+import Link from 'next/link'
 import NewsHeatmap from '@/components/NewsHeatmap'
 import TreemapView from '@/components/TreemapView'
 import InteractiveTreemapView from '@/components/InteractiveTreemapView'
+import ChatBot from '@/components/ChatBot'
 import { ViewType } from '@/types'
 
 // Dynamically import GlobeView with no SSR (client-side only for Three.js)
@@ -109,6 +111,11 @@ export default function Home() {
               >
                 3D Globe
               </button>
+              <Link href="/world-news">
+                <button className="px-2 py-1 rounded text-[9px] font-semibold transition-all bg-gradient-to-r from-indigo-600 to-indigo-700 text-white hover:from-indigo-700 hover:to-indigo-800 shadow">
+                  🌍 World Map
+                </button>
+              </Link>
             </div>
 
             {/* Normalization Toggle */}
@@ -310,6 +317,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <ChatBot />
     </main>
   )
 }

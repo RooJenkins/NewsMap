@@ -1,6 +1,7 @@
 'use client'
 
 import dynamic from 'next/dynamic'
+import ChatBot from '@/components/ChatBot'
 
 // Dynamically import location-based map view to avoid SSR issues
 const MapViewLocations = dynamic(() => import('@/components/MapViewLocations'), {
@@ -16,6 +17,7 @@ export default function WorldNewsPage() {
   return (
     <div className="w-full h-screen">
       <MapViewLocations />
+      <ChatBot />
     </div>
   )
 }
