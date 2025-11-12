@@ -119,14 +119,29 @@ export async function POST(request: NextRequest) {
       )
     }
 
-    // Build messages array with conversation history
-    const messages: Anthropic.MessageParam[] = [
-      ...conversationHistory,
-      {
-        role: 'user',
-        content: message,
-      },
-    ]
+    console.log('📨 Received message:', message)
+    console.log('📚 Conversation history length:', conversationHistory.length)
+
+    // Build messages array - convert simple history format to Claude format
+    const messages: Anthropic.MessageParam[] = []
+
+    // Add conversation history (only simple text messages)
+    for (const msg of conversationHistory) {
+      if (msg.role && msg.content && typeof msg.content === 'string') {
+        messages.push({
+          role: msg.role as 'user' | 'assistant',
+          content: msg.content,
+        })
+      }
+    }
+
+    // Add current user message
+    messages.push({
+      role: 'user',
+      content: message,
+    })
+
+    console.log('🤖 Calling Claude API...')
 
     // First Claude API call
     let response = await anthropic.messages.create({
@@ -136,6 +151,8 @@ export async function POST(request: NextRequest) {
       tools: tools,
       messages: messages,
     })
+
+    console.log('✅ Got Claude response, stop_reason:', response.stop_reason)
 
     // Handle tool use loop
     while (response.stop_reason === 'tool_use') {
@@ -151,6 +168,7 @@ export async function POST(request: NextRequest) {
         const query = (toolUse.input as { query: string }).query
         console.log('🔍 Searching news for:', query)
         toolResult = await searchPerplexity(query)
+        console.log('📰 Got search results:', toolResult.slice(0, 100) + '...')
       }
 
       // Add assistant's response and tool result to messages
@@ -170,6 +188,8 @@ export async function POST(request: NextRequest) {
         ],
       })
 
+      console.log('🔄 Continuing conversation with tool result...')
+
       // Continue conversation with tool result
       response = await anthropic.messages.create({
         model: 'claude-3-5-sonnet-20241022',
@@ -178,6 +198,8 @@ export async function POST(request: NextRequest) {
         tools: tools,
         messages: messages,
       })
+
+      console.log('✅ Got follow-up response, stop_reason:', response.stop_reason)
     }
 
     // Extract the final text response
@@ -185,14 +207,25 @@ export async function POST(request: NextRequest) {
       (block): block is Anthropic.TextBlock => block.type === 'text'
     )
 
+    const responseText = textContent?.text || 'I apologize, I had trouble formulating a response.'
+    console.log('💬 Sending response:', responseText.slice(0, 100) + '...')
+
+    // Build simple conversation history for frontend (text only)
+    const simpleHistory = conversationHistory.concat([
+      { role: 'user', content: message },
+      { role: 'assistant', content: responseText }
+    ])
+
     return NextResponse.json({
-      response: textContent?.text || 'I apologize, I had trouble formulating a response.',
-      conversationHistory: messages,
+      response: responseText,
+      conversationHistory: simpleHistory,
     })
-  } catch (error) {
-    console.error('Chat API error:', error)
+  } catch (error: any) {
+    console.error('❌ Chat API error:', error)
+    console.error('Error details:', error.message)
+    console.error('Error stack:', error.stack)
     return NextResponse.json(
-      { error: 'Failed to process chat message' },
+      { error: `Failed to process chat message: ${error.message}` },
       { status: 500 }
     )
   }

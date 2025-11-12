@@ -41,6 +41,8 @@ export default function ChatBot() {
     setIsLoading(true)
 
     try {
+      console.log('🚀 Sending message to API:', userMessage)
+
       const response = await fetch('/api/chat', {
         method: 'POST',
         headers: {
@@ -48,24 +50,27 @@ export default function ChatBot() {
         },
         body: JSON.stringify({
           message: userMessage,
-          conversationHistory: messages.map(msg => ({
-            role: msg.role,
-            content: msg.content
-          }))
+          conversationHistory: messages
         }),
       })
 
+      console.log('📡 API response status:', response.status)
+
       if (!response.ok) {
-        throw new Error('Failed to get response')
+        const errorData = await response.json()
+        console.error('❌ API error:', errorData)
+        throw new Error(errorData.error || 'Failed to get response')
       }
 
       const data = await response.json()
+      console.log('✅ Got response from API')
+
       setMessages(prev => [...prev, { role: 'assistant', content: data.response }])
-    } catch (error) {
-      console.error('Chat error:', error)
+    } catch (error: any) {
+      console.error('💥 Chat error:', error)
       setMessages(prev => [...prev, {
         role: 'assistant',
-        content: 'I apologize, but I encountered an error. Please try again.'
+        content: `I apologize, but I encountered an error: ${error.message}. Please check the console for details.`
       }])
     } finally {
       setIsLoading(false)
