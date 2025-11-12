@@ -94,9 +94,12 @@ export default function ChatBot({ panelOpen = false }: ChatBotProps) {
 
   return (
     <div
-      className={`fixed bottom-8 left-1/2 transform -translate-x-1/2 z-50 w-full px-4 transition-all duration-300 ${
-        panelOpen ? 'max-w-[calc(100vw-660px)]' : 'max-w-3xl'
+      className={`fixed bottom-8 z-50 w-full px-4 transition-all duration-300 ${
+        panelOpen
+          ? 'left-0 right-[600px]'
+          : 'left-1/2 transform -translate-x-1/2 max-w-3xl'
       }`}
+      style={panelOpen ? { maxWidth: 'calc(100vw - 600px)' } : undefined}
     >
       {/* Expanded conversation view */}
       {isExpanded && messages.length > 0 && (
