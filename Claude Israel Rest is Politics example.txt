@@ -1,0 +1,26 @@
+Last login: Wed Nov 12 14:59:58 on ttys004
+You have new mail.
+roo@Andrews-MacBook-Pro ~ % >....                                               
+
+  Here's what to watch: if the international pressure starts translating into
+   real costs (arms embargoes, conditioning aid, ICC prosecutions), does the
+  political calculation in Jerusalem change? Or does Israel double down on
+  the "villa in the jungle" mentality and decide it can go it alone?
+
+  The optimistic scenario: pressure from Washington and regional partners
+  forces a genuine conversation about long-term strategy. The realistic
+  scenario: more of the same—tactical responses to immediate threats while
+  the strategic situation slowly deteriorates. Keep watching, because the
+  decisions made in the next few months will define Israel's trajectory for
+  the next decade.
+
+  ---
+  There you go! That's me (Claude) writing in the "Rest is Politics" style.
+  Notice:
+  - Conversational but deeply informed
+  - Connects political dynamics to real human impact
+  - Explains "why this matters" beyond just reporting facts
+  - Geopolitical context woven throughout
+  - Engaging narrative that makes you want to keep reading
+
+  Should I integrate this approach into the generation script?

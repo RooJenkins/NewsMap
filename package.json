@@ -6,13 +6,38 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "fetch-news": "tsx scripts/fetch-news.ts",
+    "fetch-google-news": "tsx scripts/fetch-news-google-inspired.ts",
+    "improve-db": "tsx scripts/improve-database.ts",
+    "generate-summaries": "tsx scripts/generate-summaries.ts",
+    "generate-location-summaries": "tsx scripts/generate-location-summaries.ts",
+    "generate-location-summaries-openai": "tsx scripts/generate-location-summaries-openai.ts",
+    "generate-comprehensive": "tsx scripts/generate-location-summaries-comprehensive.ts",
+    "generate-specific-countries": "tsx scripts/generate-specific-countries.ts",
+    "generate-four-countries": "tsx scripts/generate-four-countries.ts"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.68.0",
+    "@prisma/client": "^6.19.0",
+    "@react-three/drei": "^9.114.3",
+    "@react-three/fiber": "^8.17.10",
+    "@types/leaflet": "^1.9.21",
+    "dotenv": "^17.2.3",
+    "leaflet": "^1.9.4",
+    "leaflet.markercluster": "^1.5.3",
+    "lucide-react": "^0.553.0",
     "next": "^14.0.0",
+    "openai": "^6.8.1",
+    "prisma": "^6.19.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "recharts": "^3.4.1"
+    "react-globe.gl": "^2.37.0",
+    "react-leaflet": "^4.2.1",
+    "react-leaflet-cluster": "^3.1.1",
+    "react-markdown": "^10.1.0",
+    "recharts": "^3.4.1",
+    "three": "^0.169.0"
   },
   "devDependencies": {
     "@types/node": "^20.0.0",
@@ -23,6 +48,7 @@
     "eslint-config-next": "^14.0.0",
     "postcss": "^8.4.0",
     "tailwindcss": "^3.4.0",
+    "tsx": "^4.20.6",
     "typescript": "^5.0.0"
   }
 }

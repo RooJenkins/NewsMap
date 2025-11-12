@@ -1,0 +1,64 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Story {
+  id          String   @id @default(cuid())
+  title       String
+  link        String   @unique
+  description String?
+  source      String
+  pubDate     DateTime
+  createdAt   DateTime @default(now())
+
+  // Location data
+  lat         Float
+  lng         Float
+  city        String?
+  country     String?
+  region      String?
+
+  // Metadata
+  importance    Float    @default(0.5)
+  isBreaking    Boolean  @default(false)
+  category      String?
+  aiSummary     String?
+  sourceQuality String   @default("medium") // major, medium, local
+
+  @@index([lat, lng])
+  @@index([pubDate])
+  @@index([importance])
+  @@index([sourceQuality])
+}
+
+model LocationSummary {
+  id            String   @id @default(cuid())
+  name          String   // e.g. "Tokyo", "Japan", "United States"
+  type          String   // "country" or "city"
+  country       String   // Country code or name
+  lat           Float
+  lng           Float
+
+  // AI-generated summary
+  summary       String   // Full AI-generated summary
+  issues        String   // JSON array of major issues
+  topStories    String   // JSON array of top 10 news stories with links
+
+  // Metadata
+  updatedAt     DateTime @default(now())
+  createdAt     DateTime @default(now())
+  storyCount    Int      @default(0) // Number of stories used to generate summary
+
+  @@unique([name, type])
+  @@index([type])
+  @@index([country])
+  @@index([updatedAt])
+}

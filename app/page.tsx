@@ -1,10 +1,21 @@
 'use client'
 
 import { useState } from 'react'
+import dynamic from 'next/dynamic'
 import NewsHeatmap from '@/components/NewsHeatmap'
 import TreemapView from '@/components/TreemapView'
 import InteractiveTreemapView from '@/components/InteractiveTreemapView'
 import { ViewType } from '@/types'
+
+// Dynamically import GlobeView with no SSR (client-side only for Three.js)
+const GlobeView = dynamic(() => import('@/components/GlobeView'), {
+  ssr: false,
+  loading: () => (
+    <div className="flex items-center justify-center h-screen bg-black">
+      <div className="text-white text-xl">Loading 3D Globe...</div>
+    </div>
+  ),
+})
 
 export default function Home() {
   const [viewType, setViewType] = useState<ViewType>('frequency')
@@ -88,6 +99,16 @@ export default function Home() {
               >
                 Interactive Map
               </button>
+              <button
+                onClick={() => setViewType('globe')}
+                className={`px-2 py-1 rounded text-[9px] font-semibold transition-all ${
+                  viewType === 'globe'
+                    ? 'bg-gradient-to-r from-blue-600 to-blue-700 text-white shadow'
+                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                }`}
+              >
+                3D Globe
+              </button>
             </div>
 
             {/* Normalization Toggle */}
@@ -143,11 +164,18 @@ export default function Home() {
                 <span className="font-bold text-emerald-600">Interactive Map:</span> Box size = articles today, Color = change vs yesterday (Green = increase, Red = decrease). Hover for outlet breakdown.
               </p>
             )}
+            {viewType === 'globe' && (
+              <p className="text-[10px] text-gray-700">
+                <span className="font-bold text-blue-600">3D Globe:</span> Rotate and zoom the globe to explore news stories worldwide. Pins scale with story importance. Zoom in for local news, zoom out for global headlines.
+              </p>
+            )}
           </div>
         </div>
 
         {/* Visualization */}
-        {viewType === 'interactive-map' ? (
+        {viewType === 'globe' ? (
+          <GlobeView />
+        ) : viewType === 'interactive-map' ? (
           <InteractiveTreemapView />
         ) : viewType === 'treemap' ? (
           <TreemapView normalized={normalized} />
@@ -260,6 +288,22 @@ export default function Home() {
                 <div className="flex items-center gap-1">
                   <div className="w-6 h-3 bg-red-600 rounded"></div>
                   <span className="text-[8px]">Down</span>
+                </div>
+              </div>
+            )}
+            {viewType === 'globe' && (
+              <div className="flex items-center gap-2">
+                <div className="flex items-center gap-1">
+                  <span className="text-[8px] font-semibold">Pin Size:</span>
+                  <span className="text-[8px]">Story Importance</span>
+                </div>
+                <div className="flex items-center gap-1">
+                  <div className="w-3 h-3 rounded-full bg-amber-500"></div>
+                  <span className="text-[8px]">Regular</span>
+                </div>
+                <div className="flex items-center gap-1">
+                  <div className="w-3 h-3 rounded-full bg-red-500"></div>
+                  <span className="text-[8px]">Breaking</span>
                 </div>
               </div>
             )}

@@ -1,4 +1,4 @@
-export type ViewType = 'frequency' | 'sentiment' | 'political' | 'truth-spectrum' | 'treemap' | 'interactive-map'
+export type ViewType = 'frequency' | 'sentiment' | 'political' | 'truth-spectrum' | 'treemap' | 'interactive-map' | 'globe'
 
 export interface NewsOutlet {
   id: string
@@ -14,6 +14,12 @@ export interface Topic {
   category: string
   isSubTopic?: boolean
   parentId?: string
+  location?: {
+    city?: string
+    country: string
+    lat: number
+    lng: number
+  }
 }
 
 export interface TopicArticleData {
@@ -22,12 +28,22 @@ export interface TopicArticleData {
   yesterdayCount: number
   changePercent: number
   isBreaking?: boolean
+  summary?: string
   outletBreakdown: {
     outletId: string
     count: number
     sentiment: number
     bias: number
   }[]
+  articles?: {
+    title: string
+    url: string
+    source: string
+    publishedAt: string
+    description?: string
+    imageUrl?: string
+  }[]
+  heroImageUrl?: string
 }
 
 export interface FrequencyData {
