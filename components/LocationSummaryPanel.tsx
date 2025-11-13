@@ -2,6 +2,7 @@
 
 import { X } from 'lucide-react'
 import ReactMarkdown from 'react-markdown'
+import { getCountryStats } from '@/lib/countryData'
 
 interface LocationSummary {
   id: string
@@ -38,16 +39,19 @@ export default function LocationSummaryPanel({ location, onClose }: LocationSumm
     return `${diffDays} day${diffDays > 1 ? 's' : ''} ago`
   }
 
+  // Get country stats
+  const countryStats = getCountryStats(location.name)
+
   return (
-    <div className="fixed top-0 right-0 w-[600px] h-full shadow-2xl overflow-y-auto z-[10000] animate-slideIn border-l-4 border-white/20 backdrop-blur-xl bg-white/80">
+    <div className="fixed top-0 right-0 w-[800px] h-full shadow-2xl overflow-y-auto z-[10000] animate-slideIn border-l-4 border-white/20 backdrop-blur-xl bg-white/80">
       {/* Header with clean FT styling */}
       <div className="bg-ft-oxford/95 backdrop-blur-sm border-b-2 border-ft-claret/50 p-6 relative">
         <button
           onClick={onClose}
-          className="absolute top-6 right-6 p-2 bg-white/10 hover:bg-white/20 rounded-full transition-all z-10"
+          className="absolute top-6 right-6 p-3 bg-white/90 hover:bg-white border-2 border-ft-oxford hover:border-ft-claret rounded-full transition-all z-10 shadow-lg"
           aria-label="Close"
         >
-          <X size={18} className="text-ft-black" />
+          <X size={20} className="text-ft-oxford" />
         </button>
 
         <div className="pr-14 relative z-0">
@@ -61,49 +65,74 @@ export default function LocationSummaryPanel({ location, onClose }: LocationSumm
       </div>
 
       {/* Metadata bar with clean spacing */}
-      <div className="bg-white/60 backdrop-blur-sm border-b-2 border-ft-wheat/30 px-6 py-3">
-        <div className="flex items-center justify-between text-xs font-body">
-          <div className="flex items-center gap-3">
-            <span className="px-3 py-1 bg-white/80 backdrop-blur-sm border border-ft-oxford text-ft-oxford font-semibold rounded-full">
-              {location.storyCount} stories
+      <div className="bg-white/60 backdrop-blur-sm border-b-2 border-ft-wheat/30 px-6 py-4">
+        <div className="flex flex-col gap-1.5">
+          {/* Row 1: Leader, Party, Government, Population */}
+          <div className="flex items-center gap-1 flex-wrap">
+            <span className="px-2 py-0.5 bg-white/80 backdrop-blur-sm border border-ft-oxford text-ft-oxford font-bold rounded-full text-[10px] whitespace-nowrap">
+              {countryStats.leader.split(' ').slice(-1)[0]} ({countryStats.leaderTitle})
             </span>
-            <span className="px-3 py-1 bg-white/80 backdrop-blur-sm border border-ft-claret text-ft-claret font-semibold rounded-full">
-              {location.issues.length} issues
+            <span className="px-2 py-0.5 bg-white/80 backdrop-blur-sm border border-ft-slate text-ft-slate font-semibold rounded-full text-[10px] whitespace-nowrap">
+              {countryStats.rulingParty}
+            </span>
+            <span className="px-2 py-0.5 bg-white/80 backdrop-blur-sm border border-ft-oxford text-ft-oxford font-semibold rounded-full text-[10px] whitespace-nowrap">
+              {countryStats.government}
+            </span>
+            <span className="px-2 py-0.5 bg-white/80 backdrop-blur-sm border border-ft-claret text-ft-claret font-semibold rounded-full text-[10px] whitespace-nowrap">
+              Pop: {countryStats.population}
             </span>
           </div>
-          <span className="px-3 py-1 bg-white/80 backdrop-blur-sm text-ft-slate font-medium rounded-full">
+
+          {/* Row 2: GDP, GDP/cap, Capital, Export */}
+          <div className="flex items-center gap-1 text-[10px] font-body flex-wrap">
+            <span className="px-2 py-0.5 bg-white/80 backdrop-blur-sm border border-ft-teal text-ft-teal font-semibold rounded-full whitespace-nowrap">
+              GDP: {countryStats.gdp}
+            </span>
+            <span className="px-2 py-0.5 bg-white/80 backdrop-blur-sm border border-ft-mandarin text-ft-mandarin font-semibold rounded-full whitespace-nowrap">
+              GDP/cap: {countryStats.gdpPerCapita}
+            </span>
+            <span className="px-2 py-0.5 bg-white/80 backdrop-blur-sm border border-ft-slate/60 text-ft-slate font-semibold rounded-full whitespace-nowrap">
+              {countryStats.capital}
+            </span>
+            <span className="px-2 py-0.5 bg-white/80 backdrop-blur-sm border border-ft-slate/60 text-ft-slate font-semibold rounded-full whitespace-nowrap">
+              {countryStats.primaryExport}
+            </span>
+          </div>
+
+          {/* Updated timestamp below */}
+          <div className="text-[9px] text-ft-slate/60 font-medium mt-1">
             Updated {timeAgo(location.updatedAt)}
-          </span>
+          </div>
         </div>
       </div>
 
       {/* AI Summary with FT styling */}
-      <div className="p-6 bg-white/40 backdrop-blur-sm">
-        <div className="prose prose-sm max-w-none font-body">
+      <div className="p-8 bg-white/40 backdrop-blur-sm">
+        <div className="prose prose-base max-w-none font-body">
           <ReactMarkdown
             components={{
               h1: ({ children }) => (
-                <h1 className="font-headline text-2xl font-bold mb-4 text-ft-oxford leading-tight">{children}</h1>
+                <h1 className="font-headline text-3xl font-bold mb-6 text-ft-oxford leading-tight border-b-2 border-ft-teal pb-2">{children}</h1>
               ),
               h2: ({ children }) => (
-                <h2 className="font-headline text-xl font-bold mt-6 mb-3 text-ft-oxford border-l-4 border-ft-claret pl-3">
+                <h2 className="font-headline text-2xl font-bold mt-8 mb-4 text-ft-oxford border-l-4 border-blue-500 pl-4 bg-blue-50/50 py-2 rounded-r">
                   {children}
                 </h2>
               ),
               h3: ({ children }) => (
-                <h3 className="font-headline text-lg font-semibold mt-4 mb-2 text-ft-black">{children}</h3>
+                <h3 className="font-headline text-xl font-semibold mt-6 mb-3 text-blue-600 border-b border-blue-200 pb-1">{children}</h3>
               ),
               p: ({ children }) => (
-                <p className="text-ft-slate leading-relaxed mb-3 text-sm">{children}</p>
+                <p className="text-ft-slate leading-loose mb-5 text-base">{children}</p>
               ),
               ul: ({ children }) => (
-                <ul className="list-disc list-inside space-y-1 mb-3 text-ft-slate">{children}</ul>
+                <ul className="list-disc list-inside space-y-2 mb-5 text-ft-slate marker:text-blue-500">{children}</ul>
               ),
               li: ({ children }) => (
-                <li className="leading-relaxed text-sm">{children}</li>
+                <li className="leading-loose text-base marker:text-blue-500">{children}</li>
               ),
               strong: ({ children }) => (
-                <strong className="font-semibold text-ft-oxford">{children}</strong>
+                <strong className="font-bold text-blue-600">{children}</strong>
               ),
             }}
           >

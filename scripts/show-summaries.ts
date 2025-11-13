@@ -1,30 +1,43 @@
-import 'dotenv/config'
 import { PrismaClient } from '@prisma/client'
 
 const prisma = new PrismaClient()
 
 async function showSummaries() {
-  const summaries = await prisma.locationSummary.findMany({
+  const suriname = await prisma.locationSummary.findUnique({
     where: {
-      type: 'country'
-    },
-    orderBy: {
-      updatedAt: 'desc'
-    },
-    take: 3
+      name_type_category: {
+        name: 'Suriname',
+        type: 'country',
+        category: 'all'
+      }
+    }
   })
 
-  console.log(`\n📊 Found ${summaries.length} country summaries\n`)
-  console.log('=' .repeat(80))
+  const trinidad = await prisma.locationSummary.findUnique({
+    where: {
+      name_type_category: {
+        name: 'Trinidad and Tobago',
+        type: 'country',
+        category: 'all'
+      }
+    }
+  })
 
-  for (const summary of summaries) {
-    console.log(`\n🌍 ${summary.name} (${summary.storyCount} stories analyzed)`)
-    console.log('-'.repeat(80))
-    console.log(summary.summary)
-    console.log('\n' + '='.repeat(80))
+  console.log('\n' + '='.repeat(80))
+  console.log('SURINAME SUMMARY')
+  console.log('='.repeat(80))
+  if (suriname) {
+    console.log(suriname.summary.substring(0, 500) + '...\n')
   }
+
+  console.log('\n' + '='.repeat(80))
+  console.log('TRINIDAD AND TOBAGO SUMMARY')
+  console.log('='.repeat(80))
+  if (trinidad) {
+    console.log(trinidad.summary.substring(0, 500) + '...\n')
+  }
+
+  await prisma.$disconnect()
 }
 
 showSummaries()
-  .catch(console.error)
-  .finally(() => prisma.$disconnect())
