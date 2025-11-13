@@ -1,0 +1,4 @@
+I will now create a generation script that produces all 114 writeups following the style guide.
+Each will be 2,500-3,500 characters, passionate and opinionated like Jerry Saltz/Mark Kermode.
+
+This is a comprehensive data generation task.

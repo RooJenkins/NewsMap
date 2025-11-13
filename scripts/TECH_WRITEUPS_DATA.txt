@@ -1,0 +1,129 @@
+This file will be used to systematically generate all 126 technology writeups.
+Structure: Country name | Key tech themes | Issues focus
+
+Afghanistan | Taliban digital repression, VPN usage, crypto adoption | Tech sector destroyed, talent fled, censorship
+Albania | E-gov success, EU accession, outsourcing hub | Small market, brain drain, limited VC
+Algeria | Trapped talent, FX controls, diaspora funding | State control, brain drain, outdated infrastructure  
+Angola | Mobile money, fintech growth, Chinese tech | Limited infrastructure, electricity issues
+Argentina | Fintech boom, MercadoLibre, remote work | Economic instability, talent retention
+Australia | Tech hubs Sydney/Melbourne, AI adoption | Housing costs, China tech tensions
+Austria | Deeptech, privacy focus, EU digital leader | Small domestic market, talent competition
+Bahrain | Fintech hub, AWS region, 5G leader | Small market, regional competition
+Bangladesh | Mobile fintech bKash, garment tech, outsourcing | Infrastructure gaps, digital divide
+Belarus | IT Park success despite sanctions, game dev | Brain drain due to 2020 protests
+Belgium | EU tech policy center, cybersecurity | Fragmented market, language barriers
+Benin | Mobile money growth, Nigerian tech spillover | Infrastructure poverty, limited electricity
+Bolivia | Limited connectivity, lithium tech potential | Political instability, infrastructure gaps
+Bosnia-Herzegovina | Fragmented governance, diaspora tech ties | Political paralysis, brain drain
+Botswana | Gov digital services, diamond blockchain | Small market, infrastructure outside cities
+Brazil | Tech giant ecosystem, fintech, payments | Inequality, bureaucracy, infrastructure
+Bulgaria | Outsourcing hub, Sofia tech scene | Corruption, brain drain to Western Europe
+Burkina Faso | Mobile money, security threats to infrastructure | Jihadist attacks, extreme poverty
+Cambodia | Mobile-first, Chinese tech influence | Authoritarianism, surveillance concerns
+Cameroon | Bilingual tech talent, mobile money | Infrastructure, Anglophone crisis impact
+Canada | AI research leader, Toronto/Montreal hubs | Brain drain to US, housing costs
+Chile | Santiago tech hub, fintech innovation | Social unrest impact, geographic isolation
+China | Tech superpower, AI/5G leader, surveillance state | US tensions, zero-COVID damage, demographic crisis
+Colombia | Bogota unicorns, fintech, remote work | Security concerns, infrastructure gaps
+Costa Rica | Intel legacy, call centers, eco-tech | Small market, brain drain to US
+Croatia | EU digital nomad hub, game dev | Small market, wage competition
+Cuba | Severe internet restrictions, black market tech | US sanctions, authoritarian control
+Cyprus | Crypto hub, Russian tech diaspora | Regulatory uncertainty, small market
+Czech Republic | Prague tech scene, robotics, cybersecurity | Brain drain to Germany, aging workforce
+DRC | Cobalt/minerals for tech, mobile money | Conflict zones, extreme infrastructure poverty
+Denmark | Nordic digital leader, fintech, cleantech | High costs, small domestic market
+Dominican Republic | Nearshore outsourcing, remittance tech | Infrastructure inequality, electricity issues
+Ecuador | Dollarization limits fintech, startups emerging | Political instability, migration
+Egypt | Cairo tech scene, fintech growth, government digitization | Authoritarianism, infrastructure, currency crisis
+El Salvador | Bitcoin experiment, remittances, tech authoritarianism | Bukele's power grab, Bitcoin failure
+Estonia | E-residency, digital gov model, cyber defense | Russian threat, small market
+Ethiopia | Telecom opening, Chinese tech, mobile money | Civil war damage, internet shutdowns
+Fiji | Tourism tech, limited ecosystem | Small market, climate vulnerability
+Finland | Nokia legacy, gaming giants, 5G leadership | Small market, cold climate challenges
+France | Station F, AI research, digital sovereignty push | Bureaucracy, startup relocation to US
+Georgia | Outsourcing hub, crypto mining, Russian  tech diaspora | Russian occupation threat, brain drain
+Germany | SAP/industrial tech, privacy-focused, bureaucratic | Slow digitization, paper-based systems
+Ghana | West African tech hub, mobile money, startup growth | Infrastructure gaps, electricity costs
+Greece | Athens startup revival, digital nomads | Brain drain, bureaucracy, crisis legacy
+Guatemala | Nearshore outsourcing, remittance tech | Violence, corruption, inequality
+Haiti | Diaspora remittance tech, severe infrastructure collapse | Gang violence, state failure
+Honduras | Limited ecosystem, nearshore potential | Violence, corruption, infrastructure
+Hungary | Budapest outsourcing hub, EU funding | Orban's authoritarianism, brain drain
+India | Tech superpower, Bangalore/Hyderabad giants, massive diaspora | Digital divide, infrastructure, authoritarian drift
+Indonesia | Jakarta unicorns, massive mobile market | Infrastructure inequality, digital divide
+Iran | Talented diaspora, domestic tech under sanctions | Isolation, censorship, brain drain
+Iraq | Oil wealth potential, Chinese tech, severe instability | Corruption, Iran influence, infrastructure destruction
+Ireland | European tech HQ hub, data centers | Tax haven criticism, housing crisis
+Israel | Startup Nation, cybersecurity leader, defense tech | Geopolitical isolation, judicial crisis
+Italy | Design/fashion tech, slow digitization | Bureaucracy, aging population, brain drain
+Japan | Robotics/gaming giant, aging society tech | Declining innovation, risk-aversion
+Jordan | Nearshore hub, Syrian refugee talent | Small market, water/energy scarcity
+Kazakhstan | Crypto mining, Astana Hub, Russian tech diaspora | Authoritarian control, Russian influence
+Kenya | M-Pesa pioneer, Nairobi Silicon Savannah | Infrastructure gaps, inequality
+Kuwait | Oil wealth, limited tech ecosystem | Rentier mentality, expat dependency
+Laos | Chinese tech influence, limited ecosystem | Authoritarian control, extreme poverty
+Latvia | Riga fintech, Russian tech diaspora | Small market, demographic decline
+Lebanon | Talented diaspora, economic collapse destroyed ecosystem | State failure, electricity crisis
+Libya | Oil wealth wasted, dual government chaos | Civil war, infrastructure destruction
+Lithuania | Vilnius fintech, remote work hub | Small market, Russia threat
+Luxembourg | Fintech hub, SES satellites, EU funding | Tiny market, high costs
+Malaysia | Penang semiconductors, Kuala Lumpur startups | Middle income trap, brain drain
+Mexico | Nearshore boom, fintech growth, cartel tech | Violence, corruption, inequality
+Moldova | Outsourcing, Russian tech diaspora | Poorest in Europe, energy blackmail
+Montenegro | Digital nomads, small ecosystem | Tiny market, organized crime
+Mongolia | Crypto mining, Chinese tech influence | Landlocked, infrastructure challenges
+Morocco | Casablanca tech hub, French ties, outsourcing | Authoritarianism, inequality
+Mozambique | Mobile money, gas wealth potential | Jihadist insurgency, extreme poverty
+Myanmar | Coup destroyed ecosystem, digital resistance | Military dictatorship, civil war
+Nepal | Remittance tech, Indian influence, earthquake reconstruction | Political instability, infrastructure
+Netherlands | Amsterdam tech hub, fintech, cleantech | High costs, housing crisis
+New Zealand | Wellington/Auckland scene, SaaS focus | Remote location, small market
+Nicaragua | Ortega authoritarianism destroying ecosystem | Dictatorship, repression, exodus
+Nigeria | Lagos tech giant, fintech/crypto, massive market | Infrastructure collapse, insecurity
+North Korea | Hermit kingdom, hacking operations | Total isolation, regime tech use
+Norway | Oil wealth sovereign fund investing, small ecosystem | High costs, oil dependency
+Oman | GCC digital transformation, modest ecosystem | Rentier economy, expat dependency
+Pakistan | Karachi/Lahore startups, diaspora ties | Political instability, energy crisis
+Palestine | Resilient tech scene despite occupation | Israeli restrictions, movement limits
+Panama | Regional hub, fintech, dollarization | Corruption, inequality
+Papua New Guinea | Extractive industry tech, severe infrastructure poverty | Extreme remoteness, tribal conflicts
+Paraguay | Low-cost nearshore potential, emerging scene | Political instability, landlocked
+Peru | Lima tech scene, fintech, mining tech | Political chaos, inequality
+Philippines | Manila BPO giant, mobile money, remittances | Infrastructure gaps, political instability
+Poland | Warsaw/Krakow hubs, gaming, fintech | Democratic backsliding under PiS (improving)
+Portugal | Lisbon digital nomad hub, Web Summit | Brain drain to  richer EU, startup exit challenges
+Qatar | Massive wealth, AI/smart city push | Tiny population, rentier economy
+Romania | Bucharest outsourcing giant, EU hub | Corruption, infrastructure outside cities
+Russia | Tech talent exodus, sanctions isolation | War pariah status, authoritarian control
+Rwanda | Kigali ambitions, government digitization | Authoritarian control, small market
+Saudi Arabia | NEOM/Vision 2030, massive investment | Authoritarian control, expat dependency
+Senegal | Dakar tech hub, French ties | Infrastructure, inequality, political tensions
+Serbia | Belgrade outsourcing, Russian ties | EU accession limbo, brain drain
+Singapore | Global fintech hub, AI leader, authoritarian efficiency | High costs, small market, speech limits
+Slovakia | Bratislava proximity to Vienna, automotive tech | Small market, populist government
+Slovenia | Small but sophisticated, EU funding | Tiny market, aging population
+Somalia | State collapse, mobile money (Zaad) success despite chaos | Terrorism, no government
+South Africa | Joburg/Cape Town hubs, inequality, infrastructure decay | Electricity crisis, crime, exodus
+South Korea | Samsung/gaming giant, 5G leader | Demographic crisis, chaebols dominance
+Spain | Barcelona/Madrid revival, digital nomads | Youth unemployment, bureaucracy
+Sri Lanka | Colombo BPO, economic collapse impact | Currency crisis, political chaos
+Sudan | Civil war destroying infrastructure | State collapse, violence
+Sweden | Stockholm unicorn factory, Spotify/Klarna | High costs, integration challenges
+Switzerland | Zurich/Crypto Valley, privacy tech | Extreme costs, small market
+Syria | Civil war destroyed everything | State collapse, Assad control
+Taiwan | TSMC semiconductor dominance, China threat | Geopolitical vulnerability, aging population
+Tanzania | Dar tech scene, mobile money | Infrastructure, authoritarianism
+Thailand | Bangkok regional hub, digital nomads | Military influence, inequality
+Tunisia | French ties, Arab Spring tech legacy | Economic crisis, authoritarianism return
+Turkey | Istanbul tech scene, economic crisis impact | Erdogan authoritarianism, currency collapse
+Uganda | Mobile money, Kampala startups | Museveni authoritarianism, infrastructure
+Ukraine | War refugee talent, wartime digital resilience | Ongoing invasion, destruction
+UAE | Dubai global hub, government-driven, Chinese tech ties | Authoritarian control, expat dependency
+UK | London fintech giant, post-Brexit challenges | Brexit damage, visa restrictions
+USA | Silicon Valley dominance, regulatory battles | Tech backlash, China decoupling
+Uruguay | Montevideo stability, regional hub potential | Small market, Argentina's shadow
+Uzbekistan | Tashkent Hub, reforms opening up | Authoritarian control, corruption legacy
+Venezuela | Crypto adoption amid collapse | Maduro dictatorship, hyperinflation
+Vietnam | Hanoi/HCMC manufacturing, China+1 beneficiary | Authoritarian control, infrastructure gaps
+Yemen | Civil war destroyed everything | State collapse, famine
+Zimbabwe | Hyperinflation drives crypto, Mugabe legacy | Economic collapse, authoritarianism
