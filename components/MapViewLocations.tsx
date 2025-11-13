@@ -37,7 +37,27 @@ interface MapViewLocationsProps {
   onPanelStateChange?: (isOpen: boolean) => void
 }
 
-type NewsCategory = 'all' | 'politics' | 'technology' | 'climate' | 'economy'
+type NewsCategory =
+  | 'all'
+  | 'politics'
+  | 'economy'
+  | 'technology'
+  | 'climate'
+  | 'culture'
+  | 'sports'
+  | 'travel'
+  | 'food'
+  | 'healthcare'
+  | 'education'
+  | 'crime'
+  | 'energy'
+  | 'entertainment'
+  | 'lifestyle'
+  | 'infrastructure'
+  | 'science'
+  | 'humanrights'
+  | 'military'
+  | 'realestate'
 
 export default function MapViewLocations({ onViewChange, onPanelStateChange }: MapViewLocationsProps) {
   const [locations, setLocations] = useState<LocationSummary[]>([])
@@ -391,16 +411,31 @@ export default function MapViewLocations({ onViewChange, onPanelStateChange }: M
   const categories: { id: NewsCategory; label: string }[] = [
     { id: 'all', label: 'All News' },
     { id: 'politics', label: 'Politics' },
+    { id: 'economy', label: 'Economy & Business' },
     { id: 'technology', label: 'Technology' },
-    { id: 'climate', label: 'Climate' },
-    { id: 'economy', label: 'Economy' },
+    { id: 'climate', label: 'Climate & Environment' },
+    { id: 'culture', label: 'Culture & Arts' },
+    { id: 'sports', label: 'Sports' },
+    { id: 'travel', label: 'Travel & Tourism' },
+    { id: 'food', label: 'Food & Cuisine' },
+    { id: 'healthcare', label: 'Healthcare' },
+    { id: 'education', label: 'Education' },
+    { id: 'crime', label: 'Crime & Justice' },
+    { id: 'energy', label: 'Energy' },
+    { id: 'entertainment', label: 'Entertainment' },
+    { id: 'lifestyle', label: 'Lifestyle' },
+    { id: 'infrastructure', label: 'Infrastructure' },
+    { id: 'science', label: 'Science & Research' },
+    { id: 'humanrights', label: 'Human Rights' },
+    { id: 'military', label: 'Military & Defense' },
+    { id: 'realestate', label: 'Real Estate & Housing' },
   ]
 
   return (
     <div className="relative w-full h-screen">
       {/* Category Filter Pills */}
       <div
-        className="absolute top-4 z-[1000] flex gap-2 transition-all duration-300"
+        className="absolute top-4 z-[1000] flex flex-wrap gap-2 transition-all duration-300 max-w-4xl justify-center"
         style={{
           left: selectedLocation ? 'calc(50% - 300px)' : '50%',
           transform: 'translateX(-50%)'
