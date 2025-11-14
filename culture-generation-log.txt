@@ -1,0 +1,1611 @@
+
+🎭 CULTURE & ARTS - WESLEY MORRIS VOICE
+Generating remaining countries...
+
+📊 Found 94 countries to generate
+
+
+[1/94] 🎨 Uruguay
+  ⏳ Generating with Claude...
+Error generating writeup for Uruguay: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[2/94] 🎨 Venezuela
+  ⏳ Generating with Claude...
+Error generating writeup for Venezuela: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[3/94] 🎨 Austria
+  ⏳ Generating with Claude...
+Error generating writeup for Austria: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[4/94] 🎨 Belgium
+  ⏳ Generating with Claude...
+Error generating writeup for Belgium: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[5/94] 🎨 Bulgaria
+  ⏳ Generating with Claude...
+Error generating writeup for Bulgaria: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[6/94] 🎨 Croatia
+  ⏳ Generating with Claude...
+Error generating writeup for Croatia: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[7/94] 🎨 Czech Republic
+  ⏳ Generating with Claude...
+Error generating writeup for Czech Republic: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[8/94] 🎨 Denmark
+  ⏳ Generating with Claude...
+Error generating writeup for Denmark: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[9/94] 🎨 Estonia
+  ⏳ Generating with Claude...
+Error generating writeup for Estonia: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[10/94] 🎨 Finland
+  ⏳ Generating with Claude...
+Error generating writeup for Finland: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[11/94] 🎨 France
+  ⏳ Generating with Claude...
+Error generating writeup for France: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[12/94] 🎨 Germany
+  ⏳ Generating with Claude...
+Error generating writeup for Germany: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[13/94] 🎨 Greece
+  ⏳ Generating with Claude...
+Error generating writeup for Greece: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[14/94] 🎨 Hungary
+  ⏳ Generating with Claude...
+Error generating writeup for Hungary: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[15/94] 🎨 Ireland
+  ⏳ Generating with Claude...
+Error generating writeup for Ireland: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[16/94] 🎨 Italy
+  ⏳ Generating with Claude...
+Error generating writeup for Italy: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[17/94] 🎨 Latvia
+  ⏳ Generating with Claude...
+Error generating writeup for Latvia: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[18/94] 🎨 Lithuania
+  ⏳ Generating with Claude...
+Error generating writeup for Lithuania: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[19/94] 🎨 Netherlands
+  ⏳ Generating with Claude...
+Error generating writeup for Netherlands: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[20/94] 🎨 Norway
+  ⏳ Generating with Claude...
+Error generating writeup for Norway: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[21/94] 🎨 Poland
+  ⏳ Generating with Claude...
+Error generating writeup for Poland: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[22/94] 🎨 Portugal
+  ⏳ Generating with Claude...
+Error generating writeup for Portugal: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[23/94] 🎨 Romania
+  ⏳ Generating with Claude...
+Error generating writeup for Romania: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[24/94] 🎨 Russia
+  ⏳ Generating with Claude...
+Error generating writeup for Russia: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[25/94] 🎨 Serbia
+  ⏳ Generating with Claude...
+Error generating writeup for Serbia: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[26/94] 🎨 Slovakia
+  ⏳ Generating with Claude...
+Error generating writeup for Slovakia: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[27/94] 🎨 Slovenia
+  ⏳ Generating with Claude...
+Error generating writeup for Slovenia: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[28/94] 🎨 Spain
+  ⏳ Generating with Claude...
+Error generating writeup for Spain: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[29/94] 🎨 Sweden
+  ⏳ Generating with Claude...
+Error generating writeup for Sweden: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[30/94] 🎨 Switzerland
+  ⏳ Generating with Claude...
+Error generating writeup for Switzerland: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[31/94] 🎨 Turkey
+  ⏳ Generating with Claude...
+Error generating writeup for Turkey: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[32/94] 🎨 Ukraine
+  ⏳ Generating with Claude...
+Error generating writeup for Ukraine: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[33/94] 🎨 United Kingdom
+  ⏳ Generating with Claude...
+Error generating writeup for United Kingdom: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[34/94] 🎨 Afghanistan
+  ⏳ Generating with Claude...
+Error generating writeup for Afghanistan: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[35/94] 🎨 Australia
+  ⏳ Generating with Claude...
+Error generating writeup for Australia: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[36/94] 🎨 Bahrain
+  ⏳ Generating with Claude...
+Error generating writeup for Bahrain: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[37/94] 🎨 Bangladesh
+  ⏳ Generating with Claude...
+Error generating writeup for Bangladesh: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[38/94] 🎨 Cambodia
+  ⏳ Generating with Claude...
+Error generating writeup for Cambodia: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[39/94] 🎨 China
+  ⏳ Generating with Claude...
+Error generating writeup for China: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[40/94] 🎨 Fiji
+  ⏳ Generating with Claude...
+Error generating writeup for Fiji: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[41/94] 🎨 India
+  ⏳ Generating with Claude...
+Error generating writeup for India: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[42/94] 🎨 Indonesia
+  ⏳ Generating with Claude...
+Error generating writeup for Indonesia: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[43/94] 🎨 Iran
+  ⏳ Generating with Claude...
+Error generating writeup for Iran: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[44/94] 🎨 Iraq
+  ⏳ Generating with Claude...
+Error generating writeup for Iraq: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[45/94] 🎨 Israel
+  ⏳ Generating with Claude...
+Error generating writeup for Israel: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[46/94] 🎨 Japan
+  ⏳ Generating with Claude...
+Error generating writeup for Japan: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[47/94] 🎨 Jordan
+  ⏳ Generating with Claude...
+Error generating writeup for Jordan: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[48/94] 🎨 Kazakhstan
+  ⏳ Generating with Claude...
+Error generating writeup for Kazakhstan: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[49/94] 🎨 Kenya
+  ⏳ Generating with Claude...
+Error generating writeup for Kenya: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[50/94] 🎨 Kuwait
+  ⏳ Generating with Claude...
+Error generating writeup for Kuwait: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[51/94] 🎨 Laos
+  ⏳ Generating with Claude...
+Error generating writeup for Laos: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[52/94] 🎨 Lebanon
+  ⏳ Generating with Claude...
+Error generating writeup for Lebanon: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[53/94] 🎨 Malaysia
+  ⏳ Generating with Claude...
+Error generating writeup for Malaysia: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[54/94] 🎨 Mongolia
+  ⏳ Generating with Claude...
+Error generating writeup for Mongolia: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[55/94] 🎨 Myanmar
+  ⏳ Generating with Claude...
+Error generating writeup for Myanmar: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[56/94] 🎨 Nepal
+  ⏳ Generating with Claude...
+Error generating writeup for Nepal: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[57/94] 🎨 New Zealand
+  ⏳ Generating with Claude...
+Error generating writeup for New Zealand: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[58/94] 🎨 North Korea
+  ⏳ Generating with Claude...
+Error generating writeup for North Korea: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[59/94] 🎨 Oman
+  ⏳ Generating with Claude...
+Error generating writeup for Oman: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[60/94] 🎨 Pakistan
+  ⏳ Generating with Claude...
+Error generating writeup for Pakistan: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[61/94] 🎨 Palestine
+  ⏳ Generating with Claude...
+Error generating writeup for Palestine: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[62/94] 🎨 Papua New Guinea
+  ⏳ Generating with Claude...
+Error generating writeup for Papua New Guinea: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[63/94] 🎨 Philippines
+  ⏳ Generating with Claude...
+Error generating writeup for Philippines: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[64/94] 🎨 Qatar
+  ⏳ Generating with Claude...
+Error generating writeup for Qatar: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[65/94] 🎨 Saudi Arabia
+  ⏳ Generating with Claude...
+Error generating writeup for Saudi Arabia: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[66/94] 🎨 Singapore
+  ⏳ Generating with Claude...
+Error generating writeup for Singapore: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[67/94] 🎨 South Korea
+  ⏳ Generating with Claude...
+Error generating writeup for South Korea: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[68/94] 🎨 Sri Lanka
+  ⏳ Generating with Claude...
+Error generating writeup for Sri Lanka: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[69/94] 🎨 Syria
+  ⏳ Generating with Claude...
+Error generating writeup for Syria: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[70/94] 🎨 Taiwan
+  ⏳ Generating with Claude...
+Error generating writeup for Taiwan: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[71/94] 🎨 Thailand
+  ⏳ Generating with Claude...
+Error generating writeup for Thailand: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[72/94] 🎨 United Arab Emirates
+  ⏳ Generating with Claude...
+Error generating writeup for United Arab Emirates: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[73/94] 🎨 Uzbekistan
+  ⏳ Generating with Claude...
+Error generating writeup for Uzbekistan: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[74/94] 🎨 Vietnam
+  ⏳ Generating with Claude...
+Error generating writeup for Vietnam: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[75/94] 🎨 Yemen
+  ⏳ Generating with Claude...
+Error generating writeup for Yemen: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[76/94] 🎨 Algeria
+  ⏳ Generating with Claude...
+Error generating writeup for Algeria: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[77/94] 🎨 Angola
+  ⏳ Generating with Claude...
+Error generating writeup for Angola: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[78/94] 🎨 Democratic Republic of Congo
+  ⏳ Generating with Claude...
+Error generating writeup for Democratic Republic of Congo: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[79/94] 🎨 Egypt
+  ⏳ Generating with Claude...
+Error generating writeup for Egypt: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[80/94] 🎨 Ethiopia
+  ⏳ Generating with Claude...
+Error generating writeup for Ethiopia: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[81/94] 🎨 Ghana
+  ⏳ Generating with Claude...
+Error generating writeup for Ghana: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[82/94] 🎨 Libya
+  ⏳ Generating with Claude...
+Error generating writeup for Libya: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[83/94] 🎨 Morocco
+  ⏳ Generating with Claude...
+Error generating writeup for Morocco: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[84/94] 🎨 Mozambique
+  ⏳ Generating with Claude...
+Error generating writeup for Mozambique: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[85/94] 🎨 Nigeria
+  ⏳ Generating with Claude...
+Error generating writeup for Nigeria: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[86/94] 🎨 Rwanda
+  ⏳ Generating with Claude...
+Error generating writeup for Rwanda: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[87/94] 🎨 Senegal
+  ⏳ Generating with Claude...
+Error generating writeup for Senegal: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[88/94] 🎨 Somalia
+  ⏳ Generating with Claude...
+Error generating writeup for Somalia: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[89/94] 🎨 South Africa
+  ⏳ Generating with Claude...
+Error generating writeup for South Africa: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[90/94] 🎨 Sudan
+  ⏳ Generating with Claude...
+Error generating writeup for Sudan: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[91/94] 🎨 Tanzania
+  ⏳ Generating with Claude...
+Error generating writeup for Tanzania: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[92/94] 🎨 Tunisia
+  ⏳ Generating with Claude...
+Error generating writeup for Tunisia: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[93/94] 🎨 Uganda
+  ⏳ Generating with Claude...
+Error generating writeup for Uganda: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+[94/94] 🎨 Zimbabwe
+  ⏳ Generating with Claude...
+Error generating writeup for Zimbabwe: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+  ❌ Failed: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+    at Anthropic.validateHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:372:11)
+    at Anthropic.buildHeaders (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:891:10)
+    at async Anthropic.buildRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:839:24)
+    at async Anthropic.makeRequest (/home/user/NewsMap/node_modules/@anthropic-ai/sdk/src/client.ts:535:35)
+    at async generateCultureWriteup (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:84:21)
+    at async generateAllRemainingCulture (/home/user/NewsMap/scripts/generate-culture-all-94-remaining.ts:171:23)
+
+
+✅ GENERATION COMPLETE!
+   Success: 0/94
+   Errors: 94
+   Total time: 4m 42s
+   Average: Infinitys per country

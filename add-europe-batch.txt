@@ -1,0 +1,4 @@
+Adding European climate writeups to reach first 25 country milestone.
+Current: 10 generated (22 total in DB)
+Target: Add 15 more to reach 25 generated
+This will trigger first progress report as requested.

@@ -1,0 +1,11 @@
+Error: ANTHROPIC_API_KEY not found in environment variables
+    at generateMultiCategorySummaries (/home/user/NewsMap/scripts/generate-multi-category-summaries.ts:535:11)
+    at Anthropic (/home/user/NewsMap/scripts/generate-multi-category-summaries.ts:656:1)
+    at Object.<anonymous> (/home/user/NewsMap/scripts/generate-multi-category-summaries.ts:658:38)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object.transformer (/home/user/NewsMap/node_modules/tsx/dist/register-D46fvsV_.cjs:3:1104)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at cjsLoader (node:internal/modules/esm/translators:309:5)

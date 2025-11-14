@@ -1,0 +1,10 @@
+{
+  "note": "Generating all remaining 92 climate writeups in Bill McKibben voice",
+  "total_remaining": 92,
+  "regions": {
+    "europe": 31,
+    "asia_pacific": 43,
+    "africa": 18
+  },
+  "approach": "Add all writeups to main script, then run to save all at once with progress reporting every 25"
+}
