@@ -16,7 +16,9 @@
     "generate-comprehensive": "tsx scripts/generate-location-summaries-comprehensive.ts",
     "generate-specific-countries": "tsx scripts/generate-specific-countries.ts",
     "generate-four-countries": "tsx scripts/generate-four-countries.ts",
-    "generate-category-summaries": "tsx scripts/generate-category-summaries.ts"
+    "generate-category-summaries": "tsx scripts/generate-category-summaries.ts",
+    "generate-realestate-41-80": "tsx scripts/generate-realestate-41-80.ts",
+    "generate-human-rights-1-40": "tsx scripts/generate-human-rights-1-40.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.68.0",
