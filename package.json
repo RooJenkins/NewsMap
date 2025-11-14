@@ -16,11 +16,13 @@
     "generate-comprehensive": "tsx scripts/generate-location-summaries-comprehensive.ts",
     "generate-specific-countries": "tsx scripts/generate-specific-countries.ts",
     "generate-four-countries": "tsx scripts/generate-four-countries.ts",
-    "generate-category-summaries": "tsx scripts/generate-category-summaries.ts"
+    "generate-category-summaries": "tsx scripts/generate-category-summaries.ts",
+    "generate-realestate-41-80": "tsx scripts/generate-realestate-41-80.ts",
+    "generate-human-rights-1-40": "tsx scripts/generate-human-rights-1-40.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.68.0",
-    "@prisma/client": "6.19.0",
+    "@prisma/client": "^6.19.0",
     "@react-three/drei": "^9.114.3",
     "@react-three/fiber": "^8.17.10",
     "@types/leaflet": "^1.9.21",
@@ -47,7 +49,7 @@
     "eslint": "^8.0.0",
     "eslint-config-next": "^14.0.0",
     "postcss": "^8.4.0",
-    "prisma": "6.19.0",
+    "prisma": "^6.19.0",
     "tailwindcss": "^3.4.0",
     "tsx": "^4.20.6",
     "typescript": "^5.0.0"

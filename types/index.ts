@@ -98,3 +98,28 @@ export interface HeatmapCell {
   truthPosition?: number // For truth spectrum view
   distanceFromTruth?: number // For truth spectrum view
 }
+
+export interface GlobalNewsStory {
+  id: string
+  rank: number
+  title: string
+  narrative: string
+  authorStyle: 'rory_stewart' | 'alastair_campbell' | 'anthony_scaramucci' | 'katty_kay'
+  globalSignificance: string
+  affectedPopulation: string
+  category: string
+  location: {
+    lat: number
+    lng: number
+    city: string | null
+    country: string
+    region: string | null
+  }
+  sources: Array<{
+    title: string
+    url: string
+    outlet: string
+  }>
+  generatedAt: string
+  publishDate: string
+}

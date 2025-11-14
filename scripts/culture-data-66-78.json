@@ -1,0 +1,32 @@
+{
+  "countries": [
+    {
+      "name": "Italy",
+      "country": "Italy",
+      "lat": 41.8719,
+      "lng": 12.5674,
+      "summary": "Italy in 2024-25 isn't just resting on its Renaissance laurels—it's having one of its most ambitious cultural moments in decades, and the tension between preservation and innovation is absolutely electric. The Venice Architecture Biennale's 19th edition (May-November 2025), curated by Carlo Ratti under the theme \"Intelligens,\" is bringing together 750+ participants across 66 national pavilions to wrestle with AI, climate adaptation, and collective intelligence. Meanwhile, miart returned to Milan in April 2025 with 179 galleries from 31 countries—now in its 29th edition and stronger than ever—while Artissima in Turin (October 31-November 2, 2025) remains Italy's only fair exclusively devoted to contemporary art, directed by Luigi Fassi and fiercely defending its experimental edge.\n\nThe museum scene is on fire. Anselm Kiefer's \"The Women Alchemists\" at Palazzo Reale in Milan (February 2025 through September 2026) is the kind of site-specific institutional gamble that reminds you why Italy still matters for contemporary art. Ai Weiwei's first solo show in Bologna at Palazzo Fava proves Italian institutions are finally willing to platform activist artists without flinching. And MAMbo's institutional retrospective on irony in postwar Italian art—featuring 100+ works from 70+ artists—is the kind of smart, self-reflexive survey that should shame other countries into thinking harder about their own cultural narratives.\n\nThe Italian film industry is experiencing a genuine resurgence, though it's complicated. The 40% tax credit has lured Hollywood back to Cinecittà at levels unseen since the 1950s-60s glory days, but there's anxiety about whether this is sustainable cultural policy or just subsidizing American blockbusters. The good news: Italy's recorded music market grew 8.5% in 2024, marking seven straight years of growth, with streaming up 13.5% to €308.1 million. The Screen Music Program in Pavia (August 4-14, 2025) is training a new generation of film and video game composers, while FIMUCITÉ 2025 celebrates Italian film composers' contributions to cinema history.\n\nWith 61 UNESCO World Heritage Sites—more than any nation on Earth—Italy's preservation infrastructure is both a blessing and a burden. From the Perdonanza Celestiniana festival in L'Aquila to the Opera dei Pupi puppet theatre in Sicily, intangible cultural heritage is being actively performed and protected. But the real story is how contemporary artists are engaging with this overwhelming history: not with reverence, but with irreverence, irony, and genuine innovation. Italian culture in 2025 isn't museum-bound—it's alive, fighting, and fiercely relevant.",
+      "issues": [
+        "Venice Architecture Biennale exploring AI and climate adaptation",
+        "Museum exhibitions from Anselm Kiefer to Ai Weiwei",
+        "Film industry revival via 40% tax credit",
+        "Music market growth at 8.5% annually",
+        "61 UNESCO sites balancing preservation with innovation"
+      ]
+    },
+    {
+      "name": "Ivory Coast",
+      "country": "Ivory Coast",
+      "lat": 7.54,
+      "lng": -5.5471,
+      "summary": "Abidjan is having its moment, and anyone who's been paying attention to contemporary African art knows it. In just five years, this city has welcomed new galleries, the Something Art Space video art center, a contemporary art museum, artist residencies like Maison N'Zima (founded by Jean Servais Somian), and online marketplaces that are changing how Ivorian art reaches the world. The government actually put its money where its mouth is: a one billion FCFA public fund (roughly $1.7 million USD) launched in 2024 by the Ministry of Youth Promotion and Ministry of Culture is fueling creative industries in ways that would make most Western countries blush with envy.\n\nThe gallery scene is exploding. Galerie Farah Fakhri opened in Le Plateau in 2023, Windsor Gallery at the Sofitel in 2022, WALLS House of Art in Marcory in 2019—and these newcomers are joining stalwarts like Galerie Amani (Jean Léon N'Guetta), Eureka Galerie (Sandrine Marmissolle Mesquida), Fondation Donwahi (Illa Donwahi), and Galerie Cécile Fakhoury, which has the strongest international presence. The second Abidjan Art Week (April 23-27, 2025) showcased powerful works by Aboudia at Rotonde des Arts, curated by philosopher-critic Yacouba Konaté. Joana Choumali—an international figure in African photography—concluded her first solo show in Ivory Coast in over a decade at Farah Fakhri in July 2025, and it was worth the wait.\n\nThe new generation is fearless. Carl-Edouard Keïta, 33, based in New York and repped by Cécile Fakhoury, had his first Abidjan solo \"Goumbé\" in February 2024—masterful pastel-and-acrylic canvases that signal a rare artistic maturity. Leading artists Yeanzi, Mounou, and Konan Pascal inaugurated La Maison de l'Art at the SGBCI Foundation in Grand-Bassam on May 15, 2025, and international curators are noticing: Chris Dercon of Fondation Cartier visited in April 2025, which tells you everything about where the power is shifting.\n\nFEMUA (Festival des Musiques Urbaines d'Anoumabo), founded in 2008 by A'salfo of Magic System, returned to Abidjan in 2024-25 as one of Africa's biggest music festivals, blending Afrobeat, reggae, zouglou, coupé-décalé, hip-hop, and traditional rhythms with social initiatives around youth empowerment and education. Since 2023, FEMUA has been part of the state budget—real institutional support, not just lip service. Artists are even leaving Abidjan for beachside havens to create, which is the kind of decentralization that signals a maturing cultural ecosystem. Ivory Coast isn't just West Africa's premier hub for contemporary culture anymore—it's giving major global cities a run for their money.",
+      "issues": [
+        "$1.7M government cultural fund driving gallery boom",
+        "Abidjan Art Week and international curator attention",
+        "Emerging artists like Carl-Edouard Keïta gaining global traction",
+        "FEMUA festival state-funded since 2023",
+        "Decentralization from Abidjan to coastal creative communities"
+      ]
+    }
+  ]
+}
