@@ -37,7 +37,7 @@ interface MapViewLocationsProps {
   onPanelStateChange?: (isOpen: boolean) => void
 }
 
-type NewsCategory = 'all' | 'politics' | 'technology' | 'climate' | 'economy'
+type NewsCategory = 'all' | 'politics' | 'technology' | 'climate' | 'economy' | 'culture' | 'sports' | 'infrastructure' | 'science' | 'education' | 'healthcare' | 'military' | 'crime' | 'energy'
 
 export default function MapViewLocations({ onViewChange, onPanelStateChange }: MapViewLocationsProps) {
   const [locations, setLocations] = useState<LocationSummary[]>([])
@@ -391,9 +391,18 @@ export default function MapViewLocations({ onViewChange, onPanelStateChange }: M
   const categories: { id: NewsCategory; label: string }[] = [
     { id: 'all', label: 'All News' },
     { id: 'politics', label: 'Politics' },
+    { id: 'economy', label: 'Economy' },
     { id: 'technology', label: 'Technology' },
     { id: 'climate', label: 'Climate' },
-    { id: 'economy', label: 'Economy' },
+    { id: 'culture', label: 'Culture & Arts' },
+    { id: 'sports', label: 'Sports' },
+    { id: 'infrastructure', label: 'Infrastructure' },
+    { id: 'science', label: 'Science' },
+    { id: 'education', label: 'Education' },
+    { id: 'healthcare', label: 'Healthcare' },
+    { id: 'military', label: 'Military & Defense' },
+    { id: 'crime', label: 'Crime & Justice' },
+    { id: 'energy', label: 'Energy' },
   ]
 
   return (
