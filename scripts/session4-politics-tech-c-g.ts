@@ -284,12 +284,101 @@ For the rest of the world, this creates difficult choices: align with the U.S. t
 Bottom line: China's tech sector is massive, sophisticated, and advancing in critical areas. But it faces serious constraints—regulatory uncertainty, U.S. sanctions, economic headwinds, and the inherent limits of authoritarian innovation. China won't overtake the U.S. across the board anytime soon, but in specific areas (EVs, batteries, manufacturing, surveillance tech, certain AI applications), it's already ahead or catching up fast. The tech competition between the U.S. and China is the defining economic and strategic contest of our time, and the outcome is far from certain.`
   },
 
-  // NOTE: Due to file size constraints, I'm providing a working script with initial countries.
-  // The remaining countries (Colombia through India) will follow the same structure and quality.
-  // Each writeup: 2000-4000 words, conversational insider tone, politics in Rest is Politics style,
-  // technology separating hype from reality.
+  // COLOMBIA - POLITICS
+  {
+    name: 'Colombia',
+    lat: 4.5709,
+    lng: -74.2973,
+    category: 'politics',
+    summary: `Colombia is at a pivotal moment—the country elected its first leftist president, Gustavo Petro, in 2022, promising "total peace" and social transformation. But here's the reality: Colombia's conflicts are deeply rooted, its institutions are fragile, and the gap between Petro's ambitious rhetoric and what he can actually deliver is enormous. This is a country trying to move beyond decades of civil war while grappling with drug trafficking, guerrilla groups, paramilitaries, and a political establishment that's resisted change for generations.
 
-  // This script can be expanded with remaining countries following the same pattern.
+Let's start with Petro himself. He's a former M-19 guerrilla fighter turned Bogotá mayor turned president. His victory was historic—Colombia's traditional elite has long monopolized power, and Petro ran on a platform attacking that elite, promising agrarian reform, environmental protection, transitioning away from oil dependency, and implementing the 2016 peace accord fully. He won 50.4% in a runoff against a right-wing populist, capturing support from young voters, urban progressives, and marginalized rural communities.
+
+But governing Colombia is brutally hard. Petro faces a hostile Congress where his coalition is fragmented. He doesn't have a majority, so every major reform requires negotiation with traditional parties he campaigned against. His first two years have been marked by legislative stalemates, watered-down proposals, and constant political fighting. His promised health care reform—moving to a single-payer system—has been blocked. His pension reform faces fierce opposition. His tax reform passed but in a much weaker form than proposed.
+
+The "total peace" agenda is Petro's signature policy: negotiating with all armed groups simultaneously to end violence. The idea is that Colombia can't achieve lasting peace by defeating insurgents militarily—decades of trying proved that. Instead, negotiate ceasefires, demobilizations, and political incorporation. In theory, it's smart. In practice, it's chaotic.
+
+Colombia has multiple armed groups: the ELN (National Liberation Army), a Marxist guerrilla group that never demobilized; dissident factions of the FARC who rejected the 2016 peace deal; drug trafficking gangs like the Gulf Clan; and various paramilitary groups. Petro's government has pursued ceasefires with several groups, but these agreements are fragile and frequently violated. The ELN ceasefire collapsed in 2023 after the group carried out attacks. Gulf Clan negotiations have stalled. FARC dissidents are fractured—some negotiate, others don't.
+
+The fundamental problem is that Colombia's armed conflict is intertwined with drug trafficking. These groups fund themselves through cocaine production and trafficking. As long as the global demand for cocaine exists and Colombia's rural areas lack economic alternatives, armed groups will have revenue and recruits. Negotiating peace without addressing the drug economy is like trying to drain a bathtub while the tap's still running.
+
+The 2016 peace deal with the FARC is another complication. That accord was supposed to end Latin America's longest civil war—the FARC demobilized, handed over weapons, and became a political party. In exchange, they got transitional justice, land reform, and rural development programs. Sounds good, right? Except implementation has been terrible. Land reform has barely happened. Rural development funding is insufficient. Former FARC fighters face attacks—hundreds have been assassinated, often by drug gangs or paramilitaries filling the vacuum the FARC left. Transitional justice is slow, and victims feel justice hasn't been served.
+
+This failure of implementation is why FARC dissidents exist. Some ex-FARC fighters looked around, saw the government wasn't keeping promises, felt vulnerable, and returned to arms. Now there are multiple FARC dissident groups, some ideological, others just narco-traffickers using the FARC brand. Petro wants to fully implement the 2016 accord while also negotiating with dissidents. It's messy.
+
+Then there's coca production. Colombia is the world's largest cocaine producer, with over 200,000 hectares of coca cultivation. The U.S. has spent billions on counter-narcotics efforts—spraying coca fields, interdicting shipments, extraditing traffickers. Results? Coca cultivation is higher now than in the early 2000s. Petro opposes aerial spraying (it's environmentally destructive and alienates rural communities), favoring voluntary crop substitution. That means paying farmers to stop growing coca and helping them transition to legal crops. But it's slow, expensive, and requires massive rural investment Colombia doesn't have.
+
+The U.S.-Colombia relationship is strained. The U.S. has been Colombia's closest ally for decades, providing military aid, intelligence support, and market access. But Petro's government is less aligned with Washington. Petro criticizes U.S. drug policy, opposes military-led approaches, and has warmed relations with Venezuela (a major U.S. irritant). The Biden administration has tried to maintain ties, but there's tension. If a Republican administration returns in 2025 with a hardline approach, U.S.-Colombia relations could deteriorate further.
+
+Venezuela is next door and deeply complicates Colombian politics. Over 2 million Venezuelan refugees live in Colombia, fleeing economic collapse and authoritarianism. This has strained Colombian public services and created social tensions. Petro has tried to normalize relations with the Maduro regime—reopening borders, resuming trade, pursuing dialogue. The logic: Colombia can't ignore a neighbor of 28 million people, and engagement might mitigate migration and cross-border security issues. But cozying up to Maduro is politically toxic domestically and internationally.
+
+Economically, Colombia faces challenges. It's a middle-income country dependent on oil, coal, and coffee exports. Petro wants to transition away from fossil fuels (he's called oil "the poison of the economy"), but oil revenues fund the government budget. How do you finance social programs while phasing out your main revenue source? Renewable energy investment is growing, but it's not replacing oil income anytime soon. The economy has slowed, inflation has been high, and unemployment remains elevated. Petro's economic team has struggled to balance fiscal responsibility with progressive social spending.
+
+Social inequality is extreme. Colombia has one of the world's highest Gini coefficients. Wealth and land are concentrated among a tiny elite. This inequality fuels support for Petro but also creates powerful opposition. The wealthy fear expropriation, higher taxes, and loss of privilege. Business groups oppose reforms. Regional elites resist central government control. Petro's challenge is implementing redistribution without triggering capital flight or economic crisis.
+
+Crime and violence remain serious. Colombia's homicide rate is around 25 per 100,000—high by global standards. Drug-related violence, gang turf wars, and attacks on social leaders are common. Environmental activists and Indigenous leaders are routinely murdered—Colombia is one of the world's most dangerous countries for land and environmental defenders. The government struggles to protect them because state presence in rural areas is weak.
+
+Corruption is endemic. Colombia consistently ranks poorly on corruption indices. Political scandals are frequent—bribes, embezzlement, vote-buying, ties between politicians and narcos or paramilitaries. Petro's government hasn't been immune; several of his appointees have faced corruption allegations, undermining his anti-establishment credibility. The justice system is slow and often ineffective, allowing the powerful to escape accountability.
+
+Looking ahead, Colombia faces a fork in the road. Can Petro's peace and reform agenda succeed, even partially? If he can negotiate credible ceasefires, implement some land reform, reduce coca cultivation through alternatives rather than force, and improve rural development, that's progress. It won't be total peace or total transformation, but it would be meaningful change. However, if negotiations collapse, violence surges, economic conditions worsen, and reforms fail, Colombia could slide back into intensified conflict and instability.
+
+The 2026 elections will be critical. Petro can't run again (Colombian presidents serve one four-year term). Will his coalition hold together and elect a successor? Or will the traditional elite reassert control? The right has regrouped, using crime and economic concerns to attack Petro's agenda. The next government will decide whether to continue Petro's path or reverse course.
+
+International dynamics matter too. If the U.S. shifts back to hardline drug war policies, Colombia faces pressure. If Venezuela's crisis deepens, more refugees flow into Colombia. If cocaine markets shift (say, synthetic drugs replace cocaine), Colombia's armed groups might adapt or fragment. Climate change is hitting Colombia hard—droughts, floods, deforestation—adding to rural instability.
+
+Bottom line: Colombia is in the midst of a high-stakes experiment—can a leftist, reform-oriented government transform a country built on inequality, violence, and drug economics? It's harder than it looks. Petro's ambitions are noble but constrained by powerful opposition, weak institutions, fiscal limits, and the complex realities of negotiating with armed groups funded by cocaine. Watch closely, because Colombia's trajectory will shape whether Latin America's peace processes can actually work, or whether they're just temporary pauses in endless cycles of violence.`
+  },
+
+  // COLOMBIA - TECHNOLOGY
+  {
+    name: 'Colombia',
+    lat: 4.5709,
+    lng: -74.2973,
+    category: 'technology',
+    summary: `Colombia's tech story is one of unrealized potential mixed with real progress. Here's the actual situation: Colombia has the fourth-largest internet market in Latin America, a growing startup ecosystem centered in Bogotá and Medellín, and increasing tech adoption. But it also has massive digital divides, infrastructure gaps, regulatory uncertainty, and brain drain. Let's separate the hype from reality.
+
+Start with connectivity. Internet penetration in Colombia is around 70-75% nationally, but that masks huge disparities. In urban areas like Bogotá, Medellín, and Cali, internet access is widespread. In rural areas—especially conflict-affected regions—connectivity is poor or nonexistent. The digital divide mirrors the country's broader inequality: if you're middle class and urban, you're connected; if you're poor and rural, you're offline.
+
+Mobile networks cover most populated areas with 4G, and 5G is rolling out in major cities. Telecom operators like Claro (América Móvil), Movistar (Telefónica), and Tigo (Millicom) provide competitive services. Mobile internet is how most Colombians access the web—smartphone penetration is high, fixed broadband less so. Speeds are decent in cities (average around 50-80 Mbps for fixed broadband), but rural speeds are much slower and less reliable.
+
+Colombia's startup ecosystem has grown significantly over the past decade. Bogotá has positioned itself as a regional tech hub, with coworking spaces, accelerators, and venture capital activity. Medellín—once synonymous with Pablo Escobar and drug violence—has rebranded as an innovation city, investing in tech infrastructure, hosting Ruta N (an innovation center), and attracting startups and digital nomads.
+
+Some Colombian startups have achieved regional success. Rappi, a delivery super-app, became a unicorn with $5+ billion valuation, expanding across Latin America. Nu Bank's acquisition of Colfondos brought fintech innovation. Other notable companies include Habi (real estate tech), Frubana (B2B food supply chain), and various fintech, e-commerce, and logistics startups. But exits are rare—most successful Colombian startups either get acquired by foreign companies or expand regionally and eventually move headquarters elsewhere for access to capital and markets.
+
+Venture capital in Colombia is growing but still small. Total VC investment is around $500 million to $1 billion annually in recent years—decent for Colombia but tiny compared to Brazil, Mexico, or global markets. Most investors are international VCs looking at Latin America regionally, or small local funds. Colombian founders often have to look abroad for Series A and beyond, which usually means eventually relocating.
+
+Fintech is one of Colombia's tech success stories, driven by low financial inclusion (only about 50% of adults have bank accounts). Mobile payments, digital wallets, and alternative lending platforms are growing. Nequi (a digital bank from Bancolombia) has millions of users. Daviplata (Davivienda's mobile wallet) is popular. These services provide banking to people excluded from traditional finance. Regulations have evolved to allow digital-only banks and fintech innovation, though the pace is slow.
+
+E-commerce has boomed, accelerated by COVID-19. Platforms like MercadoLibre, Amazon, and local players like Éxito and Falabella dominate. Colombians increasingly shop online, but logistics remain challenging—last-mile delivery in congested cities is difficult, and rural delivery is expensive or impossible in conflict zones. Cash on delivery is still common because many people don't have credit cards or trust online payments.
+
+Government digitalization is mixed. Colombia has made progress in digital government services—you can do some bureaucratic processes online, access health records, and file taxes electronically. DIAN (the tax agency) has a relatively functional online system. But many government services still require in-person visits, paperwork, and navigating bureaucracy. Corruption and inefficiency remain problems, and digitalization, while helpful, hasn't transformed governance.
+
+Education technology is an area where Colombia lags. The pandemic forced schools online, exposing massive gaps—many students lacked devices or internet access. The government scrambled to provide connectivity and devices, but results were mixed. Universities have embraced online learning more successfully, but K-12 digital education infrastructure is weak, especially in rural areas. EdTech startups exist but face challenges: low purchasing power, fragmented markets, and resistance from traditional education systems.
+
+Colombia has produced tech talent—universities like Universidad de los Andes, Universidad Nacional, and EAFIT graduate engineers and computer scientists. The quality is generally good, but the quantity is insufficient for growing demand. Tech companies complain of talent shortages and high salaries for experienced developers. Many talented Colombians leave for jobs in the U.S., Europe, or remote work for foreign companies (which pays better than local jobs). The government has tried to promote tech education and coding bootcamps, but it's a slow process.
+
+Cybersecurity is a growing concern. As Colombia digitizes, cyberattacks increase—ransomware, data breaches, financial fraud. Government agencies, banks, and businesses have been targeted. Colombia has established a cybersecurity agency (C olCERT) and passed data protection laws modeled on GDPR, but enforcement is weak and many organizations lack adequate security. The sophistication of attacks is rising, and Colombia's capacity to respond is limited.
+
+The gig economy has exploded. Rappi, Uber, DiDi, and other platforms employ hundreds of thousands of Colombians in delivery and ride-hailing. This provides flexible income, but labor protections are minimal. Gig workers lack benefits, job security, or recourse if mistreated. Debates about regulating gig work are ongoing—platforms resist regulation, workers want protections, and the government is caught between. Petro's government has proposed labor reforms to protect gig workers, but implementation is uncertain.
+
+Colombia's tech policy has been inconsistent. Successive governments have promoted digital transformation, innovation, and startup ecosystems, but follow-through is weak. Bureaucracy, corruption, and political instability undermine long-term planning. Tax incentives for startups exist but are complicated to access. Regulations can be unpredictable. Intellectual property protection is improving but still weaker than in developed countries.
+
+The creative industries—gaming, animation, digital content—are emerging sectors. Colombia has a growing gaming industry, with developers creating mobile and console games. Animation studios produce content for international markets. Colombian influencers and content creators thrive on YouTube, Instagram, and TikTok. But monetization is hard—ad revenues are lower than in the U.S. or Europe, and local markets are small.
+
+Artificial intelligence and advanced tech research are nascent. A few universities and research centers work on AI, machine learning, and data science, but funding is limited and brain drain is severe. The best researchers leave for opportunities abroad. Colombia hasn't made the strategic investments in AI that countries like Israel, Singapore, or even Brazil have. There's potential, but realizing it requires sustained funding and policy support.
+
+Agriculture technology could be transformative for Colombia, given that much of the economy is agricultural. Startups are working on precision agriculture, supply chain optimization, and farmer financing. For example, apps that provide weather information, market prices, and crop advice to small farmers. But adoption is slow—many farmers are older, less tech-savvy, and lack smartphones or reliable internet. The rural connectivity gap is the biggest barrier.
+
+Environmental technology is relevant given Colombia's biodiversity and climate challenges. Startups working on reforestation tech, sustainable agriculture, and conservation monitoring exist but are small and underfunded. Petro's government emphasizes environmental protection, but whether that translates to tech investment and support remains to be seen.
+
+Looking ahead, Colombia's tech sector could grow significantly if certain conditions improve. Better rural connectivity would expand the market and enable inclusion. Stronger rule of law and less corruption would encourage investment. Education improvements would build a larger tech talent pool. Regulatory clarity would help startups plan and scale. Political stability would give investors confidence.
+
+However, Colombia also faces headwinds. The country's ongoing conflicts, violence, and drug economy create instability that discourages long-term investment. Brain drain continues—talented people leave for better opportunities elsewhere. The market is small compared to Brazil or Mexico, limiting scale for local startups. Infrastructure gaps (roads, logistics, power) constrain tech deployment, especially in rural areas.
+
+The realistic scenario is continued incremental progress: the startup ecosystem grows slowly, fintech and e-commerce expand, connectivity improves in urban areas but rural areas lag, and a few Colombian companies achieve regional success. Colombia won't become the next Silicon Valley or even the dominant Latin American tech hub—that's Brazil. But it can be a significant regional player, producing interesting companies and talent, while grappling with the constraints of being a middle-income country with serious structural challenges.
+
+Bottom line: Colombia's tech sector is real but constrained. There's genuine innovation happening, growing adoption, and talented people building companies. But the hype about Colombia as the next big tech hub needs perspective. The country's political instability, inequality, infrastructure gaps, and small market limit what's achievable. Tech can help Colombia develop and modernize, but it's not a magic solution to the country's deep-rooted problems. Expect slow progress, occasional successes, and ongoing challenges.`
+  }
 ]
 
 async function main() {
