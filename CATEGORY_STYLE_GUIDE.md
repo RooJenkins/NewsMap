@@ -4,15 +4,84 @@ This guide defines the voice, structure, and requirements for category-specific 
 
 ## General Requirements
 
-- **Length**: 2,500-3,500 characters (approximately 400-600 words)
-- **Tone**: Professional, analytical, evidence-based
+- **Length**: 2,000-3,500 characters (varies by category)
+- **Tone**: Professional, analytical, evidence-based (or engaging for travel/food)
 - **Structure**: Clear sections with specific focus areas
 - **Citations**: Reference actual news stories and dates when possible
-- **Audience**: Business, investment, policy professionals, journalists
+- **Audience**: Business, investment, policy professionals, journalists, travelers
 
 ---
 
-## CATEGORY 1: CRIME & JUSTICE
+## TRAVEL & TOURISM
+
+### Voice & Style
+- **Persona**: Anthony Bourdain meets Rick Steves - adventurous yet practical, culturally curious with street-level insights
+- **Tone**: Engaging, authentic, with personality but still informative
+- **Length**: 2,500-3,500 characters
+
+### Required Content
+1. **Must-See Destinations**: Major tourist draws and UNESCO sites
+2. **Hidden Gems**: Off-the-beaten-path locations locals love
+3. **Infrastructure**: Transportation, accommodation quality, accessibility
+4. **Safety & Security**: Current safety situation for travelers
+5. **Visa Requirements**: Entry requirements and difficulty level
+6. **Best Times to Visit**: Seasonal considerations, weather, peak/off-peak
+7. **Tourist Numbers**: Annual visitor statistics and trends
+
+### Writing Guidelines
+- Open with an evocative scene or distinctive travel hook
+- Balance practical logistics with cultural immersion
+- Include specific examples and vivid details
+- Mention both budget and luxury options
+- Address common traveler concerns honestly
+- End with a compelling reason to visit (or honest assessment)
+
+### Examples of Good Opening Lines
+- "Landing in [Country] feels like stepping into a living contradiction..."
+- "Most travelers miss [Country]'s real magic by sticking to the guidebook circuit..."
+- "There's a reason [Country] has become the fastest-growing destination in [region]..."
+
+### Database Field
+- **category**: `'travel'`
+
+---
+
+## FOOD & CUISINE
+
+### Voice & Style
+- **Persona**: Samin Nosrat meets David Chang - celebrating culture through food, technical but accessible
+- **Tone**: Passionate, reverent to tradition, curious about innovation
+- **Length**: 2,000-3,000 characters
+
+### Required Content
+1. **National Dishes**: Iconic foods that define the cuisine
+2. **Regional Specialties**: Geographic variations and local favorites
+3. **Street Food Culture**: Markets, stalls, food traditions
+4. **High-End Dining**: Michelin stars, fine dining scene, celebrity chefs
+5. **Key Ingredients**: Agricultural products, spices, unique items
+6. **Food Traditions**: Meal customs, hospitality, food rituals
+7. **Agricultural Context**: What they grow, produce, export
+
+### Writing Guidelines
+- Lead with the most distinctive or surprising culinary element
+- Explain the "why" behind dishes (history, climate, culture)
+- Balance street-level and high-end perspectives
+- Mention specific dishes by local names
+- Include sensory details (flavors, textures, aromas)
+- Connect food to broader culture and identity
+- Address how cuisine is evolving or being preserved
+
+### Examples of Good Opening Lines
+- "[Country]'s cuisine is a masterclass in [technique/philosophy]..."
+- "To understand [Country], start with [dish] - it tells you everything..."
+- "While the world knows [Country] for [famous dish], locals will point you to..."
+
+### Database Field
+- **category**: `'food'`
+
+---
+
+## CRIME & JUSTICE
 
 ### Voice & Style
 Write in the style of **Preet Bharara** (former US Attorney) and **Jeffrey Toobin** (legal analyst):
@@ -76,7 +145,7 @@ Cover these key areas:
 
 ---
 
-## CATEGORY 2: ENERGY
+## ENERGY
 
 ### Voice & Style
 Write in the style of **Daniel Yergin** (energy historian and analyst):
@@ -147,7 +216,7 @@ Cover these key areas:
 
 ---
 
-## Writing Best Practices
+## General Writing Best Practices
 
 1. **Be Specific**: Use numbers, dates, names of officials, specific laws or cases
 2. **Cite Sources**: Reference news stories when making claims
@@ -157,12 +226,12 @@ Cover these key areas:
 6. **Actionable**: Provide insights useful for decision-makers
 7. **Current**: Focus on November 2025 and recent developments
 
-## Length Guidelines
+## Cultural Sensitivity (for all categories)
 
-- **Opening paragraph**: 50-100 characters
-- **Each section**: 300-500 characters
-- **Summary paragraph**: 100-150 characters
-- **Total**: 2,500-3,500 characters
+- Respect local perspectives and traditions
+- Acknowledge complexities and controversies honestly
+- Avoid perpetuating stereotypes
+- Use proper transliterations and local terminology
 
 ---
 
@@ -176,10 +245,10 @@ Each summary is stored with:
   country: string,        // Same as name for countries
   lat: number,
   lng: number,
-  category: string,       // 'crime' or 'energy'
-  summary: string,        // Full markdown text (2,500-3,500 chars)
-  issues: string,         // JSON array of major issues
-  topStories: string,     // JSON array of news stories
+  category: string,       // 'travel', 'food', 'crime', 'energy', etc.
+  summary: string,        // Full markdown text (2,000-3,500 chars)
+  issues: string,         // JSON array of major issues (empty for travel/food)
+  topStories: string,     // JSON array of news stories (empty for travel/food)
   storyCount: number,
   updatedAt: DateTime
 }
@@ -190,9 +259,9 @@ Each summary is stored with:
 ## Quality Control
 
 Before saving each summary, verify:
-- ✅ Length is between 2,500-3,500 characters
+- ✅ Length is between 2,000-3,500 characters (category-specific)
 - ✅ All main sections are covered
-- ✅ Voice matches the specified expert (Bharara/Toobin for crime, Yergin for energy)
+- ✅ Voice matches the specified expert/persona
 - ✅ Specific examples and data points included
-- ✅ Professional, analytical tone maintained
-- ✅ Category field correctly set ('crime' or 'energy')
+- ✅ Appropriate tone maintained (analytical or engaging as per category)
+- ✅ Category field correctly set
