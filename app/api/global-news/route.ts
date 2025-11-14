@@ -34,7 +34,7 @@ export async function GET() {
     })
 
     // Format stories for response
-    const formattedStories = stories.map(story => ({
+    const formattedStories = stories.map((story: any) => ({
       id: story.id,
       rank: story.rank,
       title: story.title,

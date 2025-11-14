@@ -2,6 +2,7 @@
 
 import { MapPin, ExternalLink } from 'lucide-react'
 import { getHostDisplayName } from '@/lib/global-news/hostPersonalities'
+import { useAudioNarrator } from '@/contexts/AudioNarratorContext'
 
 interface GlobalStory {
   id: string
@@ -46,6 +47,40 @@ const categoryColors: Record<string, string> = {
 export default function GlobalStoryCard({ story, onClick, isExpanded }: GlobalStoryCardProps) {
   const categoryStyle = categoryColors[story.category.toLowerCase()] || categoryColors.general
   const authorName = getHostDisplayName(story.authorStyle as any)
+  const { addToQueue, playNow, queue, currentItem } = useAudioNarrator()
+
+  const isInQueue = queue.some(item => item.id === story.id)
+  const isCurrentlyPlaying = currentItem?.id === story.id
+
+  const handlePlayNow = (e: React.MouseEvent) => {
+    e.stopPropagation()
+    playNow({
+      id: story.id,
+      title: story.title,
+      content: story.narrative,
+      type: 'story',
+      metadata: {
+        authorStyle: authorName,
+        location: `${story.location.city ? story.location.city + ', ' : ''}${story.location.country}`,
+        category: story.category,
+      },
+    })
+  }
+
+  const handleAddToQueue = (e: React.MouseEvent) => {
+    e.stopPropagation()
+    addToQueue({
+      id: story.id,
+      title: story.title,
+      content: story.narrative,
+      type: 'story',
+      metadata: {
+        authorStyle: authorName,
+        location: `${story.location.city ? story.location.city + ', ' : ''}${story.location.country}`,
+        category: story.category,
+      },
+    })
+  }
 
   return (
     <div
@@ -82,9 +117,53 @@ export default function GlobalStoryCard({ story, onClick, isExpanded }: GlobalSt
           {story.title}
         </h3>
 
-        <p className="text-xs text-ft-slate/80 italic">
-          Written by {authorName}
-        </p>
+        <div className="flex items-center justify-between gap-3">
+          <p className="text-xs text-ft-slate/80 italic">
+            Written by {authorName}
+          </p>
+
+          {/* Narrator Controls */}
+          <div className="flex items-center gap-2">
+            {isCurrentlyPlaying ? (
+              <span className="flex items-center gap-1 text-xs font-semibold text-ft-claret">
+                <svg className="w-4 h-4 animate-pulse" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M8 5v14l11-7z" />
+                </svg>
+                Playing
+              </span>
+            ) : isInQueue ? (
+              <span className="flex items-center gap-1 text-xs font-semibold text-ft-teal">
+                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                </svg>
+                In Queue
+              </span>
+            ) : (
+              <>
+                <button
+                  onClick={handlePlayNow}
+                  className="flex items-center gap-1 px-3 py-1.5 text-xs font-semibold text-white bg-ft-oxford hover:bg-ft-oxford/80 rounded-full transition-colors"
+                  title="Play this article now"
+                >
+                  <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                  Play
+                </button>
+                <button
+                  onClick={handleAddToQueue}
+                  className="flex items-center gap-1 px-3 py-1.5 text-xs font-semibold text-ft-oxford border border-ft-oxford hover:bg-ft-oxford hover:text-white rounded-full transition-colors"
+                  title="Add to narration queue"
+                >
+                  <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+                  </svg>
+                  Queue
+                </button>
+              </>
+            )}
+          </div>
+        </div>
       </div>
 
       {/* Content */}
