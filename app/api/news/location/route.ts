@@ -135,7 +135,7 @@ export async function GET(request: NextRequest) {
     if (zoomLevel === 'global') {
       // For global view: prioritize diversity across regions
       const regionGroups = new Map<string, typeof stories>()
-      stories.forEach(story => {
+      stories.forEach((story: any) => {
         const region = story.region || 'Unknown'
         if (!regionGroups.has(region)) regionGroups.set(region, [])
         regionGroups.get(region)!.push(story)
@@ -155,9 +155,9 @@ export async function GET(request: NextRequest) {
       }
     } else if (zoomLevel === 'city' || zoomLevel === 'neighborhood') {
       // For city/neighborhood: show mix of breaking + important + recent
-      const breaking = stories.filter(s => s.isBreaking).slice(0, 5)
-      const important = stories.filter(s => !s.isBreaking && s.importance > 0.7).slice(0, 5)
-      const recent = stories.filter(s => !s.isBreaking && s.importance <= 0.7).slice(0, 10)
+      const breaking = stories.filter((s: any) => s.isBreaking).slice(0, 5)
+      const important = stories.filter((s: any) => !s.isBreaking && s.importance > 0.7).slice(0, 5)
+      const recent = stories.filter((s: any) => !s.isBreaking && s.importance <= 0.7).slice(0, 10)
 
       selectedStories = [...breaking, ...important, ...recent].slice(0, storyCount)
     } else {
@@ -166,7 +166,7 @@ export async function GET(request: NextRequest) {
     }
 
     // Format stories for response
-    const formattedStories = selectedStories.map(story => ({
+    const formattedStories = selectedStories.map((story: any) => ({
       id: story.id,
       title: story.title,
       link: story.link,
@@ -186,7 +186,7 @@ export async function GET(request: NextRequest) {
 
     // Get unique cities in view
     const citiesInView = Array.from(new Set(
-      stories.map(s => s.city).filter((city): city is string => city !== null)
+      stories.map((s: any) => s.city).filter((city: any): city is string => city !== null)
     ))
 
     const responseData = {
