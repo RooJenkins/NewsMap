@@ -116,6 +116,11 @@ export default function Home() {
                   World Map
                 </button>
               </Link>
+              <Link href="/global-news">
+                <button className="ft-pill bg-ft-claret text-white hover:bg-ft-oxford shadow-lg transition-all text-xs">
+                  Global News Top 100
+                </button>
+              </Link>
             </div>
 
             {/* Normalization Toggle with FT styling */}
