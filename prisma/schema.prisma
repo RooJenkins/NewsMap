@@ -64,3 +64,42 @@ model LocationSummary {
   @@index([category])
   @@index([updatedAt])
 }
+
+model GlobalNewsStory {
+  id               String   @id @default(cuid())
+  rank             Int      // 1-100 ranking
+  title            String
+  sourceStoryId    String?  // Reference to original Story if applicable
+
+  // Location data
+  lat              Float
+  lng              Float
+  city             String?
+  country          String
+  region           String?
+
+  // Enhanced narrative (2-6 paragraphs)
+  narrative        String   // Full narrative text
+
+  // Rest is Politics host who "wrote" this
+  authorStyle      String   // "rory_stewart" | "alastair_campbell" | "anthony_scaramucci" | "katty_kay"
+
+  // Global context
+  globalSignificance String // Why this matters globally
+  affectedPopulation String // Who this affects
+  category           String // e.g., "politics", "conflict", "economy", "climate"
+
+  // Metadata
+  generatedAt      DateTime @default(now())
+  publishDate      DateTime // Date this story batch was published (for daily 5am updates)
+  isActive         Boolean  @default(true) // Current top 100 vs archived
+
+  // Source tracking
+  sources          String   // JSON array of source links/outlets
+
+  @@index([rank])
+  @@index([publishDate])
+  @@index([isActive])
+  @@index([lat, lng])
+  @@index([category])
+}
