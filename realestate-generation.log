@@ -1,0 +1,299 @@
+🚀 Starting real estate & housing summary generation for ALL 143 countries
+
+Processing 143 countries...
+
+[1/143] Processing: United States
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[2/143] Processing: Canada
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[3/143] Processing: Mexico
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[4/143] Processing: Brazil
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[5/143] Processing: Argentina
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[6/143] Processing: Chile
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[7/143] Processing: Colombia
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[8/143] Processing: Peru
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[9/143] Processing: Venezuela
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[10/143] Processing: Ecuador
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[11/143] Processing: Bolivia
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[12/143] Processing: Paraguay
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[13/143] Processing: Uruguay
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[14/143] Processing: Cuba
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[15/143] Processing: Haiti
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[16/143] Processing: Dominican Republic
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[17/143] Processing: Guatemala
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[18/143] Processing: Honduras
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[19/143] Processing: El Salvador
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[20/143] Processing: Nicaragua
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[21/143] Processing: Costa Rica
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[22/143] Processing: Panama
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[23/143] Processing: Jamaica
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[24/143] Processing: Trinidad and Tobago
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[25/143] Processing: Guyana
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[26/143] Processing: Suriname
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[27/143] Processing: Belize
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[28/143] Processing: United Kingdom
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[29/143] Processing: France
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[30/143] Processing: Germany
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[31/143] Processing: Italy
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[32/143] Processing: Spain
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[33/143] Processing: Poland
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[34/143] Processing: Ukraine
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[35/143] Processing: Russia
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[36/143] Processing: Turkey
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[37/143] Processing: Greece
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[38/143] Processing: Belgium
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[39/143] Processing: Austria
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[40/143] Processing: Finland
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[41/143] Processing: Denmark
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[42/143] Processing: Ireland
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[43/143] Processing: Hungary
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[44/143] Processing: Czech Republic
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[45/143] Processing: Bulgaria
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[46/143] Processing: Croatia
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[47/143] Processing: Estonia
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[48/143] Processing: Norway
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[49/143] Processing: Sweden
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[50/143] Processing: Portugal
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[51/143] Processing: Netherlands
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[52/143] Processing: Romania
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[53/143] Processing: Serbia
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[54/143] Processing: Switzerland
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[55/143] Processing: Slovakia
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[56/143] Processing: Lithuania
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[57/143] Processing: Latvia
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[58/143] Processing: China
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[59/143] Processing: India
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[60/143] Processing: Japan
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[61/143] Processing: South Korea
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[62/143] Processing: North Korea
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[63/143] Processing: Indonesia
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[64/143] Processing: Australia
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[65/143] Processing: New Zealand
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[66/143] Processing: Pakistan
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[67/143] Processing: Bangladesh
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[68/143] Processing: Afghanistan
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[69/143] Processing: Iran
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[70/143] Processing: Israel
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[71/143] Processing: Palestine
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[72/143] Processing: Iraq
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[73/143] Processing: Jordan
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[74/143] Processing: Cambodia
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[75/143] Processing: Laos
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[76/143] Processing: Myanmar
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[77/143] Processing: Nepal
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[78/143] Processing: Mongolia
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[79/143] Processing: Papua New Guinea
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[80/143] Processing: Fiji
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[81/143] Processing: Bahrain
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[82/143] Processing: Kuwait
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[83/143] Processing: Oman
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[84/143] Processing: Qatar
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[85/143] Processing: Kazakhstan
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[86/143] Processing: Thailand
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[87/143] Processing: Vietnam
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[88/143] Processing: Philippines
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[89/143] Processing: Malaysia
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[90/143] Processing: Singapore
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[91/143] Processing: Taiwan
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[92/143] Processing: Sri Lanka
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[93/143] Processing: Yemen
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[94/143] Processing: Saudi Arabia
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[95/143] Processing: UAE
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[96/143] Processing: Lebanon
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[97/143] Processing: Syria
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[98/143] Processing: Solomon Islands
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[99/143] Processing: Vanuatu
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[100/143] Processing: Samoa
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[101/143] Processing: Tonga
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[102/143] Processing: Egypt
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[103/143] Processing: Ethiopia
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[104/143] Processing: Kenya
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[105/143] Processing: Somalia
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[106/143] Processing: Sudan
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[107/143] Processing: Algeria
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[108/143] Processing: Angola
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[109/143] Processing: Ghana
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[110/143] Processing: Mozambique
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[111/143] Processing: Senegal
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[112/143] Processing: Democratic Republic of Congo
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[113/143] Processing: Nigeria
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[114/143] Processing: South Africa
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[115/143] Processing: Morocco
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[116/143] Processing: Tunisia
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[117/143] Processing: Libya
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[118/143] Processing: Tanzania
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[119/143] Processing: Uganda
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[120/143] Processing: Zimbabwe
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[121/143] Processing: Cameroon
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[122/143] Processing: Zambia
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[123/143] Processing: Mali
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[124/143] Processing: Niger
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[125/143] Processing: Chad
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[126/143] Processing: Burkina Faso
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[127/143] Processing: Rwanda
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[128/143] Processing: Botswana
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[129/143] Processing: Namibia
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[130/143] Processing: Madagascar
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[131/143] Processing: Malawi
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[132/143] Processing: South Sudan
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[133/143] Processing: Eritrea
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[134/143] Processing: Djibouti
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[135/143] Processing: Sierra Leone
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[136/143] Processing: Liberia
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[137/143] Processing: Guinea
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[138/143] Processing: Ivory Coast
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[139/143] Processing: Togo
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[140/143] Processing: Benin
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[141/143] Processing: Gambia
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[142/143] Processing: Mauritania
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+[143/143] Processing: Congo-Brazzaville
+   ⏭️  Skipped - Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+
+================================================================================
+✅ GENERATION COMPLETE!
+================================================================================
+✅ Successfully processed: 0 countries
+❌ Errors: 143 countries
+📊 Total: 143 countries
+⏱️  Duration: 0.00 minutes
+================================================================================
