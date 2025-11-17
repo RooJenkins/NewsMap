@@ -378,6 +378,202 @@ However, Colombia also faces headwinds. The country's ongoing conflicts, violenc
 The realistic scenario is continued incremental progress: the startup ecosystem grows slowly, fintech and e-commerce expand, connectivity improves in urban areas but rural areas lag, and a few Colombian companies achieve regional success. Colombia won't become the next Silicon Valley or even the dominant Latin American tech hub—that's Brazil. But it can be a significant regional player, producing interesting companies and talent, while grappling with the constraints of being a middle-income country with serious structural challenges.
 
 Bottom line: Colombia's tech sector is real but constrained. There's genuine innovation happening, growing adoption, and talented people building companies. But the hype about Colombia as the next big tech hub needs perspective. The country's political instability, inequality, infrastructure gaps, and small market limit what's achievable. Tech can help Colombia develop and modernize, but it's not a magic solution to the country's deep-rooted problems. Expect slow progress, occasional successes, and ongoing challenges.`
+  },
+
+  // COSTA RICA - POLITICS
+  {
+    name: 'Costa Rica',
+    lat: 9.7489,
+    lng: -83.7534,
+    category: 'politics',
+    summary: `Costa Rica is Central America's success story—a stable democracy in a region plagued by authoritarianism, violence, and instability. But here's what's actually happening: that stability is being tested by economic pressures, rising crime, immigration challenges, and political fragmentation that's making governance harder. The country that abolished its military in 1948 and built a welfare state on coffee and bananas now faces tough questions about whether its model can survive the 21st century.
+
+Start with the basics: Costa Rica has had uninterrupted democracy since 1949, peaceful transfers of power, free elections, independent media, and functioning institutions. In a region where neighboring Nicaragua is a dictatorship, El Salvador is sliding toward autocracy, Honduras is recovering from a coup, and Guatemala battles corruption, Costa Rica looks like paradise. It is—relatively. But scratch the surface and you'll find serious problems.
+
+President Rodrigo Chaves, elected in 2022, represents a shift. He's a former World Bank economist who ran as an outsider, attacking the political establishment and promising to shake things up. Sound familiar? He won 52.8% in a runoff against a traditional party candidate, riding voter frustration with corruption, economic stagnation, and crime. But he's governing with a tiny legislative minority—his party has maybe 10 of 57 seats in the Legislative Assembly. Every bill requires coalition-building with parties he campaigned against.
+
+Chaves has an abrasive style. He's picked fights with journalists, criticized the judiciary, and pushed the boundaries of executive power. His critics worry he's got authoritarian tendencies; his supporters say he's just willing to challenge a sclerotic system. The Constitutional Court (Sala IV) has repeatedly struck down his decrees, creating institutional tension. So far, democratic guardrails are holding, but it's more contentious than Costa Rica's used to.
+
+The economic situation is challenging. Costa Rica transitioned from an agricultural economy to services and light manufacturing—think Intel had a major facility here, medical devices, call centers, tourism. GDP per capita is around $13,000, highest in Central America. But growth has slowed, public debt is around 70% of GDP, and fiscal deficits are chronic. The pandemic hammered tourism and exposed vulnerabilities. Inflation has been painful for ordinary Costa Ricans.
+
+The fiscal crisis is real. Costa Rica's government spending is high by regional standards—it maintains a generous (by Central American standards) public healthcare system, public education, and social programs. But tax collection is inefficient, evasion is high, and revenues don't cover spending. The country needed an IMF program to stabilize finances. Austerity is unpopular—public sector unions are powerful, and any attempt to cut spending or raise taxes triggers protests.
+
+Public debt sustainability worries economists. If Costa Rica can't get its fiscal house in order, it risks a debt crisis, which would be catastrophic for a small open economy. Chaves talks about fiscal discipline but hasn't achieved much—cutting spending means taking on unions and middle-class beneficiaries of public programs. Raising taxes is politically toxic. The IMF program bought time but didn't solve underlying problems.
+
+Crime is Costa Rica's fastest-growing political issue. For decades, Costa Rica was safe—tourists could walk around San José at night, violent crime was rare. Not anymore. Drug trafficking organizations have moved in. Costa Rica sits between cocaine-producing countries (Colombia) and markets (U.S., Europe). Cartels use Costa Rican ports and coasts for transshipment. With that comes violence—turf wars, assassinations, extortion. The homicide rate has climbed to around 11-12 per 100,000—still lower than neighbors, but shocking for Costa Ricans used to safety.
+
+The lack of a military is both source of pride and vulnerability. Costa Rica's police are lightly armed and trained for community policing, not battling heavily armed narco-gangs. When cartels bring automatic weapons and grenades, the police are outgunned. There's been debate about creating a more militarized force or even reconstituting a military, but that's politically unthinkable—abolishing the army is part of national identity. So Costa Rica muddles through with underfunded police trying to handle threats they're not equipped for.
+
+Immigration has become politically sensitive. Costa Rica has been relatively welcoming compared to neighbors—about 10% of the population is foreign-born, mostly Nicaraguans fleeing poverty and dictatorship. But the numbers have grown, straining public services. Venezuelans fleeing their country's collapse have also arrived. While Costa Rica hasn't gone full xenophobic, there's growing resentment, particularly in working-class communities where migrants are seen as competing for jobs and resources.
+
+Relations with Nicaragua are terrible. Daniel Ortega's regime is a dictatorship that brutally crushes dissent. Costa Rica has taken in Nicaraguan refugees and criticized Ortega's abuses. Ortega responded by sending military forces to disputed border areas, creating tensions. Costa Rica has no military to respond, relying on diplomacy and international law. The International Court of Justice handles border disputes, but Ortega ignores rulings he doesn't like. It's asymmetric—Costa Rica uses law and diplomacy; Ortega uses force and intimidation.
+
+Environmental protection is core to Costa Rican identity. The country has protected about 25% of its territory as national parks and reserves, pioneered ecotourism, and reforested previously cleared land. It's a global leader in renewable energy—nearly 100% of electricity comes from hydro, wind, geothermal, and solar. This is genuine, not greenwashing. But there are tensions: economic development versus conservation, agribusiness versus protected areas, tourism infrastructure versus pristine beaches.
+
+Political fragmentation is increasing. Costa Rica's traditional two-party system (PLN and PUSC) has collapsed. Now the Legislative Assembly has over a dozen parties, none with a majority. This makes governance difficult—every law requires building ad hoc coalitions. It's democratic, but it's messy and slow. Major reforms stall because there's no consensus. The upside is checks on executive power; the downside is gridlock.
+
+Corruption scandals have tarnished Costa Rica's reputation. Several ex-presidents have been investigated or jailed for corruption—taking bribes, illegal campaign financing, embezzlement. This destroyed public trust in traditional parties and fueled anti-establishment candidates like Chaves. The good news: Costa Rica actually investigates and prosecutes corruption, unlike neighbors where it's ignored. The bad news: it reveals how deep the rot goes.
+
+Social issues divide the country. Costa Rica is traditionally Catholic and socially conservative, but urban areas and younger people are more progressive. Same-sex marriage became legal in 2020 after a court ruling, despite fierce opposition from evangelicals. Abortion remains highly restricted. Marijuana legalization is debated. These culture war issues don't dominate like in the U.S., but they're creating political cleavages.
+
+Looking ahead, Costa Rica faces a choice: can it maintain its distinctive model—democracy, social programs, environmentalism, peace—in a region sliding toward authoritarianism and violence? Or will pressures force it to become more "normal"—cutting social spending, militarizing security, closing borders, sacrificing environmental protection for growth?
+
+The optimistic scenario: Costa Rica muddles through. It reforms taxes to improve revenue, finds some fiscal balance, professionalizes police enough to manage crime without militarizing, maintains democratic institutions, and remains a regional outlier in a good way. Tourism and services drive modest growth, the educated population adapts, and Costa Rica stays Costa Rica.
+
+The pessimistic scenario: fiscal crisis hits, forcing brutal austerity and social unrest. Crime continues rising, overwhelming police and creating demand for authoritarian law-and-order politics. Immigration backlash grows. A populist strongman (maybe Chaves or his successor) concentrates power, weakens institutions, and Costa Rica becomes more like its neighbors—messier, more violent, less democratic.
+
+The realistic scenario is probably somewhere in between: Costa Rica retains its core democratic character but under strain. Institutions hold but are tested. Crime gets somewhat worse but not catastrophic. Fiscal problems continue without resolution. The country remains the best place to live in Central America but less exceptional than before. That's still worth defending.`
+  },
+
+  // COSTA RICA - TECHNOLOGY
+  {
+    name: 'Costa Rica',
+    lat: 9.7489,
+    lng: -83.7534,
+    category: 'technology',
+    summary: `Costa Rica punches above its weight in tech for a country of 5 million, but let's be clear about what that means. This isn't a startup powerhouse or innovation hub—it's a solid services economy that attracted foreign tech companies through tax incentives, educated workforce, and political stability. The story is more about adapting to globalization than leading-edge innovation.
+
+Internet penetration is around 80-85%—high for Central America. Most access is mobile; smartphone penetration is over 70%. Fixed broadband reaches urban areas with decent speeds (50-100 Mbps), but rural connectivity lags. Telecom operators—ICE (state-owned), Claro, Movistar—provide competitive services after the sector was opened to competition. 4G coverage is widespread; 5G is beginning to roll out in San José and major cities.
+
+Costa Rica's tech claim to fame is attracting foreign companies. Intel famously had a chip manufacturing plant here from 1998-2014—at its peak, Intel chips were Costa Rica's top export. When Intel closed the plant and shifted to R&D and services, it shocked the country. But the transition worked: Intel still employs thousands in engineering and support roles. Other tech companies followed—HP, Dell, Microsoft, Oracle, SAP, Accenture—setting up shared services centers, customer support, software development, and back-office operations.
+
+Why did these companies come? Tax incentives through free trade zones (reduced corporate tax, import duty exemptions), educated bilingual workforce (many Costa Ricans speak English), political stability (unlike neighbors), reasonable infrastructure, and proximity to U.S. time zones. It's classic nearshoring—companies get cheaper labor than the U.S. with less risk than Asia or unstable Latin American countries.
+
+But here's the reality: most of these are service centers, not innovation hubs. Costa Ricans are doing customer support, accounting, coding for foreign projects, maintaining systems—valuable work, but not creating IP or building global products. The R&D that happens is mostly incremental improvements for parent companies, not breakthrough innovation. Costa Rica is in the global tech supply chain, but as a service provider, not a leader.
+
+The local startup ecosystem exists but is small. There are incubators, accelerators, coworking spaces in San José. Some startups in fintech, agtech, e-commerce, and SaaS. But venture capital is scarce—maybe $50-100 million annually, tiny compared to Chile, Colombia, or Mexico. Most successful Costa Rican startups either struggle to scale or get acquired early. The market is small (5 million people), and expanding regionally means competing with bigger ecosystems.
+
+Fintech has potential given low financial inclusion—about 60% have bank accounts. Digital payment platforms like Sinpe Móvil (a government-backed instant payment system) have gained traction. Neobanks and alternative lending startups are emerging. Regulations have slowly modernized to allow fintech innovation, but the banking sector is conservative and resistant to disruption.
+
+E-commerce grew during COVID but remains smaller than in larger markets. Costa Ricans shop on Amazon (shipped from U.S.), MercadoLibre (regional platform), and local sites. Logistics are challenging—Costa Rica is mountainous, roads are sometimes poor, and last-mile delivery outside San José is expensive. Cash on delivery is still common. The market is too small for e-commerce giants to invest heavily, so service quality lags.
+
+Government digitalization has progressed. Digital signatures are legal, some government services are online (tax filing, business registration, health records), and there's a push for e-government. But bureaucracy remains heavy, many processes still require in-person visits, and the pace of digitalization is slow. Corruption and inefficiency haven't been eliminated by technology—they've just moved partially online.
+
+Education in STEM is decent but not exceptional. Universities like UCR, TEC, and private institutions graduate engineers and computer scientists. Quality is reasonable—good enough for service center jobs—but not world-class. The best students often leave for grad school and jobs abroad. Tech companies complain about talent shortages for specialized roles. The government has promoted coding bootcamps and tech training, but scaling is slow.
+
+Costa Rica's approach to tech is pragmatic: attract foreign investment, train workforce for service jobs, maintain stability to keep companies here. It works—tech services employ tens of thousands in relatively high-paying jobs (by Costa Rican standards). But it's vulnerable: if companies find cheaper locations (Mexico, Eastern Europe, India) or automate the work Costa Ricans do, those jobs disappear.
+
+Medical devices are another tech success. Companies like Boston Scientific, Abbott, and others manufacture medical devices in Costa Rica. It's high-precision manufacturing requiring trained technicians, regulatory compliance, and quality control. Costa Rica has built expertise in this niche—good regulations, skilled labor, proximity to U.S. market. It's not sexy like software, but it's real manufacturing creating good jobs.
+
+Agtech has potential given Costa Rica's agricultural economy. Coffee, bananas, pineapples are major exports. Startups work on precision agriculture, supply chain optimization, sustainability monitoring. But adoption is slow—many farmers are small-scale, lack capital for technology, and are skeptical of change. The rural connectivity gap limits what's possible. Still, larger agribusinesses are adopting tech, and there's room for growth.
+
+Environmental tech aligns with Costa Rica's green brand. Startups and projects focus on reforestation monitoring, biodiversity conservation, sustainable tourism, renewable energy management. Costa Rica's nearly 100% renewable electricity grid requires sophisticated management—balancing hydro, wind, geothermal, solar—which involves real technical challenges. But the market for environmental tech is limited; much depends on international funding and carbon credits.
+
+Cybersecurity is an emerging concern. As Costa Rica digitizes, vulnerabilities increase. Government agencies, banks, and companies have been hit by ransomware and breaches. Costa Rica's cybersecurity capacity is limited—few experts, minimal government investment, weak enforcement of data protection laws. High-profile incidents (like the 2022 ransomware attack on government systems) exposed fragility.
+
+The gig economy exists but is smaller than in larger countries. Uber and other ride-hailing apps operate (often in regulatory gray zones). Food delivery via Rappi and UberEats has grown in San José. These provide flexible income but minimal protections. Regulation is debated but not implemented. It's the familiar story: platforms want no regulation, workers want protections, government moves slowly.
+
+Tech policy has been inconsistent. Successive governments promote innovation, digital transformation, and tech attractiveness, but execution is uneven. Tax incentives for free trade zones remain crucial for keeping foreign companies. Efforts to build domestic innovation capacity have been half-hearted—more rhetoric than resources. The startup ecosystem gets some government support (Startup Costa Rica program) but not enough to transform it.
+
+Internet freedom is generally good. Costa Rica respects free speech and press freedom (mostly). Internet access isn't censored like in authoritarian countries. Privacy protections exist but enforcement is weak. Surveillance capacity is limited compared to sophisticated states. Costa Rica is one of the freer internet environments in Latin America.
+
+Looking ahead, Costa Rica's tech trajectory depends on maintaining advantages that attracted foreign companies while trying to move up the value chain. The service center model works but is vulnerable to automation and cheaper competitors. Moving into higher-value activities—R&D, product development, advanced manufacturing—requires better education, more R&D investment, and stronger startup ecosystem. That's hard without scale and capital.
+
+The realistic scenario: Costa Rica remains an attractive nearshoring destination, retaining foreign tech employment while slowly building domestic capabilities. A few local startups succeed regionally, fintech and agtech grow modestly, government digitalization continues incrementally, and tech continues being a decent but not transformative part of the economy.
+
+The downside risk: automation reduces demand for service center labor, companies leave for cheaper locations, fiscal crisis reduces education quality, political instability scares investors, and tech sector employment declines. Costa Rica would still have tourism and agriculture, but losing tech would hurt.
+
+Bottom line: Costa Rica's tech sector is real but derivative. It's built on serving foreign companies, not creating breakthrough innovation. That's not a criticism—it's a viable strategy for a small country. The work provides good jobs and integrates Costa Rica into global value chains. But it's also precarious, dependent on factors beyond Costa Rica's control. The country is doing better than most of Central America, which is worth something, but it's not going to become the next Singapore or Israel. Realistic expectations matter.`
+  },
+
+  // CUBA - POLITICS
+  {
+    name: 'Cuba',
+    lat: 21.5218,
+    lng: -77.7812,
+    category: 'politics',
+    summary: `Cuba is frozen in time politically—a one-party Communist state that's survived the Soviet collapse, the Cold War's end, and every prediction of imminent regime change. But here's what's actually happening: the system is decaying from within, the economy is in crisis, young people are fleeing in massive numbers, and the regime's grip is loosening not through revolution but through exhaustion and collapse.
+
+The political structure hasn't fundamentally changed since 1959. The Communist Party is the only legal party. Miguel Díaz-Canel is president, but real power still flows through the old guard—Raúl Castro and his generation, though even they're dying off. The National Assembly rubber-stamps party decisions. Media is state-controlled. Civil society doesn't exist in any meaningful sense. Dissent is criminalized. This is textbook authoritarianism.
+
+But the regime is weaker than it looks. The revolutionary generation that had legitimacy from overthrowing Batista is gone or dying. Díaz-Canel lacks charisma or independent power base—he's a party bureaucrat, not a revolutionary leader. Younger Cubans don't remember the revolution and don't buy the regime's propaganda. The social contract—we provide education, healthcare, and security, you tolerate dictatorship—is breaking because the regime can't deliver anymore.
+
+The economy is a disaster. Cuba has been in crisis since the Soviet Union collapsed and subsidies ended. The "Special Period" of the 1990s brought near-starvation. Things improved when Venezuela under Chávez provided cheap oil and subsidies, but Venezuela's own collapse ended that. Now Cuba is back to severe shortages—food, medicine, electricity, fuel. Blackouts are routine. Hospitals lack supplies. People can't find basic goods.
+
+The U.S. embargo (Cubans call it "the blockade") is part of the problem, but not the whole story. The regime blames everything on the embargo, and it does cause real harm—restricting trade, financial transactions, investment. But Cuba trades with the rest of the world (EU, Canada, China, Latin America). The bigger problem is the system: centralized planning, state control of economy, prohibition on entrepreneurship, corruption, inefficiency. The embargo is an excuse and a crutch.
+
+Recent reforms have allowed limited private enterprise—small restaurants (paladares), B&Bs for tourists (casas particulares), some small businesses. These are controlled concessions, not genuine market liberalization. The state still dominates. Dual currency system (tourist CUC and local peso) created distortions until it was ended, but the transition was botched, causing more chaos.
+
+Migration is hemorrhaging the country. Over half a million Cubans have left since 2021—out of a population of 11 million. That's staggering. They're fleeing economic collapse and political repression. Young people see no future. Doctors, engineers, teachers—educated professionals—leave because they can't survive on state salaries. The exodus includes the very people Cuba needs to function. This is regime failure by another name.
+
+The July 2021 protests were unprecedented—thousands in the streets across Cuba chanting "Patria y Vida" (Homeland and Life, a rejection of the revolutionary slogan "Patria o Muerte"—Homeland or Death). The regime responded with mass arrests, show trials, and long prison sentences. Hundreds remain jailed. The crackdown worked in suppressing further protests, but it exposed the regime's brittleness—it can only maintain control through repression, not legitimacy.
+
+Internet access changed the dynamic. For decades, the regime controlled information completely. Now, with mobile internet (introduced only in 2018), Cubans can access outside information, organize, and share grievances. The government tries to censor and control, but it's harder than before. Social media spread the 2021 protests. Diaspora Cubans send information and money. The information monopoly is broken.
+
+Relations with the U.S. fluctuate with American politics. Obama opened relations, eased restrictions, and visited Cuba—it looked like normalization. Trump reversed most of it, tightening the embargo and designating Cuba a state sponsor of terrorism. Biden has made minor adjustments but kept most restrictions. Cuban-American politics in Florida (crucial swing state) constrain any president from dramatic opening. The embargo will likely continue indefinitely.
+
+Cuba's international position is weak. Russia and China provide some support but nothing like Soviet-era subsidies. Cuba sent doctors abroad in exchange for hard currency (medical diplomacy), but conditions are exploitative and many defect. Cuba has sold "sovereignty" to allies like Nicaragua and Venezuela, supporting their regimes rhetorically and with personnel, but this brings no real benefit to ordinary Cubans.
+
+The succession question looms. What happens when Raúl Castro and the last revolutionaries die? Díaz-Canel has no independent legitimacy. Will the system persist through institutional inertia, with security forces maintaining control? Or will it collapse like Eastern European Communist regimes did? Or could there be reform from within, a Vietnamese or Chinese-style opening while maintaining party control?
+
+The security apparatus remains loyal for now. Police, military, and intelligence services benefit from the system and fear retribution if it falls. They've crushed dissent effectively. But if economic conditions worsen further and migration continues, even security forces might fracture—lower ranks are Cubans suffering like everyone else.
+
+Scenarios for Cuba's future:
+
+Collapse: Economic crisis deepens, mass protests overwhelm security forces, regime falls chaotically. This could be violent and destabilizing, with uncertain outcome—could lead to democracy or new authoritarianism.
+
+Muddle through: The regime survives in zombie mode—repressive, poor, isolated—but doesn't fall because there's no organized opposition and security forces stay loyal. Cubans continue suffering and leaving.
+
+Reform: The party decides to liberalize economically (like Vietnam) to save itself, allowing markets, foreign investment, and growth while maintaining political control. Possible but requires regime willingness to share power with emerging business class.
+
+Normalization: U.S. ends embargo in exchange for reforms, foreign investment floods in, tourism booms, economy grows. But this requires political changes in both countries that aren't visible.
+
+The most likely scenario is muddle through—the regime is too weak to reform effectively but too repressive to allow challenge. Cuba remains stuck, poor, and shrinking as people leave. It's slow-motion collapse rather than dramatic upheaval. That's worse for ordinary Cubans than any of the alternatives.
+
+Bottom line: Cuba's political system is a zombie—technically alive but functionally dead. It persists through repression, not legitimacy or performance. The question isn't if it ends, but when and how. The tragedy is how much suffering and wasted potential happens in the meantime.`
+  },
+
+  // CUBA - TECHNOLOGY
+  {
+    name: 'Cuba',
+    lat: 21.5218,
+    lng: -77.7812,
+    category: 'technology',
+    summary: `Cuba's tech story is basically: imagine trying to build a digital economy in a country with frequent blackouts, minimal internet, no capital, and a government that treats information technology as a threat. That's Cuba. The fact that anything works at all is impressive; the reality is that Cuba is one of the least connected, least technologically advanced countries in the Western Hemisphere.
+
+Internet penetration is around 70% officially, but that's misleading. Most "internet access" is through public Wi-Fi hotspots where you buy prepaid cards for limited time. Home internet is rare and expensive. Mobile internet exists but is slow (3G mostly, some 4G in Havana) and costly relative to incomes. The average Cuban can't afford regular internet access. A month of home internet costs more than many people's monthly salary.
+
+The state telecom monopoly ETECSA controls everything. There's no competition, no private ISPs, no choice. ETECSA is inefficient, expensive, and serves regime control more than customer service. Prices are deliberately high to limit access. The government fears free information flow, so restrictions aren't just about infrastructure—they're policy.
+
+Cuba only got mobile internet in 2018—yes, 2018. Before that, Cubans went to Wi-Fi parks with smartphones to access internet via prepaid cards. This was surreal—parks full of people staring at phones, trying to cram everything (messaging family abroad, checking news, downloading) into limited time. Mobile internet expanded access significantly but it's still restricted and monitored.
+
+Censorship and surveillance are real. Websites critical of the government are blocked. VPNs are used to circumvent but require technical knowledge. The regime monitors internet traffic, tracks dissidents' communications, and arrests people for online activity. Posting criticism or organizing protests online can lead to prison. This chills online speech and limits internet's potential.
+
+The tech sector barely exists. There are no Cuban startups, no venture capital, no entrepreneurial ecosystem. Private enterprise was illegal until recent timid reforms, and even now, tech entrepreneurship isn't permitted in meaningful ways. State-owned companies provide basic IT services. Cuban programmers exist—educated workforce—but they work for state entities or seek ways to work remotely for foreign companies (which is complicated legally and practically).
+
+Brain drain is catastrophic. Cuban engineers and programmers who get the chance leave—to U.S., Spain, other Latin American countries, anywhere offering opportunity. Why stay when salaries are $50/month and you can't access modern tools or build independent projects? The best talent flees, leaving Cuba with less capacity to modernize.
+
+Government IT systems are primitive. Bureaucracy is paper-based. E-government barely exists. You can't do most official processes online. This isn't just about infrastructure—it's about control and inertia. Digital systems would require transparency and efficiency, threatening entrenched bureaucracies and opportunities for corruption.
+
+Education in STEM is actually decent—Cuba has good literacy and education system. Universities produce engineers and computer scientists. Quality of education is real. But what do graduates do with it? Work for state wages of $30-50/month? The education system produces talent that the economic and political system can't utilize. It's wasteful.
+
+Cuba has tried to spin its IT education as a strength, marketing services to allies (Venezuela, Nicaragua). Cuban IT professionals help set up systems in friendly countries. But this is small-scale and generates little benefit for Cubans themselves. It's like the medical diplomacy—exported labor for regime benefit.
+
+The tech that ordinary Cubans use is jury-rigged and ingenious. Imagine trying to function with sporadic electricity, expensive internet, old devices, and no access to modern services. Cubans improvise—sharing Wi-Fi passwords, using VPNs, downloading offline Wikipedia (yes, that's a thing), swapping USB drives with pirated content and information ("el paquete semanal"—the weekly package of movies, music, software shared offline).
+
+"El paquete" is fascinating—a offline content distribution system. Since internet is too expensive for most, entrepreneurs compile terabytes of content (pirated movies, TV shows, music, software, apps, websites) onto hard drives and sell USB copies weekly. It's how most Cubans access entertainment and information. It's completely outside official channels and technically illegal, but tolerated because it's a pressure valve.
+
+Cryptocurrency is technically illegal but happens anyway. Some Cubans use Bitcoin or stablecoins to receive remittances from family abroad, bypassing official channels and fees. The government has talked about regulating or creating official crypto, but implementation is unclear. Crypto offers Cubans a way to access global economy despite restrictions, but adoption is limited by internet access and technical barriers.
+
+Cuba has tried to position itself as a tech innovator in specific niches. The regime points to biotech—Cuba has developed vaccines and pharmaceuticals despite embargo. That's real, though limited. But this isn't digital tech; it's different. Digital tech requires openness and information flow that the regime fears.
+
+Social media use is growing but monitored. Facebook, WhatsApp, Instagram are accessible and used by Cubans who can afford data. But the government tracks activists, infiltrates groups, and uses social media for surveillance. Diaspora Cubans use social media to stay connected and share information, which the regime can't fully control.
+
+Tech's role in the 2021 protests was significant. Social media spread word of demonstrations, videos of police brutality went viral, and diaspora amplified voices. The regime temporarily shut down internet during protests—a crude but effective control method. This showed both tech's power and the regime's willingness to use blunt force against it.
+
+E-commerce is nearly nonexistent. No Amazon, no local e-commerce platforms, minimal digital payments. Most commerce is cash-based because of lack of internet, banking infrastructure, and trust. Some state-run online stores exist but selection is limited and often sold out due to shortages. Credit cards are rare. Cuba is a cash economy.
+
+The U.S. embargo affects tech directly. American companies can't do business in Cuba, so no Apple stores, no Google services officially, no Microsoft, no modern tech infrastructure from U.S. providers. Cubans use Chinese phones (Huawei, Xiaomi), European software, and workarounds. This limits access to cutting-edge tech and creates compatibility issues.
+
+Looking forward, Cuba's tech development depends entirely on political change. If the regime falls or reforms radically, and if the embargo ends, Cuba could modernize quickly—educated population, proximity to U.S., diaspora connections, and pent-up demand. But under current conditions, don't expect progress. The regime fears tech's liberating potential more than it values economic benefits.
+
+Optimistic scenario: Political opening (however it happens) leads to internet liberalization, investment in infrastructure, tech companies entering market, Cuban talent returning or working remotely, and rapid digital transformation. Cuba could be a decent tech services market like Costa Rica.
+
+Pessimistic scenario: Regime continues, infrastructure continues degrading, blackouts worsen, internet remains restricted, brain drain accelerates, and Cuba falls further behind. It becomes like North Korea—technologically isolated and backward.
+
+Realistic scenario: Slow decay with small improvements. Internet access gradually expands, quality remains poor, regime maintains control and censorship, some Cubans find workarounds, brain drain continues, and Cuba remains one of the hemisphere's least connected countries.
+
+Bottom line: Cuba's technology situation is what happens when political control trumps everything else. The regime prioritizes information control over development, repression over innovation, isolation over integration. This keeps the regime in power (for now) but impoverishes Cubans and wastes human potential. Cuban could have a thriving tech sector—it has the talent—but the political system won't allow it. That's the tragedy.`
   }
 ]
 
