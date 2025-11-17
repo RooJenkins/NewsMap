@@ -282,6 +282,261 @@ const politicsSummaries: PoliticsSummary[] = [
       'Climate change threatening Himalayan glaciers and water supply',
       'Geopolitical balancing between India and China creating tensions'
     ]
+  },
+  {
+    country: 'Mongolia',
+    summary: `Mongolia operates as parliamentary democracy but faces corruption, mining dependence on China, and geopolitical pressures between giant neighbors Russia and China. The country alternates power between Mongolian People Party and Democratic Party through generally free elections, but patronage and corruption persist. Economic dependence on copper and coal mining exports to China creates vulnerability. Winters (dzud) kill livestock devastating herders. Ulaanbaatar has severe air pollution. China economic dominance prompts "third neighbor" policy seeking U.S. and Japan engagement.`,
+    issues: ['Mining dependence on China exports', 'Air pollution in Ulaanbaatar', 'Dzud winters devastating herders', 'Corruption in politics', 'China-Russia geopolitical pressures']
+  },
+  {
+    country: 'Papua New Guinea',
+    summary: `PNG faces tribal violence, corruption, weak state capacity, and Bougainville independence demands. Over 800 languages create governance challenges. Elections feature violence. Tribal conflicts and payback killings are common. Resource extraction benefits elites while locals face environmental destruction. Bougainville independence referendum passed 98% but stalled. Gender violence is epidemic. Australia provides critical aid.`,
+    issues: ['Tribal violence and payback killings', 'Bougainville 98% independence vote stalled', 'Endemic corruption', 'Gender-based violence epidemic', 'Weak state in remote regions']
+  },
+  {
+    country: 'Fiji',
+    summary: `Fiji has experienced multiple coups and faces indigenous Fijian-Indian ethnic tensions. Military interventions have repeatedly overthrown elected governments. Current democracy is fragile. Indigenous Fijians dominate politics and military. Indo-Fijians face discrimination. China influence grows through infrastructure and aid. Climate change threatens low-lying islands. Tourism drives economy.`,
+    issues: ['History of military coups', 'Ethnic tensions between indigenous Fijians and Indo-Fijians', 'China influence growing', 'Climate vulnerability', 'Fragile democracy']
+  },
+  {
+    country: 'Bahrain',
+    summary: `Bahrain under Sunni Al Khalifa monarchy rules Shia majority population, creating tensions. 2011 Arab Spring protests demanding reforms were crushed with Saudi military assistance. Shia activists face imprisonment. Political parties are banned. Economy depends on finance and oil. Saudi Arabia exerts major influence. Iran is accused of supporting Shia opposition. U.S. Fifth Fleet is based in Bahrain.`,
+    issues: ['Sunni minority ruling Shia majority', '2011 protests crushed with repression', 'Political rights severely restricted', 'Saudi influence and intervention', 'Sectarian tensions']
+  },
+  {
+    country: 'Kuwait',
+    summary: `Kuwait operates as constitutional emirate with elected parliament, unusual in Gulf. Parliament can question ministers and has blocked government initiatives, creating tensions with Al Sabah ruling family. Oil wealth funds generous welfare but economic diversification lags. Iraq 1990 invasion remains traumatic memory. Expatriates outnumber citizens. Women gained voting rights in 2005 but face restrictions. Corruption scandals recur.`,
+    issues: ['Emir-parliament tensions', 'Economic diversification failure', 'Expatriates outnumber citizens', 'Corruption scandals', 'Women rights limited despite progress']
+  },
+  {
+    country: 'Oman',
+    summary: `Oman under Sultan Haitham faces economic pressures after oil price decline and succession from long-ruling Sultan Qaboos. The country maintained neutrality and mediated regional conflicts. Economic diversification efforts proceed slowly. Youth unemployment is concern. Oman avoided Arab Spring protests through modest reforms and subsidies. Relations with Iran are pragmatic despite Gulf tensions. Governance is authoritarian but relatively tolerant.`,
+    issues: ['Economic pressures from oil dependence', 'Youth unemployment rising', 'Succession from Qaboos to Haitham', 'Diversification slow progress', 'Authoritarianism despite tolerance']
+  },
+  {
+    country: 'Qatar',
+    summary: `Qatar under Emir Tamim faces post-blockade normalization after Saudi-led 2017-2021 isolation. The tiny gas-rich state hosted 2022 World Cup amid labor rights criticism. Al Jazeera media network projects influence. Support for Muslim Brotherhood and mediation with Taliban anger neighbors. Massive gas wealth funds development. Expatriates are 90% of population. Women rights improved but restrictions remain. Absolute monarchy tolerates no dissent.`,
+    issues: ['Saudi-led blockade legacy', 'Labor rights abuses for migrant workers', 'Expatriates 90% of population', 'Absolute monarchy with no political freedom', 'Regional tensions over Muslim Brotherhood support']
+  },
+  {
+    country: 'Kazakhstan',
+    summary: `Kazakhstan under President Tokayev navigates post-Nazarbayev transition and January 2022 violent protests. Nazarbayev ruled 1990-2019 and retained power behind scenes until protests. Economic dependence on oil creates vulnerability. Corruption is endemic. January 2022 fuel price protests escalated into violence, and Tokayev called Russian-led forces to restore order. This revealed regime fragility. Reforms promised but implementation questioned. Ethnic Russians are significant minority. Balancing Russia and China is key challenge.`,
+    issues: ['January 2022 violent protests and Russian intervention', 'Nazarbayev shadow influence', 'Oil dependence creating economic vulnerability', 'Endemic corruption', 'Russia-China geopolitical balancing']
+  },
+  {
+    country: 'Thailand',
+    summary: `Thailand oscillates between democracy and military rule, with monarchy sacrosanct. The 2014 coup led to years of military government. 2019 elections restored civilian rule but military retains power through senate and constitution. Youth-led protests 2020-2021 unprecedented challenged monarchy, leading to arrests. Move Forward Party advocating monarchy reform won 2023 election but was blocked from governing and later dissolved. Political crisis persists. Southern insurgency continues. Coups recur when elites feel threatened.`,
+    issues: ['Military coups recurring when elites threatened', 'Monarchy criticism criminalized with lese-majeste law', 'Move Forward Party blocked despite election victory then dissolved', 'Youth protest movement demanding reform', 'Southern insurgency ongoing']
+  },
+  {
+    country: 'Vietnam',
+    summary: `Vietnam under Communist Party rule maintains authoritarian control while pursuing economic growth and managing China tensions. The party tolerates no opposition and suppresses dissent. Economic growth has been strong through manufacturing and exports. China tensions over South China Sea and historical animosity create strategic challenges. Vietnam balances China economically while seeking U.S. and partners for security. Corruption remains despite anti-corruption campaigns. Internet censorship and activist imprisonment are routine. The U.S.-Vietnam relationship has warmed dramatically since war.`,
+    issues: ['Communist one-party authoritarian rule', 'China tensions over South China Sea', 'Dissent and activists suppressed', 'Corruption despite campaigns', 'Balancing China economically and U.S. security ties']
+  },
+  {
+    country: 'Philippines',
+    summary: `Philippines under President Ferdinand Marcos Jr, son of dictator, faces questions about authoritarian nostalgia and China disputes. Marcos won 2022 election partnered with Duterte daughter as VP. His father ruled 1965-1986 ending in People Power revolution, and family fled. Their return represents historical revisionism downplaying martial law abuses. Duterte bloody drug war killed thousands and Marcos continues policies. China territorial disputes over Scarborough Shoal and Spratly Islands create tensions. U.S. alliance strengthened. Corruption persists. Mindanao insurgencies continue.`,
+    issues: ['Marcos dictator son revising history of martial law abuses', 'Duterte drug war extrajudicial killings continuing', 'China territorial disputes over South China Sea', 'Corruption endemic', 'Mindanao insurgencies ongoing']
+  },
+  {
+    country: 'Malaysia',
+    summary: `Malaysia operates as multi-ethnic democracy but race-based politics and UMNO dominance create tensions. The United Malays National Organization governed 1957-2018 and returned to power after brief opposition interlude. Malay majority receives affirmative action benefiting Bumiputera. Chinese and Indian minorities face discrimination. Anwar Ibrahim finally became PM in 2022 after decades of opposition and imprisonment. Corruption scandals including 1MDB generated billions in stolen funds. Islam is official religion. Opposition including Islamic party PAS gains in conservative states.`,
+    issues: ['Race-based politics with Bumiputera privileges', 'Chinese and Indian minorities facing discrimination', '1MDB corruption scandal billions stolen', 'UMNO dominance despite brief opposition government', 'Islamic party PAS growing in conservative states']
+  },
+  {
+    country: 'Singapore',
+    summary: `Singapore under People Action Party (PAP) rule since independence maintains competitive authoritarianism—elections occur but PAP always wins through system advantages. Lee Kuan Yew built the city-state and Lee family continues dominating. Lee Hsien Loong served as PM for decades before recent succession. Economic success through financial services, trade, and manufacturing. Strict laws and limited freedoms. Opposition faces defamation suits and restrictions. Media is controlled. Migrant workers face exploitation. Housing through public schemes. Meritocracy and development prioritized over democracy.`,
+    issues: ['PAP one-party dominance since 1959', 'Limited political freedoms and opposition restrictions', 'Media control and self-censorship', 'Migrant worker exploitation', 'Defamation suits silencing critics']
+  },
+  {
+    country: 'Taiwan',
+    summary: `Taiwan operates as vibrant democracy while facing existential threat from China claiming it as province. President Lai Ching-te of DPP promotes Taiwan identity angering Beijing. China threatens invasion and conducts military exercises. U.S. provides weapons and ambiguous security commitment. Semiconductor industry led by TSMC is globally critical. Elections are free and competitive. Kuomintang (KMT) favors closer China ties. Younger generation increasingly identifies as Taiwanese not Chinese. International isolation due to China pressure—few countries recognize Taiwan. Watch whether China invades and if U.S. defends, risking catastrophic war.`,
+    issues: ['China invasion threat with military exercises', 'International isolation with few diplomatic partners', 'U.S. security commitment ambiguous', 'Semiconductor industry critical vulnerability', 'Generational identity shift away from China']
+  },
+  {
+    country: 'Sri Lanka',
+    summary: `Sri Lanka faces economic crisis after 2022 sovereign default, president fleeing, and IMF bailout. Rajapaksa political dynasty dominated for decades through Sinhalese Buddhist nationalism and Tamil marginalization. 1983-2009 civil war against Tamil Tigers killed over 100,000. Tamils face ongoing discrimination. Economic crisis from debt (particularly China infrastructure loans), corruption, and mismanagement caused currency collapse and shortages. Protests ousted President Rajapaksa. Current President Wickremesinghe implements austerity. Debt restructuring ongoing. China influence through Hambantota port. Authoritarianism and war crimes accountability remain issues.`,
+    issues: ['Economic crisis and 2022 default requiring IMF bailout', 'Rajapaksa corruption and mismanagement', 'Chinese debt trap with Hambantota port', 'Tamil minority discrimination after civil war', 'Austerity and living standards collapse']
+  },
+  {
+    country: 'Yemen',
+    summary: `Yemen endures catastrophic civil war since 2014 Houthi takeover creating worst humanitarian crisis globally. Houthis (Shia Zaidi rebels) control north including capital Sanaa. Saudi-led coalition supports internationally recognized government. War has killed hundreds of thousands and created famine affecting millions. Houthi attacks on Saudi Arabia and Red Sea shipping escalate conflict. Al-Qaeda and ISIS operate amid chaos. Southern separatists seek independence. The state has collapsed. Ceasefires are temporary. No political solution visible. Iran supports Houthis; Saudi Arabia leads coalition.`,
+    issues: ['Civil war since 2014 with hundreds of thousands killed', 'Worst humanitarian crisis with famine affecting millions', 'Houthi attacks on Saudi Arabia and shipping', 'State collapse with multiple factions', 'Al-Qaeda and ISIS presence']
+  },
+  {
+    country: 'Saudi Arabia',
+    summary: `Saudi Arabia under Crown Prince Mohammed bin Salman (MBS) pursues Vision 2030 diversification while maintaining absolute monarchy and repression. MBS consolidated power through arrests of rivals. Jamal Khashoggi murder in 2018 revealed ruthlessness. Social reforms allow women to drive and work, and entertainment expands. But dissent is crushed—activists face imprisonment and execution. Yemen war is quagmire. Oil dependence persists despite diversification rhetoric. Relations with U.S. are strained but endure. Normalization with Israel is discussed. Neom megaproject is ambitious. Succession from aging King Salman to MBS looms.`,
+    issues: ['MBS absolute power and Khashoggi murder revealing repression', 'Yemen war quagmire with civilian casualties', 'Activists imprisoned and executed for dissent', 'Economic diversification from oil slow progress', 'U.S. relations strained but strategic']
+  },
+  {
+    country: 'UAE',
+    summary: `UAE under Abu Dhabi ruler Mohammed bin Zayed (MBZ) operates as federation of seven emirates with Abu Dhabi dominant. Absolute monarchy tolerates no dissent. Economic success through oil, trade, tourism, and finance. Dubai is global hub. Foreign workers are 90% of population facing exploitation and no rights. Abraham Accords normalized Israel ties. Regional influence through military interventions in Yemen and Libya. Surveillance state monitors citizens. Social reforms are superficial. Labor rights abuses continue. Expo 2020 showcased ambitions. Climate change threatens despite hosting COP28.`,
+    issues: ['Absolute monarchy with no political rights', 'Foreign workers 90% facing exploitation', 'Labor rights abuses despite development', 'Surveillance state', 'Regional military interventions']
+  },
+  {
+    country: 'Lebanon',
+    summary: `Lebanon faces economic collapse, political paralysis, and Hezbollah dominance. The 2019 economic crisis saw currency collapse, banking sector freeze, and poverty surge. Political system based on sectarian power-sharing creates dysfunction. Hezbollah (Shia militia and political party) controls security independently and dominates politics, acting as Iran proxy. 2020 Beirut port explosion killed over 200 and devastated city. No accountability due to political obstruction. Presidential vacancy persists due to political deadlock. Syrian refugees strain resources. Israel-Hezbollah tensions risk war.`,
+    issues: ['Economic collapse with currency and banking crisis', 'Hezbollah militia dominating politics as Iran proxy', '2020 Beirut explosion with no accountability', 'Political paralysis and presidential vacancy', 'Syrian refugees over 1 million straining resources']
+  },
+  {
+    country: 'Syria',
+    summary: `Syria under Assad regime survived civil war through Russian and Iranian support but remains fractured. The 2011 Arab Spring protests against Assad escalated to civil war killing over 500,000. Chemical weapons, barrel bombs, and sieges created humanitarian catastrophe. Assad controls major cities but not all territory. Kurdish SDF controls northeast. Turkish-backed rebels hold northwest. ISIS degraded. Millions are refugees. Economy collapsed. Reconstruction absent despite war winding down. Russia military bases secured. Iran influence entrenched. No accountability for war crimes. Normalization with Arab states begins despite atrocities.`,
+    issues: ['Civil war killing 500,000+ with chemical weapons used', 'Assad surviving through Russian and Iranian support', 'Humanitarian catastrophe with millions displaced', 'No accountability for war crimes', 'Economic collapse and destroyed infrastructure']
+  },
+  {
+    country: 'Solomon Islands',
+    summary: `Solomon Islands faces instability and China-Australia competition for influence. 2021 riots targeted Chinatown and government over Guadalcanal Province grievances and Taiwan-China switch. Ethnic tensions persist. Prime Minister Sogavare signed security pact with China in 2022, alarming Australia, New Zealand, and U.S. China could establish military presence threatening regional balance. Australia provides aid and peacekeeping. Corruption and weak governance persist. Climate change threatens low-lying islands.`,
+    issues: ['China security pact allowing potential military presence', '2021 riots over ethnic and political tensions', 'Australia security concerns', 'Corruption and weak governance', 'Climate vulnerability']
+  },
+  {
+    country: 'Vanuatu',
+    summary: `Vanuatu features political instability with frequent no-confidence votes and China-Taiwan competition. The country switched recognition between China and Taiwan multiple times as governments change. China provides infrastructure aid; Taiwan offers diplomatic support. Coalition governments collapse frequently. Corruption is concern. Climate change threatens—cyclones devastate islands and sea level rise threatens existence. Economy depends on tourism and offshore finance. Kastom (traditional culture) influences politics.`,
+    issues: ['Frequent government changes and instability', 'China-Taiwan diplomatic competition', 'Climate vulnerability with cyclones and sea level rise', 'Corruption concerns', 'Economic dependence on tourism']
+  },
+  {
+    country: 'Samoa',
+    summary: `Samoa features traditional chiefs (matai) system alongside democracy. The FAST party ended decades of HRPP dominance in 2021 but transfer was contentious. Prime Minister Fiame Naomi Mataafa became first female leader. China influence grows through infrastructure loans. New Zealand is traditional partner. Climate change threatens low-lying areas. Traditional culture remains strong. Religion (Christianity) is influential. Economy depends on tourism and remittances.`,
+    issues: ['Traditional matai chief system influencing politics', 'China loans creating debt concerns', 'Climate change threatening low-lying islands', '2021 contentious power transfer', 'Economic dependence on tourism and remittances']
+  },
+  {
+    country: 'Tonga',
+    summary: `Tonga operates as constitutional monarchy with elected parliament. The noble class holds reserved seats creating hybrid system. Democracy reforms in 2010 reduced monarch power but royals remain influential. 2022 Hunga Tonga volcanic eruption and tsunami devastated islands. China debt from infrastructure loans creates concerns. Relations with Australia and New Zealand are close. Climate change threatens low-lying islands. Traditional culture and monarchy are respected. Economy depends on remittances and agriculture.`,
+    issues: ['Volcanic eruption 2022 devastating islands', 'China debt from infrastructure loans', 'Climate vulnerability', 'Noble class reserved parliamentary seats', 'Economic dependence on remittances']
+  },
+  {
+    country: 'Egypt',
+    summary: `Egypt under President Abdel Fattah el-Sisi operates as authoritarian state with systematic repression after 2013 military coup. Sisi overthrew elected Islamist President Morsi and crushed Muslim Brotherhood. Tens of thousands are political prisoners. Media is controlled. Protests are banned. Economic crisis from currency devaluation and inflation affects millions despite IMF bailouts. Mega-projects like new capital drain resources. Population growth strains resources. Sinai insurgency continues. Sisi maintains U.S. and Gulf support. Israel relations are pragmatic. Suez Canal is strategic. Water security threatened by Ethiopian dam.`,
+    issues: ['Authoritarian repression with tens of thousands political prisoners', '2013 coup crushing Muslim Brotherhood', 'Economic crisis with inflation and devaluation', 'Mega-projects wasting resources amid poverty', 'Ethiopia dam threatening water security']
+  },
+  {
+    country: 'Ethiopia',
+    summary: `Ethiopia under PM Abiy Ahmed faces Tigray war aftermath, ethnic conflicts, and economic crisis. Abiy won 2019 Nobel Peace Prize for Eritrea peace but launched brutal Tigray war 2020-2022 killing hundreds of thousands. Cease-fire holds but tensions remain. Ethnic federalism creates conflicts—Oromo, Amhara, Tigray, and others compete. Fano militia in Amhara fights government. Economic crisis from war and global pressures. Grand Renaissance Dam dispute with Egypt over Nile. Abiy consolidated power and postponed elections. Infrastructure development proceeds despite conflicts. Authoritarianism increases.`,
+    issues: ['Tigray war killing hundreds of thousands', 'Ethnic conflicts with Amhara Fano militia fighting government', 'Economic crisis from war', 'Grand Renaissance Dam dispute with Egypt', 'Abiy authoritarianism despite Nobel Peace Prize']
+  },
+  {
+    country: 'Kenya',
+    summary: `Kenya under President William Ruto faces economic crisis, corruption, and ethnic politics. Ruto narrowly won disputed 2022 election against Raila Odinga. Economic pressures from debt, inflation, and IMF austerity sparked 2023-2024 protests. Tax increases angered youth. Corruption persists despite anti-corruption rhetoric. Ethnic politics shape competition—Kikuyu, Luo, Kalenjin, and others. Kenya is regional hub for East Africa. Al-Shabaab threatens from Somalia. Police brutality is routine. Democratic institutions function but are strained. 2007-08 post-election violence remains warning.`,
+    issues: ['Economic crisis with debt and inflation sparking protests', 'Corruption endemic despite rhetoric', 'Ethnic politics creating divisions', 'Disputed elections threatening stability', 'Al-Shabaab terrorism threat from Somalia']
+  },
+  {
+    country: 'Somalia',
+    summary: `Somalia endures decades of state failure, Al-Shabaab insurgency, famine, and fragmentation. The central government controls limited territory. Al-Shabaab Islamist militants control rural areas and conduct terrorism. Famine and drought kill thousands. Clan politics dominate. Somaliland declared independence in 1991 and functions independently but lacks recognition. Puntland is semi-autonomous. Federal system is weak. African Union forces support government. Corruption is massive. Piracy declined but persists. Humanitarian crisis is permanent. Ethiopia, Kenya, and regional actors intervene. No effective governance.`,
+    issues: ['Al-Shabaab controlling territory and conducting terrorism', 'Famine and drought creating humanitarian catastrophe', 'State failure with weak central government', 'Somaliland independence unrecognized', 'Clan conflicts and fragmentation']
+  },
+  {
+    country: 'Sudan',
+    summary: `Sudan descends into civil war in 2023 between military factions SAF and RSF, creating humanitarian catastrophe. General Burhan (SAF) and Hemedti (RSF) jointly led 2021 coup against transitional government. Their power struggle escalated to war. Tens of thousands killed and millions displaced. Khartoum devastated. Darfur ethnic cleansing resumes. The 2019 revolution ousted dictator Bashir, but military sabotaged transition. Economic collapse. Famine looms. Regional powers support rival sides. No end visible.`,
+    issues: ['Civil war between SAF and RSF generals', 'Humanitarian catastrophe with millions displaced', 'Darfur ethnic cleansing resuming', '2021 coup crushing democratic transition', 'Economic collapse and famine looming']
+  },
+  {
+    country: 'Algeria',
+    summary: `Algeria under President Tebboune and military rule faces Hirak protest legacy and economic challenges. The 2019 Hirak protests ousted longtime ruler Bouteflika but military retained power. Tebboune is military-backed. Protests were suppressed during COVID and dissent is crushed. Gas and oil revenues fund state but prices volatile. Youth unemployment is high. Algeria maintains non-alignment but has Russian ties. Morocco tensions over Western Sahara persist. Islamist threat decreased but surveillance continues. The military (ANP) is true power. Democratic reforms are cosmetic.`,
+    issues: ['Military rule despite Hirak protests ousting Bouteflika', 'Repression of dissent and journalists', 'Youth unemployment crisis', 'Gas revenue dependence creating economic vulnerability', 'Morocco tensions over Western Sahara']
+  },
+  {
+    country: 'Angola',
+    summary: `Angola under President João Lourenço and MPLA party faces corruption, poverty, and oil dependence despite decades of peace after 2002 civil war end. The MPLA ruled since 1975 independence. Dos Santos family dominated for decades, siphoning billions. Lourenço launched anti-corruption campaign but MPLA system persists. Oil revenues collapsed with price decline. Economic diversification is slow. Poverty is widespread despite oil wealth. Infrastructure is poor. Debt to China is massive. Elections occur but MPLA always wins. Cabinda separatism continues.`,
+    issues: ['Oil dependence with price collapse devastating economy', 'MPLA one-party dominance since 1975', 'Dos Santos corruption legacy billions siphoned', 'Poverty widespread despite oil wealth', 'Chinese debt creating dependency']
+  },
+  {
+    country: 'Ghana',
+    summary: `Ghana operates as stable democracy but faces economic crisis and debt default. The country alternates power between NDC and NPP through free elections. 2024 election is competitive. But economic crisis from debt, inflation, and IMF bailout has eroded confidence. Akufo-Addo government faces corruption accusations. Cocoa exports and gold mining drive economy but benefits uneven. Energy crisis (dumsor) recurs. Illegal mining (galamsey) devastates environment. Tribalism affects politics—Ashanti, Ewe, and northern regions have patterns. Governance institutions function but corruption persists. Ghana is regional democratic model despite challenges.`,
+    issues: ['Economic crisis and 2022 debt default requiring IMF bailout', 'Corruption despite democratic institutions', 'Energy crisis dumsor affecting businesses', 'Illegal mining galamsey devastating environment', 'Inflation and cost-of-living pressures']
+  },
+  {
+    country: 'Mozambique',
+    summary: `Mozambique faces Islamist insurgency in Cabo Delgado, economic challenges, and Frelimo dominance. The insurgency linked to Islamic State began 2017 in gas-rich north, displacing millions. Regional forces and private military intervened. Gas projects are delayed. Frelimo has ruled since 1975 independence. Elections are disputed with opposition alleging fraud. Cyclones devastate regularly. Debt crisis from hidden loans created default. Corruption is endemic. South Africa-backed gas projects promise revenues but insurgency prevents development. Poverty is widespread.`,
+    issues: ['Islamist insurgency in Cabo Delgado displacing millions', 'Frelimo one-party dominance with disputed elections', 'Hidden debt scandal creating default', 'Cyclones devastating regularly', 'Gas projects delayed by insurgency']
+  },
+  {
+    country: 'Senegal',
+    summary: `Senegal under President Bassirou Diomaye Faye represents generational change and sovereignty push after 2024 election. Faye and PM Sonko defeated establishment after years of protests against President Sall attempting third term. Faye promises economic sovereignty, renegotiating contracts, and pan-Africanism. Senegal has history as stable democracy. But economic challenges persist—youth unemployment, fishing depletion, and foreign control of resources. The country is developing offshore gas. France relations are reassessed. Political maturity is tested by delivering on promises.`,
+    issues: ['Delivering on sovereignty and renegotiating contracts', 'Youth unemployment crisis', 'Fishing resources depleted', 'France relations and military presence questioned', 'Managing offshore gas development']
+  },
+  {
+    country: 'Democratic Republic of Congo',
+    summary: `DRC under President Tshisekedi faces M23 rebel conflict, mineral exploitation, and governance failure. The country has vast mineral wealth (cobalt, coltan, copper) but population suffers poverty. Eastern Congo endures decades of conflict—M23 rebels backed by Rwanda fight government. Millions displaced and killed. Armed groups number in dozens. Kabila ruled 2001-2019 after father assassinated. Tshisekedi won disputed 2018 election and secured second term in 2023 disputed vote. Corruption is endemic. Infrastructure is minimal despite resources. Ebola and other diseases recur.`,
+    issues: ['M23 conflict backed by Rwanda in eastern Congo', 'Mineral wealth cobalt coltan exploited while population poor', 'Decades of conflict with millions killed displaced', 'Disputed elections and weak democracy', 'Corruption endemic with resources siphoned']
+  },
+  {
+    country: 'Nigeria',
+    summary: `Nigeria under President Bola Tinubu faces insecurity, economic crisis, and corruption. Boko Haram insurgency continues in northeast. Banditry plagues northwest. Separatist IPOB agitates in southeast. Herder-farmer conflicts kill thousands. Tinubu removed fuel subsidies causing economic pain but necessary reform. Naira devaluation and inflation hurt citizens. Oil theft costs billions. Corruption is endemic—politicians loot public funds. Elections are marred by violence and rigging. Ethnic and religious tensions (Muslim north, Christian south) shape politics. Lagos is economic hub. Nigeria has Africa largest economy and population but governance fails citizens.`,
+    issues: ['Boko Haram insurgency and banditry creating nationwide insecurity', 'Economic crisis with subsidy removal and inflation', 'Corruption endemic with politicians looting billions', 'Ethnic and religious tensions north-south', 'Oil theft costing billions in lost revenues']
+  },
+  {
+    country: 'South Africa',
+    summary: `South Africa under President Cyril Ramaphosa and ANC faces electricity crisis, corruption, and electoral decline. The ANC, governing since 1994 end of apartheid, lost majority in 2024 election forming GNU with DA and others. Load-shedding electricity cuts crippled economy for years. Eskom utility is bankrupt from corruption and mismanagement. Unemployment exceeds 30%, particularly youth. Zuma corruption legacy continues affecting politics. Ramaphosa promised anti-corruption but progress slow. Inequality is among world worst. Violence and crime are high. EFF far-left demands land expropriation. Democracy is resilient but service delivery fails.`,
+    issues: ['Load-shedding electricity crisis crippling economy', 'ANC lost majority after 30 years forming coalition government', 'Unemployment over 30% particularly devastating youth', 'Zuma corruption legacy and Eskom bankruptcy', 'Inequality among world worst']
+  },
+  {
+    country: 'Morocco',
+    summary: `Morocco under King Mohammed VI operates as monarchy with elected government but ultimate power resting with king. Western Sahara occupation is central issue—Morocco claims territory but Polisario Front seeks independence. Abraham Accords normalized Israel ties in exchange for U.S. recognizing Morocco Western Sahara claim. Economic growth has been steady but inequality persists. 2011 Arab Spring prompted limited reforms. Rif region protests were suppressed. Spain relations are tense over migration and Western Sahara. Tourism drives economy.`,
+    issues: ['Western Sahara occupation and Polisario conflict', 'Monarchy retaining ultimate power despite elected parliament', 'Inequality despite economic growth', 'Rif protests repression', 'Migration to Spain creating tensions']
+  },
+  {
+    country: 'Tunisia',
+    summary: `Tunisia under President Kais Saied has reversed Arab Spring gains, returning to authoritarianism. Saied won 2019 election as outsider then suspended parliament in 2021, rewrote constitution, and concentrated power. Opposition is jailed, media restricted, and racism against Black migrants is state-sanctioned. Economic crisis from debt, unemployment, and IMF conditionality generates protests. The 2011 revolution that sparked Arab Spring overthrew Ben Ali. Brief democracy flourished but economic struggles created discontent. Saied exploited frustrations to seize power. Ennahda Islamist party was dominant but now suppressed.`,
+    issues: ['Saied authoritarian power grab suspending parliament', 'Opposition jailed and media restricted', 'Economic crisis with IMF bailout conditionality', 'Racism against Black migrants state-sanctioned', '2011 revolution democratic gains reversed']
+  },
+  {
+    country: 'Libya',
+    summary: `Libya remains divided after 2011 Gaddafi overthrow and civil war. Eastern-based Haftar (LNA) and Tripoli-based Dbeibah (GNU) government compete. Oil revenues fund rival factions. 2014-2020 civil war destroyed infrastructure. Mercenaries from Russia (Wagner), Turkey, and others intervene. Elections are repeatedly postponed. Militias proliferate. Human trafficking and migrant abuses are rampant. No central authority. Foreign powers carve spheres—Turkey backs Tripoli, Russia/Egypt/UAE back Haftar. Economic collapse despite oil wealth. Southern Libya is lawless.`,
+    issues: ['Division between Haftar east and Tripoli government', 'Elections postponed with no political solution', 'Foreign mercenaries including Wagner intervening', 'Migrant trafficking and abuses rampant', 'Oil wealth funding militias and foreign powers']
+  },
+  {
+    country: 'Tanzania',
+    summary: `Tanzania under President Samia Hassan governs after Magufuli 2021 death. Magufuli was authoritarian and COVID denialist. Hassan has somewhat relaxed repression but CCM party dominance continues since independence. Opposition faces restrictions. Gas discoveries promise revenues but development is slow. Tourism to Serengeti and Zanzibar is significant. Corruption persists. Regional influence in East Africa is growing. Relations with Kenya are cooperative. Burundi refugees strain resources.`,
+    issues: ['CCM one-party dominance since independence', 'Opposition restrictions despite Hassan improvements', 'Gas development slow despite discoveries', 'Corruption endemic', 'Magufuli authoritarian legacy']
+  },
+  {
+    country: 'Uganda',
+    summary: `Uganda under President Yoweri Museveni, ruling since 1986, operates as personal dictatorship. Museveni has won every election through repression, violence, and rigging. Bobi Wine opposition leader was brutalized and elections stolen in 2021. Term limits and age limits were removed. Security forces are loyal to Museveni personally. Oil discoveries promise revenues but corruption risks. LRA insurgency ended but insecurity in some regions. LGBT persecution is severe with death penalty laws. Development has occurred but wealth concentrates. Kampala is growing hub.`,
+    issues: ['Museveni dictatorship since 1986 with rigged elections', 'Bobi Wine opposition brutalized and elections stolen', 'LGBT persecution with death penalty laws', 'Oil revenues promising but corruption risks', 'Term and age limits removed to perpetuate rule']
+  },
+  {
+    country: 'Zimbabwe',
+    summary: `Zimbabwe under President Emmerson Mnangagwa and ZANU-PF faces economic collapse, repression, and Mugabe legacy. Mnangagwa ousted Mugabe in 2017 coup but ZANU-PF system continues. Elections are rigged—2023 vote was fraudulent per observers. Opposition MDC/CCC faces violence and restrictions. Currency collapsed again. Hyperinflation returned. Poverty is universal. Corruption is endemic. Land reform displaced white farmers but failed to improve productivity. Debt default continues. Emigration is massive. No accountability for Gukurahundi massacres or ongoing abuses.`,
+    issues: ['Economic collapse with hyperinflation and currency crisis', 'Rigged elections with 2023 vote fraudulent', 'Opposition facing violence and restrictions', 'Mugabe legacy of ZANU-PF repression continuing under Mnangagwa', 'Poverty universal despite resource wealth']
+  },
+  {
+    country: 'Cameroon',
+    summary: `Cameroon under President Paul Biya, ruling since 1982, faces Anglophone crisis and authoritarian longevity. Anglophone regions declared independence as Ambazonia sparking brutal war since 2016. Security forces and separatists commit atrocities. Thousands killed and hundreds of thousands displaced. Biya refuses dialogue. Elections are rigged. Opposition is repressed. Boko Haram insurgency affects north. Corruption is endemic. Oil revenues benefit elites. Biya is among Africa longest-serving rulers. Succession is opaque given his age (over 90).`,
+    issues: ['Anglophone crisis with separatist war killing thousands', 'Biya dictatorship since 1982, over 90 years old', 'Rigged elections and opposition repression', 'Boko Haram in north', 'Succession uncertainty given Biya age']
+  },
+  {
+    country: 'Zambia',
+    summary: `Zambia under President Hakainde Hichilema governs after defeating Lungu in 2021, rare democratic transfer. HH won after years of opposition and arrests. Economic crisis from debt requires restructuring—Chinese loans for infrastructure created burden. IMF bailout secured. Copper mining drives economy but prices volatile. Corruption from Lungu era is being investigated. Democratic institutions function relatively well. Electricity crisis from drought affecting hydropower. Regional role in SADC. Peaceful transitions give Zambia democratic credentials.`,
+    issues: ['Debt crisis from Chinese loans requiring restructuring', 'Electricity crisis from drought affecting hydropower', 'Corruption from Lungu era', 'Copper price volatility affecting economy', 'IMF bailout conditionality']
+  },
+  {
+    country: 'Mali',
+    summary: `Mali faces military coups, jihadist insurgency, and Russian Wagner mercenaries. 2020 and 2021 coups overthrew government. Military junta led by Goita rules. Democratic transition is delayed repeatedly. Jihadist groups linked to Al-Qaeda and Islamic State control north and center. French forces withdrew after tensions. Wagner mercenaries provide security but commit atrocities. Humanitarian crisis affects millions. Ethnic tensions between communities. Sanctions from ECOWAS for delayed elections. Gold mining is significant. Corruption and governance failures.`,
+    issues: ['Military coups in 2020 and 2021 ending democracy', 'Jihadist insurgency controlling territory', 'Wagner mercenaries replacing French forces committing atrocities', 'Humanitarian crisis with millions affected', 'ECOWAS sanctions for delayed elections']
+  },
+  {
+    country: 'Niger',
+    summary: `Niger military coup in July 2023 overthrew President Bazoum. Junta led by Tchiani seized power citing insecurity. Democratic progress reversed. France military was ordered out. Wagner and Russian influence growing. Jihadist insurgency continues in border areas. ECOWAS sanctions imposed. Uranium exports are economically significant. Poverty is extreme—Niger ranks near bottom of development indices. Coups are recurring pattern. Regional instability from Mali and Burkina Faso coups. Youth bulge creates pressures.`,
+    issues: ['2023 military coup overthrowing elected Bazoum', 'French forces expelled with Wagner influence growing', 'Jihadist insurgency in border regions', 'Extreme poverty near bottom of development indices', 'ECOWAS sanctions']
+  },
+  {
+    country: 'Chad',
+    summary: `Chad under Mahamat Déby continues family dynasty after father Idriss Déby killed in 2021. The military transition promised elections but延迟延迟. Democracy is absent—Déby consolidated power. Rebel groups operate from Libya. Jihadist threats from Boko Haram and Lake Chad. Ethnic tensions between north and south. Oil revenues fund military and elite. France maintains military presence. Wagner and Russian influence growing. Corruption is endemic. Poverty is extreme. Refugees from Sudan and CAR strain resources.`,
+    issues: ['Déby dynasty with son succeeding father after killing', 'Elections delayed with democratic transition sabotaged', 'Rebel groups and jihadist threats', 'Extreme poverty despite oil revenues', 'Wagner influence growing']
+  },
+  {
+    country: 'Burkina Faso',
+    summary: `Burkina Faso faces military coups and jihadist insurgency. 2022 coups brought Captain Traoré to power. French forces were expelled. Wagner influence grows. Jihadist groups control large areas. Humanitarian crisis with millions displaced. Governance failures and corruption enabled insurgency. Compaoré ruled 1987-2014 before popular uprising. Brief democracy ended with coups. Economic challenges from insecurity. Gold mining is significant. Regional instability from Mali and Niger coups. Traoré promises security but progress limited.`,
+    issues: ['2022 military coups bringing Traoré to power', 'Jihadist insurgency controlling territory with millions displaced', 'French forces expelled with Wagner influence', 'Governance failures enabling insurgency', 'Democratic progress reversed']
+  },
+  {
+    country: 'Rwanda',
+    summary: `Rwanda under President Paul Kagame operates as developmental authoritarian state. Kagame has ruled since 2000 after leading RPF to end 1994 genocide. Economic growth and development are impressive. Kigali is clean and ordered. But repression is severe—opposition is exiled or killed. Dissent is crushed. Elections are shams with Kagame winning 99%. Term limits removed. Regional destabilization through M23 support in Congo. Accountability for genocide is selective. International criticism is dismissed. UK asylum deal was controversial.`,
+    issues: ['Kagame authoritarian rule with opposition killed or exiled', 'Elections shams with 99% victories', 'M23 support destabilizing eastern Congo', 'Repression severe despite development gains', 'Term limits removed for indefinite rule']
+  },
+  {
+    country: 'Botswana',
+    summary: `Botswana operates as stable democracy, unusual in Africa. The Botswana Democratic Party (BDP) has governed since independence in 1966 through free elections but dominance raises questions. Diamond wealth has funded development creating middle-income status. Corruption is low by regional standards. Governance institutions function relatively well. But inequality persists, and economic diversification is needed. BDP finally lost power in 2024 election, showing democratic maturity. San people (Bushmen) face marginalization despite indigenous rights. HIV rates were historically high but treatment programs improved outcomes.`,
+    issues: ['BDP dominance since 1966 until 2024 defeat', 'Diamond dependence requiring diversification', 'San indigenous people marginalization', 'Inequality despite middle-income status', 'HIV rates historically high']
   }
 ]
 
