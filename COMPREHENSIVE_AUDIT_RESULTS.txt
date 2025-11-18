@@ -1,0 +1,62 @@
+=== COMPREHENSIVE DATABASE AUDIT ===
+
+
+📊 Current Main DB
+   Path: ./prisma/dev.db
+   Total: 1557 entries
+   Categories:
+     ⚠️ all: 148
+     ⚠️ climate: 129
+     ✅ crime: 128
+     ❌ economy: 2
+     ✅ education: 128
+     ✅ energy: 128
+     ⚠️ entertainment: 104
+     ✅ food: 128
+     ✅ healthcare: 128
+     ⚠️ infrastructure: 148
+     ⚠️ lifestyle: 114
+     ❌ politics: 2
+     ⚠️ science: 140
+     ❌ technology: 2
+     ✅ travel: 128
+
+📊 Nested DB
+   Path: ./prisma/prisma/dev.db
+   Total: 1024 entries
+   Categories:
+     ✅ all: 128
+     ✅ culture: 128
+     ✅ entertainment: 128
+     ✅ infrastructure: 128
+     ✅ politics: 128
+     ✅ science: 128
+     ✅ sport: 128
+     ✅ sports: 128
+
+📊 Politics Complete (a641655)
+   Path: /tmp/politics-complete.db
+   Total: 384 entries
+   Categories:
+     ✅ culture: 128
+     ✅ politics: 128
+     ✅ sports: 128
+
+
+=== FRONTEND REQUIREMENTS ===
+
+Required 14 categories (from MapViewLocations.tsx):
+  1. all
+  2. politics
+  3. economy
+  4. technology
+  5. climate
+  6. culture
+  7. sports
+  8. infrastructure
+  9. science
+  10. education
+  11. healthcare
+  12. military
+  13. crime
+  14. energy
