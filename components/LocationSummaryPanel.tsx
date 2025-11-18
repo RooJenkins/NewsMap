@@ -3,6 +3,7 @@
 import { X } from 'lucide-react'
 import ReactMarkdown from 'react-markdown'
 import { getCountryStats } from '@/lib/countryData'
+import { useAudioNarrator } from '@/contexts/AudioNarratorContext'
 
 interface LocationSummary {
   id: string
@@ -27,6 +28,8 @@ interface LocationSummaryPanelProps {
 }
 
 export default function LocationSummaryPanel({ location, onClose }: LocationSummaryPanelProps) {
+  const { addToQueue, playNow, queue, currentItem } = useAudioNarrator()
+
   const timeAgo = (dateString: string) => {
     const date = new Date(dateString)
     const now = new Date()
@@ -41,6 +44,46 @@ export default function LocationSummaryPanel({ location, onClose }: LocationSumm
 
   // Get country stats
   const countryStats = getCountryStats(location.name)
+
+  const isInQueue = queue.some(item => item.id === location.id)
+  const isCurrentlyPlaying = currentItem?.id === location.id
+
+  // Strip markdown from summary for clean narration
+  const stripMarkdown = (text: string) => {
+    return text
+      .replace(/#{1,6}\s+/g, '') // Remove headers
+      .replace(/\*\*(.+?)\*\*/g, '$1') // Remove bold
+      .replace(/\*(.+?)\*/g, '$1') // Remove italic
+      .replace(/\[(.+?)\]\(.+?\)/g, '$1') // Remove links
+      .replace(/`(.+?)`/g, '$1') // Remove code
+      .replace(/^[\*\-]\s+/gm, '') // Remove list markers
+  }
+
+  const handlePlayNow = () => {
+    playNow({
+      id: location.id,
+      title: `${location.name} ${location.type === 'country' ? 'Country Analysis' : 'Summary'}`,
+      content: stripMarkdown(location.summary),
+      type: 'location',
+      metadata: {
+        location: location.name,
+        category: location.type,
+      },
+    })
+  }
+
+  const handleAddToQueue = () => {
+    addToQueue({
+      id: location.id,
+      title: `${location.name} ${location.type === 'country' ? 'Country Analysis' : 'Summary'}`,
+      content: stripMarkdown(location.summary),
+      type: 'location',
+      metadata: {
+        location: location.name,
+        category: location.type,
+      },
+    })
+  }
 
   return (
     <div className="fixed top-0 right-0 w-[800px] h-full shadow-2xl overflow-y-auto z-[10000] animate-slideIn border-l-4 border-white/20 backdrop-blur-xl bg-white/80">
@@ -58,9 +101,53 @@ export default function LocationSummaryPanel({ location, onClose }: LocationSumm
           <h2 className="font-headline text-4xl font-bold text-ft-black mb-2 leading-tight">
             {location.name}
           </h2>
-          <p className="text-ft-slate text-sm font-medium">
-            {location.type === 'country' ? 'Country Analysis' : location.country}
-          </p>
+          <div className="flex items-center justify-between gap-4">
+            <p className="text-ft-slate text-sm font-medium">
+              {location.type === 'country' ? 'Country Analysis' : location.country}
+            </p>
+
+            {/* Narrator Controls */}
+            <div className="flex items-center gap-2">
+              {isCurrentlyPlaying ? (
+                <span className="flex items-center gap-1 text-xs font-semibold text-ft-claret bg-white px-3 py-1.5 rounded-full">
+                  <svg className="w-4 h-4 animate-pulse" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                  Playing
+                </span>
+              ) : isInQueue ? (
+                <span className="flex items-center gap-1 text-xs font-semibold text-ft-teal bg-white px-3 py-1.5 rounded-full">
+                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                  </svg>
+                  In Queue
+                </span>
+              ) : (
+                <>
+                  <button
+                    onClick={handlePlayNow}
+                    className="flex items-center gap-1 px-3 py-1.5 text-xs font-semibold text-white bg-ft-claret hover:bg-ft-claret/80 rounded-full transition-colors"
+                    title="Play this summary now"
+                  >
+                    <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M8 5v14l11-7z" />
+                    </svg>
+                    Play
+                  </button>
+                  <button
+                    onClick={handleAddToQueue}
+                    className="flex items-center gap-1 px-3 py-1.5 text-xs font-semibold text-white border border-white hover:bg-white hover:text-ft-oxford rounded-full transition-colors"
+                    title="Add to narration queue"
+                  >
+                    <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+                    </svg>
+                    Queue
+                  </button>
+                </>
+              )}
+            </div>
+          </div>
         </div>
       </div>
 

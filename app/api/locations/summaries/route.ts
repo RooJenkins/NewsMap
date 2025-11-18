@@ -39,7 +39,7 @@ export async function GET(request: Request) {
     })
 
     // Format summaries for response
-    const formattedSummaries = summaries.map(loc => {
+    const formattedSummaries = summaries.map((loc: any) => {
       let issues = []
       let topStories = []
 
