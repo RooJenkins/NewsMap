@@ -34,3 +34,7 @@ yarn-error.log*
 next-env.d.ts
 
 /lib/generated/prisma
+
+# database backups
+*.db.backup
+*.db.pre-restore

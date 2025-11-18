@@ -388,21 +388,21 @@ export default function MapViewLocations({ onViewChange, onPanelStateChange }: M
     )
   }
 
-  const categories: { id: NewsCategory; label: string }[] = [
-    { id: 'all', label: 'All News' },
-    { id: 'politics', label: 'Politics' },
-    { id: 'economy', label: 'Economy' },
-    { id: 'technology', label: 'Technology' },
-    { id: 'climate', label: 'Climate' },
-    { id: 'culture', label: 'Culture & Arts' },
-    { id: 'sports', label: 'Sports' },
-    { id: 'infrastructure', label: 'Infrastructure' },
-    { id: 'science', label: 'Science' },
-    { id: 'education', label: 'Education' },
-    { id: 'healthcare', label: 'Healthcare' },
-    { id: 'military', label: 'Military & Defense' },
-    { id: 'crime', label: 'Crime & Justice' },
-    { id: 'energy', label: 'Energy' },
+  const categories: { id: NewsCategory; label: string; available: boolean }[] = [
+    { id: 'all', label: 'All News', available: true },
+    { id: 'politics', label: 'Politics', available: true },
+    { id: 'economy', label: 'Economy', available: false },
+    { id: 'technology', label: 'Tech', available: false },
+    { id: 'climate', label: 'Climate', available: true },
+    { id: 'culture', label: 'Culture', available: true },
+    { id: 'sports', label: 'Sports', available: true },
+    { id: 'infrastructure', label: 'Infrastructure', available: true },
+    { id: 'science', label: 'Science', available: true },
+    { id: 'education', label: 'Education', available: true },
+    { id: 'healthcare', label: 'Healthcare', available: true },
+    { id: 'military', label: 'Military', available: false },
+    { id: 'crime', label: 'Crime', available: true },
+    { id: 'energy', label: 'Energy', available: true },
   ]
 
   return (
@@ -424,12 +424,17 @@ export default function MapViewLocations({ onViewChange, onPanelStateChange }: M
               setSelectedCountryName(null)
             }}
             className={`
-              px-3 py-1.5 rounded-full font-body font-semibold text-xs transition-all
+              px-3 py-1.5 rounded-full font-body font-semibold text-xs transition-all whitespace-nowrap
               ${selectedCategory === category.id
-                ? 'bg-white text-ft-oxford border-2 border-blue-500 shadow-lg transform scale-105'
-                : 'bg-white/80 text-ft-black hover:bg-white border border-ft-oxford/30 shadow-sm'
+                ? category.available
+                  ? 'bg-white text-ft-oxford border-2 border-blue-500 shadow-lg transform scale-105'
+                  : 'bg-red-500 text-white border-2 border-red-600 shadow-lg transform scale-105'
+                : category.available
+                  ? 'bg-white/80 text-ft-black hover:bg-white border border-ft-oxford/30 shadow-sm'
+                  : 'bg-red-500/80 text-white hover:bg-red-500 border border-red-600/50 shadow-sm cursor-not-allowed'
               }
             `}
+            disabled={!category.available}
           >
             {category.label}
           </button>
